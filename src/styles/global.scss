@@ -12,5 +12,63 @@
 }
 
 body {
-  background: white;
+  background-color: pink;
+}
+
+section {
+  align-items: center;
+  background: $white;
+  border: 1px solid green;
+  color: $text-color;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  min-height: 100vh;
+  min-width: 100vW;
+
+  >:first-child {
+    @include sectionContainer;
+  }
+}
+
+/* ExtraExtraLarge Devices, UltraWide Desktops  */
+@media (min-width: 1921px) {
+  section {
+    max-width: 1200px;
+    width: 55vw;
+  }
+}
+
+/* ExtraLarge Devices, Desktops  */
+@media (min-width: 1200px) and (max-width: 1920px) {
+  section {
+    width: 55%;
+  }
+}
+/* Large Devices, Laptops, Large Tablets iPad Pro */
+@media only screen and (min-width: 1024px) and (max-width: 1199px) {
+  section {
+    width: 80%;
+  }
+}
+
+/* Medium Devices, Tablets iPad */
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+  section {
+    width: 95%;
+  }
+}
+
+/* Small Devices, Small tablets Large Phones */
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+  section {
+    width: 95%;
+  }
+}
+
+/* Extra Small Devices, Phones */
+@media only screen and (min-width: 0px) and (max-width: 479px) {
+  section {
+    width: 95%;
+  }
 }

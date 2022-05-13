@@ -1,10 +1,16 @@
 import React from 'react';
-// import styles from './MainPage.module.scss';
+import AboutUs from '../../common/AboutUs/AboutUs';
+import News from '../../common/News/News';
+
+import styles from './MainPage.module.scss';
 
 const MainPage = () => (
-  <div>
+  <div className={styles.root}>
     <section>
-      <p>Nowa sekcja</p>
+      <News />
+    </section>
+    <section>
+      <AboutUs />
     </section>
   </div>
 );
