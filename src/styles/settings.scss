@@ -1,0 +1,23 @@
+@import "./mixins.scss";
+
+/* DO NOT USE THOSE VARIABLES IN THE OTHER SCSS FILES! */
+$black: #000000;
+$red: #cc0033;
+$darkWhite: #f0f0f0;
+$white: #ffffff;
+$yellow: #ffff00;
+$gold: #f8af20;
+$lightGray: #b2b2b2;
+
+$mainRichBlack: #040C0E;
+$mainDarkJungleGreen: #132226;
+$mainFeldgrau: #525B56;
+$mainCamel: #BE9063;
+$mainGlossyGrape: #A497BE;
+$mainArylideYellow: #E9C974;
+$mainNavajoWhite: #FFE5A1;
+
+$text-color: $black;
+$font-title: "Ubuntu", sans-serif;
+$font-text: "Lato", sans-serif;
+$padding-below-sections: 75px;
