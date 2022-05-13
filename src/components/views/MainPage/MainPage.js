@@ -1,5 +1,5 @@
 import React from 'react';
-import styles from './MainPage.module.scss';
+// import styles from './MainPage.module.scss';
 
 const MainPage = () => (
   <div>
