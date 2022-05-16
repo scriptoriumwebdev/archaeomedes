@@ -1,10 +1,14 @@
 import React from 'react';
 import { Container } from 'react-bootstrap';
+import Button from '../Button/Button';
+import SectionHeader from '../SectionHeader/SectionHeader';
+
 // import styles from './News.module.scss';
 
 const News = () => (
   <Container>
-    <p>komponent News</p>
+    <SectionHeader> News </SectionHeader>
+    <Button> Read more</Button>
   </Container>
 );
 
