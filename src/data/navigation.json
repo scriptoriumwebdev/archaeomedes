@@ -1,0 +1,26 @@
+[
+  {
+    "id": 1,
+    "linkSrc": "#news",
+    "linkName": "News",
+    "side": "L"
+  },
+  {
+    "id": 2,
+    "linkSrc": "#aboutUs",
+    "linkName": "About us",
+    "side": "L"
+  },
+  {
+    "id": 3,
+    "linkSrc": "#services",
+    "linkName": "Services",
+    "side": "R"
+  },
+  {
+    "id": 4,
+    "linkSrc": "#contact",
+    "linkName": "Contact",
+    "side": "R"
+  }
+]
