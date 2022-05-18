@@ -4,7 +4,7 @@ import styles from './Footer.module.scss';
 const Footer = () => (
   <footer className={styles.root}>
     <div className={styles.yearBox}>
-      <div className={styles.churchLinkBox}>
+      <div className={styles.linkBox}>
         <p className={styles.textFooter}>© 2022</p>
         <a href="#" className={styles.textFooter}>
           Archaeomedes
