@@ -1,13 +1,21 @@
 import React from 'react';
-// import styles from './Footer.module.scss';
+import styles from './Footer.module.scss';
 
 const Footer = () => (
-  <footer>
-    <p>
-      {` `}
-      Powered by <a href="mailto:info@crucialfix.pl">CrucialFix</a>
-      {` `}
-    </p>
+  <footer className={styles.root}>
+    <div className={styles.yearBox}>
+      <div className={styles.churchLinkBox}>
+        <p className={styles.textFooter}>© 2022</p>
+        <a href="#" className={styles.textFooter}>
+          Archaeomedes
+        </a>
+      </div>
+      <p className={styles.textFooter}>
+        {` `}
+        Designed & Coded by <a href="mailto:info@crucialfix.pl">CrucialFix</a>
+        {` `}
+      </p>
+    </div>
   </footer>
 );
 
