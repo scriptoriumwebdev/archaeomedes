@@ -1,14 +1,13 @@
 @import "../../../styles/settings.scss";
 
 .root {
-  @include flex(column, center, center);
+  width: 100%;
+  background: $footerBackground;
 }
 
 .yearBox {
-  @include flex(column, center, center);
-  background: $footerBackground;
+  @include flex(row, center, center);
   color: $mainFeldgrau;
-  width: 100%;
 }
 
 .linkBox {
@@ -50,8 +49,14 @@ a {
 
 /* SM Small Devices, Small tablets Large Phones */
 @media only screen and (min-width: 576px) and (max-width: 767px) {
+  .yearBox {
+    @include flex(column, center, center);
+  }
 }
 
 /* Extra Small Devices, Phones */
 @media only screen and (min-width: 0px) and (max-width: 575px) {
+  .yearBox {
+    @include flex(column, center, center);
+  }
 }

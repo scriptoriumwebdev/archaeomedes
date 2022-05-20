@@ -7,7 +7,7 @@ import SectionHeader from '../SectionHeader/SectionHeader';
 const AboutUs = () => (
   <Container>
     <SectionHeader> About Us </SectionHeader>
-    <Button> Więcej o Nas</Button>
+    <Button> Our team</Button>
   </Container>
 );
 
