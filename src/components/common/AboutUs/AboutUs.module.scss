@@ -1,12 +1,47 @@
 @import "../../../styles/settings.scss";
 
 .root {
-  @include flex(column, none, space-around);
+  @include flex(column, none, space-between);
+  position: relative;
+  z-index: 1;
   .aboutUsTextContainer {
     @include flex(column, center, center);
-    align-self: center;
+    align-self: flex-end;
+    margin-right: 2rem;
     text-align: justify;
-    width: 80%;
+    width: 60%;
+  }
+  .buttonTeamContainer {
+    @include flex(column, flex-end, center);
+    height: 10rem;
+    padding-right: 2rem;
+    .buttonTeamFigure {
+      @include flex(column, center, end);
+      height: 100%;
+      position: relative;
+      width: 40%;
+      .backgroundImage2 {
+        border-radius: 50%;
+        display: inline-block;
+        left: 50%;
+        opacity: 0.1;
+        position: absolute;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        width: 100%;
+        z-index: -1;
+      }
+    }
+  }
+  .backgroundImage1 {
+    border-radius: 50%;
+    display: inline-block;
+    left: 2rem;
+    opacity: 0.2;
+    position: absolute;
+    top: 2rem;
+    width: 45%;
+    z-index: -1;
   }
 }
 
@@ -23,6 +58,31 @@
 
 /* Medium Devices, Tablets iPad */
 @media only screen and (min-width: 768px) and (max-width: 1023px) {
+  .root {
+    .backgroundImage1 {
+      width: 50%;
+    }
+    .backgroundImage2 {
+      left: 50%;
+    }
+  }
+}
+
+/* Below Medium Devices,*/
+@media only screen and (min-width: 0) and (max-width: 767px) {
+  .root {
+    .aboutUsTextContainer {
+      align-self: center;
+      margin-right: 0;
+      width: 80%;
+    }
+    .backgroundImage1 {
+      width: 50%;
+    }
+    .backgroundImage2 {
+      left: 50%;
+    }
+  }
 }
 
 /* Small Devices, Small tablets Large Phones */
