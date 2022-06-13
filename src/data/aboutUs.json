@@ -1,0 +1,80 @@
+{
+  "id": "62a20060ca0c4f2bed315ED",
+  "mainpagePhotos": [
+    {
+      "id": "62a202f8c9f8b9a4bbba19d1",
+      "src": "/images/aboutUs1.webp"
+    },
+    {
+      "id": "62a202f8c9f8b9a4bbba19d2",
+      "src": "/images/aboutUs2.webp"
+    }
+  ],
+  "data": [
+    {
+      "language": "DE",
+      "title": "Über uns",
+      "buttonTeam": "Unsere Team",
+      "aboutText": [
+        {
+          "id": "62a20060ca0c4f2bed344394",
+          "text": "Die Fa. ARCHÄOMEDES GbR ist ein Zusammenschluss aus fünf leidenschaftlichen Archäologen. Seit Jahren arbeiten wir immer wieder als Gruppe erfolgreich und zu großer Zufriedenheit von Auftraggebern und Denkmalämtern zusammen. Das gemeinsame Arbeiten hat uns selbst immer so viel Freude gemacht, dass wir beschlossen haben, die partnerschaftliche Arbeitsgemeinschaft ARCHÄOMEDES zu bilden."
+        },
+        {
+          "id": "62a200a9f865b85583922080",
+          "text": "Jeder einzelne von uns verfügt über jahrelange Berufserfahrung mit individuellen Spezifikationen. Unser großer Erfahrungsschatz in den verschiedenen archäologischen Zeithorizonten, den wir bei zahlreichen Baubegleitungen, Stadtkernuntersuchungen, Gas- und Kabelleitungstrassen bis zu großen Flächengrabungen einsetzten durften, zeichnet uns aus."
+        },
+        {
+          "id": "62a200ef448c5f6aaf000d4d",
+          "text": "Wir sind ein eingespieltes Team und agieren, effizient, flexibel, schnell mit qualitativ hohen Standards, aber auch mit Begeisterung und Verve an der Sache und in den Diensten der geschichtlichen Forschung."
+        },
+        {
+          "id": "62a201140d59dca02f8a1dfd",
+          "text": "Hilfreich sind uns dabei unsere internationalen Kontakte nach Großbritannien, in die Niederlande, nach Polen und die USA. Unsere Stärken liegen in einer erprobt erfolgreichen Zusammenarbeit mit den verschiedenen öffentlichen und privaten Auftraggebern und unsere Fähigkeit, im Bedarfsfalle schnell und flexibel qualifiziertes Fachpersonal hinzuholen zu können. Dies gilt auch für eine fachübergreifende Zusammenarbeit mit Anthropologen und Archäobotanikern."
+        },
+        {
+          "id": "62a2021b348ff4085e25423b",
+          "text": "Wir betrachten es als Bereicherung, unseren Einsatz ortsungebunden und überregional ermöglichen zu können."
+        },
+        {
+          "id": "62a200f38f1dacd0bcdc3e8c",
+          "text": "Wie bieten kompetente Beratung hinsichtlich der Vereinbarkeit von baulichen und archäologischen Belangen. Wir helfen Ihnen durch unsere Expertise schon im Vorfeld bei einer Denkmalschutz konformen Planung und Ausführung ihrer Bauprojekte."
+        },
+        {
+          "id": "62a20291f00997f48fb0def3",
+          "text": "Wir lieben, was wir tun, wir freuen uns auf eine künftige Zusammenarbeit!"
+        }
+      ],
+      "team": [
+        {
+          "id": "62a2030f94a3a05181b2f238",
+          "name": "",
+          "bio": [
+            {
+              "text": ""
+            }
+          ],
+          "photo": ""
+        }
+      ]
+    },
+    {
+      "language": "EN",
+      "title": "About us",
+      "buttonTeam": "Our Team",
+      "aboutText": [],
+      "team": [
+        {
+          "id": "62a37135943b52d0e28ddd71",
+          "name": "",
+          "bio": [
+            {
+              "text": ""
+            }
+          ],
+          "photo": ""
+        }
+      ]
+    }
+  ]
+}
