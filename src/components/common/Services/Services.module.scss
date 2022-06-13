@@ -1,0 +1,133 @@
+@import "../../../styles/settings.scss";
+
+.root {
+  @include flex(column, flex-start, space-between);
+  min-height: 100%;
+  .cardGrid {
+    display: grid;
+    grid-column-gap: 1rem;
+    grid-row-gap: 1rem;
+    grid-template-columns: repeat(1, 1fr);
+    max-width: 1200px;
+    width: 100%;
+    padding: 1rem;
+    .card {
+      color: $white;
+      list-style: none;
+      position: relative;
+      text-decoration: none;
+    }
+    .card:before {
+      content: "";
+      display: block;
+      padding-bottom: 150%;
+      width: 100%;
+    }
+    .cardBackground {
+      border-radius: 1rem;
+      bottom: 0;
+      filter: brightness(0.75) saturate(1.2) contrast(0.85);
+      height: 100%;
+      left: 0;
+      object-fit: cover;
+      position: absolute;
+      right: 0;
+      top: 0;
+      transform-origin: center;
+      transform: scale(1) translateZ(0);
+      transition: filter 200ms linear, transform 200ms linear;
+      width: 100%;
+      img {
+        height: 100%;
+        width: 100%;
+      }
+    }
+    .card:hover {
+      color: $navigationColorLink;
+      .cardBackground {
+        box-shadow: 0px 0px 50px 0px rgba(255, 255, 255, 1);
+        transform: scale(1.05) translateZ(0);
+      }
+    }
+  }
+  .cardGrid:hover > .card:not(:hover) .cardBackground {
+    filter: brightness(0.5) saturate(0) contrast(1.2) blur(20px);
+  }
+  .cardContent {
+    bottom: 0;
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+  }
+}
+
+@media (min-width: 576px) {
+  .root {
+    .cardGrid {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+}
+
+@media (min-width: 991px) {
+  .root {
+    .cardGrid {
+      grid-template-columns: repeat(4, 1fr);
+    }
+  }
+}
+
+/* XXXL ExtraExtraLarge Devices, UltraWide Desktops  */
+@media (min-width: 1921px) {
+  .root {
+  }
+}
+
+/* XXL Extra Extra Large Devices, Desktops  */
+@media (min-width: 1400px) and (max-width: 1920px) {
+  .root {
+  }
+}
+
+/* XL Extra Extra Large Devices, Laptops  */
+@media (min-width: 1200px) and (max-width: 1399px) {
+  .root {
+  }
+}
+
+/* LG Large Devices, Tablets iPad Pro */
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+  .root {
+  }
+}
+
+/* MD Medium Devices, Tablets iPad */
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .root {
+  }
+}
+
+/* SM Small Devices, Small tablets Large Phones */
+@media only screen and (min-width: 576px) and (max-width: 767px) {
+  .root {
+  }
+}
+
+/* Extra Small Devices, Phones */
+@media only screen and (min-width: 0px) and (max-width: 575px) {
+  .root {
+  }
+}
+
+/* Media pointer*/
+@media (hover: hover) and (pointer: fine) {
+  .root {
+  }
+}
+
+/* Media touchable */
+@media (pointer: coarse) {
+  .root {
+  }
+}
