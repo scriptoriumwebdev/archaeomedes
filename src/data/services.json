@@ -1,0 +1,65 @@
+{
+  "id": "62a723d46b7ac14850d2c565",
+  "data": [
+    {
+      "language": "DE",
+      "title": "Leistungsspektrum",
+      "services": [
+        {
+          "id": "62a723e63268d0c651dee865",
+          "title": "Service 1",
+          "photo": "https://images.pexels.com/photos/1116035/pexels-photo-1116035.jpeg?cs=srgb&dl=pexels-anamul-rezwan-1116035.jpg&fm=jpg",
+          "text": ""
+        },
+        {
+          "id": "62a723eb41c243582576cb7c",
+          "title": "Service 2",
+          "photo": "https://images.pexels.com/photos/3334473/pexels-photo-3334473.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+          "text": ""
+        },
+        {
+          "id": "62a723effdd03dc166a04e7d",
+          "title": "Service 3",
+          "photo": "https://images.pexels.com/photos/978710/pexels-photo-978710.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+          "text": ""
+        },
+        {
+          "id": "62a723f1848068635bbf24f8",
+          "title": "Service 4",
+          "photo": "https://images.pexels.com/photos/3285094/pexels-photo-3285094.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+          "text": ""
+        }
+      ]
+    },
+    {
+      "language": "EN",
+      "title": "Services",
+      "services": [
+        {
+          "id": "62a7253c09fc156c4c1a3a00",
+          "title": "Service 1",
+          "photo": "",
+          "text": ""
+        },
+        {
+          "id": "62a7253f3391ee7765e71294",
+          "title": "Service 2",
+          "photo": "",
+          "text": ""
+        },
+        {
+          "id": "62a725425c58552981752894",
+          "title": "Service 3",
+          "photo": "",
+          "text": ""
+        },
+        {
+          "id": "62a72547e6a53c55a28a22ca",
+          "title": "Service 4",
+          "photo": "",
+          "text": ""
+        }
+      ]
+    }
+  ]
+}
