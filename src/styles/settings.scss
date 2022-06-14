@@ -1,4 +1,5 @@
 @import "./mixins.scss";
+@import "./animations.scss";
 
 /* DO NOT USE THOSE VARIABLES IN THE OTHER SCSS FILES! */
 $black: #000000;
@@ -9,13 +10,13 @@ $yellow: #ffff00;
 $gold: #f8af20;
 $lightGray: #b2b2b2;
 
-$mainRichBlack: #040C0E;
+$mainRichBlack: #040c0e;
 $mainDarkJungleGreen: #132226;
-$mainFeldgrau: #525B56;
-$mainCamel: #BE9063;
-$mainGlossyGrape: #A497BE;
-$mainArylideYellow: #E9C974;
-$mainNavajoWhite: #FFE5A1;
+$mainFeldgrau: #525b56;
+$mainCamel: #be9063;
+$mainGlossyGrape: #a497be;
+$mainArylideYellow: #e9c974;
+$mainNavajoWhite: #ffe5a1;
 
 // FONTS & TEXT
 $text-color: $black;
@@ -28,7 +29,6 @@ $headerColor: $mainArylideYellow;
 // SECTION
 $padding-below-sections: 75px;
 
-
 // SECTION BUTTON
 $sectionButtonColor: $mainArylideYellow;
 
@@ -39,4 +39,4 @@ $navigationBackground: $mainDarkJungleGreen;
 $navigationMobileMenuBackground: $mainFeldgrau;
 
 //FOOTER
-$footerBackground: $mainDarkJungleGreen
+$footerBackground: $mainDarkJungleGreen;

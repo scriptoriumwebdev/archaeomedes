@@ -12,12 +12,11 @@
 }
 
 body {
-  background-color: pink;
+  background: $white;
 }
 
 section {
   align-items: center;
-  background: $white;
   border: 1px solid green;
   color: $text-color;
   display: flex;
@@ -25,16 +24,18 @@ section {
   justify-content: center;
   min-height: 100vh;
   min-width: 100%;
-  &:nth-child(odd) {
-    background: $mainDarkJungleGreen;
-    box-shadow: 0 8px 6px -6px black;
-  }
+
   &:nth-child(even) {
-    box-shadow: 5px 5px 5px rgba(68, 68, 68, 0.6);
+    background: $mainDarkJungleGreen;
+  }
+  &:nth-child(odd) {
+    background: $white;
     box-shadow: inset 0px 3rem 2rem -1rem $mainDarkJungleGreen, inset 0px -3rem 2rem -1rem $mainDarkJungleGreen;
   }
+  &:first-child {
+    background: none;
+  }
   &:last-child {
-    box-shadow: 5px 5px 5px rgba(68, 68, 68, 0.6);
     box-shadow: inset 0px 3rem 2rem -1rem $mainDarkJungleGreen, inset 0 0 0 0 $mainDarkJungleGreen;
   }
   > :first-child {

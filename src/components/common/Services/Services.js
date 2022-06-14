@@ -1,7 +1,6 @@
 import React from 'react';
 import { Container } from 'react-bootstrap';
 import styles from './Services.module.scss';
-import Button from '../Button/Button';
 import SectionHeader from '../SectionHeader/SectionHeader';
 
 import services from '../../../data/services.json';
@@ -18,7 +17,11 @@ const Services = () => {
       <div className={styles.cardGrid}>
         {/* //TODO dodać link do usługi */}
         {languageData.services.map((item) => (
-          <a href={`/services/#${item.title}`} className={styles.card}>
+          <a
+            href={`/services/#${item.title}`}
+            className={styles.card}
+            key={item.id}
+          >
             <figure>
               <img
                 src={item.photo}
