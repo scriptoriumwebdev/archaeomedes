@@ -34,6 +34,7 @@ section {
   }
   &:first-child {
     background: none;
+    box-shadow: none;
   }
   &:last-child {
     box-shadow: inset 0px 3rem 2rem -1rem $mainDarkJungleGreen, inset 0 0 0 0 $mainDarkJungleGreen;

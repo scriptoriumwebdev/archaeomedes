@@ -10,7 +10,6 @@ const Services = () => {
     // eslint-disable-next-line prettier/prettier
     (i) => i.language === `DE`,
   );
-  console.log(`languageData`, languageData);
   return (
     <Container className={styles.root}>
       <SectionHeader>{languageData.title}</SectionHeader>
