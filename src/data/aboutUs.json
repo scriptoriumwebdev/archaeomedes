@@ -3,11 +3,11 @@
   "mainpagePhotos": [
     {
       "id": "62a202f8c9f8b9a4bbba19d1",
-      "src": "/images/aboutUs1.webp"
+      "src": "/images/about/aboutUs1.webp"
     },
     {
       "id": "62a202f8c9f8b9a4bbba19d2",
-      "src": "/images/aboutUs2.webp"
+      "src": "/images/about/aboutUs2.webp"
     }
   ],
   "data": [

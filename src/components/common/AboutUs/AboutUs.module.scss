@@ -13,7 +13,7 @@
   }
   .buttonTeamContainer {
     @include flex(column, flex-end, center);
-    height: 10rem;
+    min-height: 10rem;
     padding-right: 2rem;
     .buttonTeamFigure {
       @include flex(column, center, end);
