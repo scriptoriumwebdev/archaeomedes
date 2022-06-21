@@ -4,11 +4,13 @@
   "buttons": [
     {
       "language": "DE",
-      "buttonMore": "Mehr"
+      "buttonMore": "Mehr",
+      "buttonMoreNews": "Mehr Nachrichten"
     },
     {
       "language": "EN",
-      "buttonMore": "More"
+      "buttonMore": "More",
+      "buttonMoreNews": "More News"
     }
   ]
 }

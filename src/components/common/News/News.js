@@ -18,9 +18,6 @@ const News = () => {
     (i) => i.language === utils.language,
   );
 
-  const newsOnPage = 3;
-
-  console.log(`languageData`, languageData);
   return (
     <Container className={styles.root}>
       {/*
@@ -31,12 +28,19 @@ const News = () => {
     */}
       <SectionHeader>{languageData.title}</SectionHeader>
       <div className={styles.newsGridContainer}>
-        {languageData.news.slice(0, 3).map((item) => (
-          <SingleNews key={item.id} post={item} />
-        ))}
+        {languageData.news
+          .slice(-3)
+          .reverse()
+          .map((item) => (
+            <SingleNews
+              key={item.id}
+              post={item}
+              buttonMore={UtilsButtons.buttonMore}
+            />
+          ))}
       </div>
       <div className={styles.buttonContainer}>
-        <Button> Read more</Button>
+        <Button>{UtilsButtons.buttonMoreNews}</Button>
       </div>
     </Container>
   );
