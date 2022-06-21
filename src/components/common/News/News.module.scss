@@ -2,8 +2,28 @@
 
 .root {
   @include flex(column, none, space-between);
-  position: relative;
-  z-index: 1;
+  height: 100%;
+  .newsGridContainer {
+    display: grid;
+    grid-column-gap: 1rem;
+    grid-row-gap: 1rem;
+    grid-template-columns: repeat(1, 1fr);
+    height: 100%;
+    min-height: 30vh;
+    padding: 1rem;
+    width: 100%;
+  }
+  .buttonContainer {
+    @include flex(row, center, center);
+  }
+}
+
+@media (min-width: 991px) {
+  .root {
+    .newsGridContainer {
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
 }
 
 /* ExtraExtraLarge Devices, UltraWide Desktops  */

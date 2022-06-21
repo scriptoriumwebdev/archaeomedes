@@ -1,5 +1,66 @@
 @import "../../../styles/settings.scss";
 
+.root {
+  min-height: 30vh;
+  position: relative;
+  text-align: justify;
+  text-justify: inter-word;
+  .postContent {
+    @include flex(column, center, space-between);
+    height: 100%;
+    left: 0;
+    padding: 1rem;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: 2;
+  }
+  .postTitle {
+    align-self: flex-start;
+    border-bottom: 3px solid $sectionButtonColor;
+    color: $font-color-alt;
+  }
+  svg,
+  svg rect {
+    fill: transparent;
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: 1;
+  }
+  svg rect {
+    stroke-dasharray: 30% 160%;
+    stroke-dashoffset: 0;
+    stroke-width: 4;
+    stroke: $newsOutlineColor;
+    transition: 1s;
+  }
+  &:hover {
+    svg rect {
+      stroke-dasharray: 160% 0%;
+      stroke-dashoffset: 0;
+      stroke: $newsOutlineColorActive;
+    }
+  }
+}
+
+@media (max-width: 991px) {
+  .root {
+    svg rect {
+      stroke-dasharray: 25% 160%;
+      stroke-dashoffset: 0;
+    }
+    &:hover {
+      svg rect {
+        stroke-dasharray: 160% 0%;
+        stroke-dashoffset: 0;
+      }
+    }
+  }
+}
+
 /* XXXL ExtraExtraLarge Devices, UltraWide Desktops  */
 @media (min-width: 1921px) {
   .root {

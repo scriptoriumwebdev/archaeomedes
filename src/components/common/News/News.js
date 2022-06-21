@@ -1,3 +1,4 @@
+/* eslint-disable comma-dangle */
 import React from 'react';
 import { Container } from 'react-bootstrap';
 import Button from '../Button/Button';
@@ -16,6 +17,9 @@ const News = () => {
     // eslint-disable-next-line prettier/prettier
     (i) => i.language === utils.language,
   );
+
+  const newsOnPage = 3;
+
   console.log(`languageData`, languageData);
   return (
     <Container className={styles.root}>
@@ -26,7 +30,14 @@ const News = () => {
     //new Date().toLocaleDateString().replace(/\//g, '.')
     */}
       <SectionHeader>{languageData.title}</SectionHeader>
-      <Button> Read more</Button>
+      <div className={styles.newsGridContainer}>
+        {languageData.news.slice(0, 3).map((item) => (
+          <SingleNews key={item.id} post={item} />
+        ))}
+      </div>
+      <div className={styles.buttonContainer}>
+        <Button> Read more</Button>
+      </div>
     </Container>
   );
 };
