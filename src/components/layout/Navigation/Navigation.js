@@ -15,12 +15,10 @@ const Navigation = () => {
   const menuRef = useRef(null);
 
   function scrollFunction() {
-    if (window.innerWidth >= 1200) {
-      if (document.documentElement.scrollTop > 50) {
-        setScroll(true);
-      } else {
-        setScroll(false);
-      }
+    if (document.documentElement.scrollTop > 50) {
+      setScroll(true);
+    } else {
+      setScroll(false);
     }
   }
 
