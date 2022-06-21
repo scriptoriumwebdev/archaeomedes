@@ -14,12 +14,21 @@
     top: 0;
     width: 100%;
     z-index: 2;
+    .postHeader {
+      align-self: flex-start;
+      .postTitle {
+        align-self: flex-start;
+        border-bottom: 3px solid $sectionButtonColor;
+        color: $font-color-alt;
+        margin: 0;
+        padding: 0;
+      }
+      p {
+        font-size: 0.9em;
+      }
+    }
   }
-  .postTitle {
-    align-self: flex-start;
-    border-bottom: 3px solid $sectionButtonColor;
-    color: $font-color-alt;
-  }
+
   svg,
   svg rect {
     fill: transparent;
