@@ -1,0 +1,87 @@
+{
+  "id": "62c436b53a27a527e56abcc2",
+  "data": [
+    {
+      "language": "DE",
+      "title": "Kontakt",
+      "contact": [
+        {
+          "id": "62c436f531ef4c0096dd087e",
+          "textData": [
+            {
+              "text": "Clarenbachstraße 168"
+            },
+            {
+              "text": "50931 Köln"
+            }
+          ],
+          "value": "https://bit.ly/3ulF2kf",
+          "type": "web",
+          "icon": "faHome"
+        },
+        {
+          "id": "62c4386c0a6bd60e8b56d6b0",
+          "textData": "+49 123 123 123",
+          "value": "+49123123123",
+          "type": "phone",
+          "icon": "faPhoneAlt"
+        },
+        {
+          "id": "62c4386c0a6bd60e8b56d6b0",
+          "textData": "info@archaeomedes.de",
+          "value": "info@archaeomedes.de",
+          "type": "mail",
+          "icon": "faEnvelope"
+        },
+        {
+          "id": "62c438d33a2a1d4f28b4a93d",
+          "textData": "Archaeomedes",
+          "value": "https://facebook.com/archaeomedes",
+          "type": "web",
+          "icon": "faFacebook"
+        }
+      ]
+    },
+    {
+      "language": "EN",
+      "title": "Contact",
+      "contact": [
+        {
+          "id": "62c436f531ef4c0096dd087e",
+          "textData": [
+            {
+              "text": "Clarenbachstraße 168"
+            },
+            {
+              "text": "50931 Cologne"
+            }
+          ],
+          "value": "https://bit.ly/3ulF2kf",
+          "type": "web",
+          "icon": "faHome"
+        },
+        {
+          "id": "62c4386c0a6bd60e8b56d6b0",
+          "textData": "+49 123 123 123",
+          "value": "+49123123123",
+          "type": "phone",
+          "icon": "faPhoneAlt"
+        },
+        {
+          "id": "62c4386c0a6bd60e8b56d6b0",
+          "textData": "info@archaeomedes.de",
+          "value": "info@archaeomedes.de",
+          "type": "mail",
+          "icon": "faEnvelope"
+        },
+        {
+          "id": "62c438d33a2a1d4f28b4a93d",
+          "textData": "Archaeomedes",
+          "value": "https://facebook.com/archaeomedes",
+          "type": "web",
+          "icon": "faFacebook"
+        }
+      ]
+    }
+  ]
+}
