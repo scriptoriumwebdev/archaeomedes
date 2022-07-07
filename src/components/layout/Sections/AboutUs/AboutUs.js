@@ -1,10 +1,10 @@
 import React from 'react';
 import { Container } from 'react-bootstrap';
-import Button from '../Button/Button';
-import SectionHeader from '../SectionHeader/SectionHeader';
+import Button from '../../../common/Button/Button';
+import SectionHeader from '../../../common/SectionHeader/SectionHeader';
 import styles from './AboutUs.module.scss';
-import aboutUsData from '../../../data/aboutUs.json';
-import utils from '../../../data/utils.json';
+import aboutUsData from '../../../../data/aboutUs.json';
+import utils from '../../../../data/utils.json';
 
 const AboutUs = () => {
   const languageData = aboutUsData.data.find(

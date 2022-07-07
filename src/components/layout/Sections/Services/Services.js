@@ -1,9 +1,9 @@
 import React from 'react';
 import { Container } from 'react-bootstrap';
 import styles from './Services.module.scss';
-import SectionHeader from '../SectionHeader/SectionHeader';
+import SectionHeader from '../../../common/SectionHeader/SectionHeader';
 
-import services from '../../../data/services.json';
+import services from '../../../../data/services.json';
 
 const Services = () => {
   const languageData = services.data.find(
