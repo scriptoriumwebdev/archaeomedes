@@ -19,7 +19,7 @@
   },
   {
     "id": 4,
-    "linkSrc": "#contact",
+    "linkSrc": "contact",
     "linkName": "Contact",
     "side": "R"
   }
