@@ -1,12 +1,12 @@
 /* eslint-disable comma-dangle */
 import React from 'react';
 import { Container } from 'react-bootstrap';
-import Button from '../Button/Button';
-import SectionHeader from '../SectionHeader/SectionHeader';
-import SingleNews from '../SingleNews/SingleNews';
+import Button from '../../../common/Button/Button';
+import SectionHeader from '../../../common/SectionHeader/SectionHeader';
+import SingleNews from '../../../common/SingleNews/SingleNews';
 import styles from './News.module.scss';
-import newsData from '../../../data/news.json';
-import utils from '../../../data/utils.json';
+import newsData from '../../../../data/news.json';
+import utils from '../../../../data/utils.json';
 
 const News = () => {
   const languageData = newsData.data.find(

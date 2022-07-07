@@ -1,8 +1,8 @@
 import React from 'react';
-import LandingPage from '../../common/LandingPage/LandingPage';
-import News from '../../common/News/News';
-import AboutUs from '../../common/AboutUs/AboutUs';
-import Services from '../../common/Services/Services';
+import LandingPage from '../../layout/Sections/LandingPage/LandingPage';
+import News from '../../layout/Sections/News/News';
+import AboutUs from '../../layout/Sections/AboutUs/AboutUs';
+import Services from '../../layout/Sections/Services/Services';
 
 import styles from './MainPage.module.scss';
 
@@ -11,13 +11,13 @@ const MainPage = () => (
     <section>
       <LandingPage />
     </section>
-    <section>
+    <section id="news">
       <News />
     </section>
-    <section>
+    <section id="aboutUs">
       <AboutUs />
     </section>
-    <section>
+    <section id="services">
       <Services />
     </section>
   </div>
