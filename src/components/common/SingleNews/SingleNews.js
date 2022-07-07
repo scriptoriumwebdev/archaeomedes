@@ -4,7 +4,7 @@ import styles from './SingleNews.module.scss';
 import Button from '../Button/Button';
 
 const SingleNews = ({ post, buttonMore }) => {
-  console.log(``, post.photos);
+  console.log(``);
   return (
     <div className={styles.root}>
       <div className={styles.postContent}>
