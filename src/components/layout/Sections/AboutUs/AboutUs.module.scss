@@ -11,28 +11,6 @@
     text-align: justify;
     width: 60%;
   }
-  .buttonTeamContainer {
-    @include flex(column, flex-end, center);
-    min-height: 10rem;
-    padding-right: 2rem;
-    .buttonTeamFigure {
-      @include flex(column, center, end);
-      height: 100%;
-      position: relative;
-      width: 40%;
-      .backgroundImage2 {
-        border-radius: 50%;
-        display: inline-block;
-        left: 50%;
-        opacity: 0.1;
-        position: absolute;
-        top: 50%;
-        transform: translate(-50%, -50%);
-        width: 100%;
-        z-index: -1;
-      }
-    }
-  }
   .backgroundImage1 {
     border-radius: 50%;
     display: inline-block;
@@ -62,9 +40,6 @@
     .backgroundImage1 {
       width: 50%;
     }
-    .backgroundImage2 {
-      left: 50%;
-    }
   }
 }
 
@@ -78,9 +53,6 @@
     }
     .backgroundImage1 {
       width: 50%;
-    }
-    .backgroundImage2 {
-      left: 50%;
     }
   }
 }

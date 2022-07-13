@@ -38,7 +38,7 @@ const Navigation = () => {
 
     gsap.set([menuLinks], { autoAlpha: 0 });
 
-    timeline.to(menuLinks, { autoAlpha: 1, stagger: 0.1, delay: 1 });
+    timeline.to(menuLinks, { autoAlpha: 1, stagger: 0.1, delay: 2 });
   }, []); // eslint-disable-line react-hooks/exhaustive-deps
 
   useEffect(() => {
@@ -47,7 +47,7 @@ const Navigation = () => {
     if (activeRWD) {
       gsap.set([menuLinks], { autoAlpha: 0 });
 
-      timeline.to(menuLinks, { autoAlpha: 1, stagger: 0.1, delay: 0.2 });
+      timeline.to(menuLinks, { autoAlpha: 1, stagger: 0.1, delay: 0.3 });
     }
   }, [activeRWD]); // eslint-disable-line react-hooks/exhaustive-deps
 
