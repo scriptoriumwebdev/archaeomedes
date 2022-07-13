@@ -1,6 +1,8 @@
 /* eslint-disable comma-dangle */
-import React from 'react';
+import React, { useEffect, useRef } from 'react';
 import { Container } from 'react-bootstrap';
+import { gsap } from 'gsap';
+import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import Button from '../../../common/Button/Button';
 import SectionHeader from '../../../common/SectionHeader/SectionHeader';
 import SingleNews from '../../../common/SingleNews/SingleNews';
@@ -18,16 +20,57 @@ const News = () => {
     (i) => i.language === utils.language,
   );
 
+  const newsRef = useRef(null);
+  const newsButtonRef = useRef(null);
+
+  useEffect(() => {
+    const newsItem = newsRef.current.children;
+    const newsButton = newsButtonRef.current;
+    gsap.set([newsItem], {
+      autoAlpha: 0,
+      y: 50,
+    });
+    gsap.set([newsButton], {
+      autoAlpha: 0,
+      scaleY: 0.5,
+    });
+
+    ScrollTrigger.batch([newsItem], {
+      start: `top bottom -=200px`,
+      onEnter: (batch) =>
+        gsap.to(batch, {
+          autoAlpha: 1,
+          delay: 0.5,
+          overwrite: true,
+          stagger: { each: 0.3 },
+          y: 0,
+        }),
+    });
+
+    ScrollTrigger.batch([newsButton], {
+      start: `top bottom -=200px`,
+      onEnter: (batch) =>
+        gsap.to(batch, {
+          autoAlpha: 1,
+          delay: 0.5,
+          scaleY: 1,
+        }),
+    });
+
+    ScrollTrigger.addEventListener(
+      `refreshInit`,
+      () => gsap.set(newsItem, { y: 0 }),
+      gsap.set(newsButton, { scaleY: 0.5 })
+    );
+  }, []);
+
   return (
     <Container className={styles.root}>
       {/*
-    //TODO Dodać news.json
-    //TODO Grid + komponent singleNews w common mapowanie 3 ostatnie na stronie głównej
-    //TODO stylowanie newsów
     //new Date().toLocaleDateString().replace(/\//g, '.')
     */}
       <SectionHeader>{languageData.title}</SectionHeader>
-      <div className={styles.newsGridContainer}>
+      <div className={styles.newsGridContainer} ref={newsRef}>
         {languageData.news
           .slice(-3)
           .reverse()
@@ -39,7 +82,7 @@ const News = () => {
             />
           ))}
       </div>
-      <div className={styles.buttonContainer}>
+      <div className={styles.buttonContainer} ref={newsButtonRef}>
         <Button>{UtilsButtons.buttonMoreNews}</Button>
       </div>
     </Container>

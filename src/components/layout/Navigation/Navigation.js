@@ -2,7 +2,7 @@
 import React, { useState, useEffect, useRef } from 'react';
 
 import { Col } from 'react-bootstrap';
-// import { gsap } from 'gsap';
+import { gsap } from 'gsap';
 import { NavHashLink } from 'react-router-hash-link';
 import { HamburgerSqueeze } from 'react-animated-burgers';
 import styles from './Navigation.module.scss';
@@ -13,6 +13,7 @@ const Navigation = () => {
   const [scroll, setScroll] = useState(false);
   const [activeRWD, setActiveRWD] = useState(false);
   const menuRef = useRef(null);
+  const menuLinksRef = useRef(null);
 
   function scrollFunction() {
     if (document.documentElement.scrollTop > 50) {
@@ -22,11 +23,33 @@ const Navigation = () => {
     }
   }
 
+  const timeline = gsap.timeline({
+    duration: 0.3,
+    defaults: {
+      ease: `Power3.easeOut`,
+    },
+  });
+
   useEffect(() => {
     window.onscroll = function () {
       scrollFunction();
     };
+    const menuLinks = menuLinksRef.current.children;
+
+    gsap.set([menuLinks], { autoAlpha: 0 });
+
+    timeline.to(menuLinks, { autoAlpha: 1, stagger: 0.1, delay: 2 });
   }, []); // eslint-disable-line react-hooks/exhaustive-deps
+
+  useEffect(() => {
+    const menuLinks = menuLinksRef.current.children;
+
+    if (activeRWD) {
+      gsap.set([menuLinks], { autoAlpha: 0 });
+
+      timeline.to(menuLinks, { autoAlpha: 1, stagger: 0.1, delay: 0.3 });
+    }
+  }, [activeRWD]); // eslint-disable-line react-hooks/exhaustive-deps
 
   const useOutsideMenu = (ref) => {
     useEffect(() => {
@@ -64,7 +87,7 @@ const Navigation = () => {
       </div>
       <div className={activeRWD ? styles.menu : styles.menu__hidden}>
         <Col className="col-12 col-xl-5">
-          <div className="d-flex flex-column flex-xl-row">
+          <div className="d-flex flex-column flex-xl-row" ref={menuLinksRef}>
             {navigation.map((item) => (
               <Col key={item.id} className="p-3 p-xl-0">
                 <NavHashLink

@@ -6,12 +6,14 @@
       "title": "Kontakt",
       "contact": [
         {
-          "id": "62c436f531ef4c0096dd087e",
+          "id": "62c436f531ef4c0096dd012e",
           "textData": [
             {
+              "id": "62cd57d39d4ab9dc9eab8901",
               "text": "Clarenbachstraße 168"
             },
             {
+              "id": "62cd57da61279a2677e5b070",
               "text": "50931 Köln"
             }
           ],
@@ -27,7 +29,7 @@
           "icon": "faPhoneAlt"
         },
         {
-          "id": "62c4386c0a6bd60e8b56d6b0",
+          "id": "62c4386c0a6bd60e8b56d6s0",
           "textData": "info@archaeomedes.de",
           "value": "info@archaeomedes.de",
           "type": "mail",

@@ -5,8 +5,10 @@
   height: 100vh;
   position: relative;
   width: 100%;
+  overflow: hidden;
+
   img {
-    animation: image-in 1s cubic-bezier(0.5, 0, 0.1, 1) 2s backwards;
+    // animation: image-in 1s cubic-bezier(0.5, 0, 0.1, 1) 2s backwards;
     height: 100%;
     object-fit: cover;
     overflow: hidden;
@@ -38,13 +40,11 @@
 }
 
 .header {
-  display: inline-block;
   letter-spacing: 0.1em;
-  animation: inner-right 1s 1s ease both, text-clip 1s 0s cubic-bezier(0.5, 0, 0.1, 1) both;
+  width: 100%;
 }
 
 .subheader {
-  animation: outer-left 1s 1s ease both, text-clip 1s 0s cubic-bezier(0.5, 0, 0.1, 1) both;
 }
 
 /* XXXL ExtraExtraLarge Devices, UltraWide Desktops  */
