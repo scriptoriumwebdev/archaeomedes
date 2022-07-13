@@ -1,5 +1,8 @@
 {
   "blueprint.templatesPath": [
     "./dev/blueprint-templates"
+  ],
+  "cSpell.words": [
+    "referrerpolicy"
   ]
 }
