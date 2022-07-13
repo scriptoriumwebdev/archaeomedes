@@ -1,3 +1,4 @@
+/* eslint-disable comma-dangle */
 import React, { useEffect, useRef } from 'react';
 import { gsap } from 'gsap';
 import styles from './LandingPage.module.scss';
@@ -33,8 +34,7 @@ const LandingPage = () => {
       .to(
         [landingTitle, landingSubtitle],
         { x: 0, ease: `Power1.easeInOut` },
-        // eslint-disable-next-line prettier/prettier
-        `<0.6`,
+        `<0.6`
       );
   }, []); // eslint-disable-line react-hooks/exhaustive-deps
 
