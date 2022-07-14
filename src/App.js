@@ -11,6 +11,7 @@ import AboutUs from './components/views/AboutUsPage/AboutUsPage';
 import News from './components/views/NewsPage/NewsPage';
 import Services from './components/views/ServicesPage/ServicesPage';
 import ContactPage from './components/views/ContactPage/ContactPage';
+import ScrollToTop from './components/utils/ScrollToTop';
 
 function App() {
   gsap.registerPlugin(ScrollTrigger);
@@ -19,6 +20,7 @@ function App() {
     <div>
       <BrowserRouter>
         <MainLayout>
+          <ScrollToTop />
           <Routes>
             <Route path="/" element={<MainPage />} />
             <Route path="/about" element={<AboutUs />} />
