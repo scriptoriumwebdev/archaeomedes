@@ -42,3 +42,18 @@
     width: 100%;
   }
 }
+
+@keyframes flickerAnimation {
+  0% {
+    opacity: 1;
+  }
+  25% {
+    opacity: 0;
+  }
+  75% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}

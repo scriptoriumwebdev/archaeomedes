@@ -84,6 +84,100 @@
   }
 }
 
+.modal {
+  @include flex(column, center, center);
+  background-color: $newsModalBackground;
+  display: block;
+  height: 100vh;
+  left: 0;
+  overflow-y: auto;
+  position: fixed;
+  top: 0;
+  width: 100vw;
+  z-index: 9999999999;
+  svg,
+  svg rect {
+    display: none;
+  }
+
+  .icon {
+    background-color: rgba(0, 0, 0, 0.4);
+    border-radius: 50%;
+    border: none;
+    color: yellow;
+    height: 2rem;
+    padding-bottom: 1px;
+    position: fixed;
+    right: 2rem;
+    top: 2rem;
+    width: 2rem;
+    z-index: 10;
+    &:hover {
+      color: blue;
+    }
+  }
+  .modalDialog {
+    // height: 90vh;
+    // left: 50%;
+    overflow-y: scroll;
+    overflow-y: initial !important;
+    // position: absolute;
+    // top: 50%;
+    // transform: translate(-50%, -50%);
+    // width: 90vw;
+    .modalContent {
+      @include flex(column, center, space-around);
+      // border: 1px solid blue;
+      height: 90vh;
+      left: 50%;
+      position: absolute;
+      top: 50%;
+      transform: translate(-50%, -50%);
+      width: 50vw;
+      //
+      .modalTitle {
+        width: 100%;
+      }
+      .modalBody {
+        @include flex(column, center, flex-start);
+        width: 100%;
+        // top: 0;
+        overflow-y: auto;
+        height: 80vh;
+        .modalBodyText {
+          // width: 100%;
+          padding: 2rem 0 2rem 0;
+          @include flex(column, center, center);
+
+          img {
+            width: 50%;
+            height: auto;
+          }
+        }
+      }
+      .modalFooter {
+        @include flex(column, flex-end, flex-end);
+        width: 100%;
+        .modalScrollArrow {
+          @include flex(row, center, center);
+          -moz-animation: flickerAnimation 2s;
+          -o-animation: flickerAnimation 2s;
+          -webkit-animation: flickerAnimation 2s;
+          animation: flickerAnimation 2s;
+          background-color: blue;
+          border-radius: 50%;
+          bottom: 5rem;
+          height: 2rem;
+          opacity: 0;
+          position: absolute;
+          right: 1rem;
+          width: 2rem;
+        }
+      }
+    }
+  }
+}
+
 @media (max-width: 991px) {
   .root {
     svg rect {
