@@ -47,13 +47,16 @@
   0% {
     opacity: 1;
   }
-  25% {
+  20% {
     opacity: 0;
   }
-  75% {
+  60% {
     opacity: 1;
   }
-  100% {
+  80% {
     opacity: 0;
+  }
+  100% {
+    opacity: 1;
   }
 }

@@ -27,7 +27,7 @@ section {
 
   &:nth-child(even) {
     background: $mainDarkJungleGreen;
-    color: $font-color-alt;
+    color: $text-color-alt;
   }
   &:nth-child(odd) {
     background: $white;

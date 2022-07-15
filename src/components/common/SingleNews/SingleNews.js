@@ -1,4 +1,4 @@
-import React, { useState, useRef, useEffect } from 'react';
+import React, { useState, useRef } from 'react';
 import PropTypes from 'prop-types';
 import styles from './SingleNews.module.scss';
 import Button from '../Button/Button';
@@ -9,15 +9,28 @@ const SingleNews = ({ post, buttonMore }) => {
 
   const modalBody = useRef(null);
 
-  function scrollbarVisible() {
+  const scrollbarVisible = () => {
     const element = modalBody.current;
-    console.log(`scrollHeight`, element.scrollHeight);
-    console.log(`clientHeight`, element.clientHeight);
-    // return
+
     if (element.scrollHeight > element.clientHeight) {
       setModalScrollArrow(true);
+    } else {
+      setModalScrollArrow(false);
     }
-  }
+    element.onscroll = function () {
+      if (element.scrollTop === element.scrollHeight - element.clientHeight) {
+        setModalScrollArrow(false);
+      } else {
+        setModalScrollArrow(true);
+      }
+    };
+  };
+
+  const scrollDown = () => {
+    const element = modalBody.current;
+    element.scrollBy({ top: 100, left: 0, behavior: `smooth` });
+  };
+
   const openModal = async () => {
     document.body.style.overflow = `hidden`;
     await setModal(true);
@@ -28,8 +41,6 @@ const SingleNews = ({ post, buttonMore }) => {
     document.body.style.overflow = `unset`;
     setModal(false);
   };
-
-  useEffect(() => {}, []);
 
   return (
     <div className={!modal ? styles.root : styles.modal}>
@@ -64,9 +75,15 @@ const SingleNews = ({ post, buttonMore }) => {
                 ))}
             </div>
             <div className={styles.modalFooter}>
-              {modalScrollArrow ? (
-                <span className={styles.modalScrollArrow}>{`\u2193`}</span>
-              ) : null}
+              <button
+                type="button"
+                onClick={() => scrollDown()}
+                className={
+                  modalScrollArrow
+                    ? styles.modalScrollArrow
+                    : styles.modalScrollArrow__hidden
+                }
+              >{`\u2193`}</button>
               <p>{post.date}</p>
             </div>
           </div>

@@ -30,9 +30,6 @@ const Contact = () => {
     const contactInfo = contactInfoRef.current.children;
     const contactMap = contactMapRef.current;
 
-    console.log(`contactInfo`, contactInfo);
-    console.log(`contactMap`, contactMap);
-
     gsap.set([contactMap], {
       opacity: 0,
       x: -50,
