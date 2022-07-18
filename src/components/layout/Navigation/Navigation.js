@@ -1,7 +1,7 @@
 /* eslint-disable comma-dangle */
 import React, { useState, useEffect, useRef } from 'react';
 import { useLocation } from 'react-router-dom';
-import { Col } from 'react-bootstrap';
+import { Row, Col } from 'react-bootstrap';
 import { gsap } from 'gsap';
 import { NavHashLink } from 'react-router-hash-link';
 import { HamburgerSqueeze } from 'react-animated-burgers';
@@ -31,9 +31,13 @@ const Navigation = () => {
   useEffect(() => {
     const menuLinks = menuLinksRef.current.children;
 
+    let linkDelay = 0.3;
+
+    if (document.documentElement.scrollTop < 50) linkDelay = 2;
+
     gsap.set([menuLinks], { autoAlpha: 0 });
 
-    timeline.to(menuLinks, { autoAlpha: 1, stagger: 0.1, delay: 2 });
+    timeline.to(menuLinks, { autoAlpha: 1, stagger: 0.1, delay: linkDelay });
 
     scrollFunction();
   }, []); // eslint-disable-line react-hooks/exhaustive-deps
@@ -102,23 +106,22 @@ const Navigation = () => {
           />
         </svg>
       </div>
-      <div className={activeRWD ? styles.menu : styles.menu__hidden}>
-        <Col className="col-12 col-xl-5">
-          <div className="d-flex flex-column flex-xl-row" ref={menuLinksRef}>
-            {navigation.map((item) => (
-              <Col key={item.id} className="p-3 p-xl-0">
-                <NavHashLink
-                  smooth
-                  className={styles.navLink}
-                  to={`/${item.linkSrc}`}
-                  onClick={() => handleClick(item.linkSrc)}
-                >
-                  {item.linkName}
-                </NavHashLink>
-              </Col>
-            ))}
-          </div>
-        </Col>
+      <div
+        className={activeRWD ? styles.menu : styles.menu__hidden}
+        ref={menuLinksRef}
+      >
+        {navigation.map((item) => (
+          <Col key={item.id} className="p-3 p-xl-0">
+            <NavHashLink
+              smooth
+              className={styles.navLink}
+              to={`/${item.linkSrc}`}
+              onClick={() => handleClick(item.linkSrc)}
+            >
+              {item.linkName}
+            </NavHashLink>
+          </Col>
+        ))}
       </div>
     </nav>
   );
