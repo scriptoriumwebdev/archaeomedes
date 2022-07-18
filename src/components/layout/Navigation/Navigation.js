@@ -44,7 +44,6 @@ const Navigation = () => {
 
   const handleClick = (link) => {
     setActiveRWD(false);
-    console.log(`link`, link);
     if (link === `#`) setScroll(false);
     if (link !== `#`) setScroll(true);
   };
