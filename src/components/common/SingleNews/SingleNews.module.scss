@@ -18,8 +18,8 @@
       align-self: flex-start;
       .postTitle {
         align-self: flex-start;
-        border-bottom: 3px solid $sectionButtonColor;
-        color: $font-color-alt;
+        border-bottom: 3px solid $newsBorderColor;
+        color: $headerColor;
         margin: 0;
         padding: 0;
       }
@@ -84,6 +84,99 @@
   }
 }
 
+.modal {
+  @include flex(column, center, center);
+  background-color: $newsModalBackground;
+  display: block;
+  height: 100%;
+  left: 0;
+  overflow: hidden;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 9999999999;
+  svg,
+  svg rect {
+    display: none;
+  }
+
+  .icon {
+    background-color: rgba(0, 0, 0, 0.4);
+    border-radius: 50%;
+    border: none;
+    height: 2rem;
+    padding-bottom: 1px;
+    position: fixed;
+    right: 2rem;
+    top: 2rem;
+    width: 2rem;
+    z-index: 10;
+    color: $navigationColorLink;
+    &:hover {
+      color: $navigationColorActiveLink;
+    }
+  }
+  .modalDialog {
+    overflow-y: initial !important;
+    .modalContent {
+      @include flex(column, center, space-around);
+      height: 90vh;
+      left: 50%;
+      position: absolute;
+      top: 50%;
+      transform: translate(-50%, -50%);
+      width: 50vw;
+      .modalTitle {
+        border-bottom: 1px solid $newsBorderColor;
+        margin-bottom: 1rem;
+        width: 100%;
+      }
+      .modalBody {
+        @include flex(column, center, flex-start);
+        height: 80vh;
+        overflow-y: auto;
+        width: 100%;
+        .modalBodyText {
+          @include flex(column, center, center);
+          margin: 1rem 0 1rem 0;
+          img {
+            height: auto;
+            width: 80%;
+          }
+        }
+      }
+      .modalFooter {
+        @include flex(column, flex-end, flex-end);
+        border-top: 1px solid $newsBorderColor;
+        width: 100%;
+        .modalScrollArrow {
+          background: none;
+          border: none;
+          bottom: 5rem;
+          color: $navigationColorLink;
+          font-size: 2rem;
+          height: 2rem;
+          opacity: 1;
+          outline: none;
+          position: absolute;
+          right: 1rem;
+          transition: all 0.5s;
+          width: 2rem;
+          &:hover {
+            color: $navigationColorActiveLink;
+          }
+          &__hidden {
+            @extend .modalScrollArrow;
+            animation: none;
+            opacity: 0;
+            transition: all 0.5s;
+          }
+        }
+      }
+    }
+  }
+}
+
 @media (max-width: 991px) {
   .root {
     svg rect {
@@ -94,6 +187,15 @@
       svg rect {
         stroke-dasharray: 160% 0%;
         stroke-dashoffset: 0;
+      }
+    }
+  }
+  .modal .modalDialog {
+    .modalContent {
+      padding: 1rem 0 1rem 0;
+      width: 85vw;
+      .modalFooter .modalScrollArrow {
+        right: 0;
       }
     }
   }

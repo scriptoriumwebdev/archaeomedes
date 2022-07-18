@@ -20,7 +20,7 @@ $mainNavajoWhite: #ffe5a1;
 
 // FONTS & TEXT
 $text-color: $black;
-$font-color-alt: $white;
+$text-color-alt: $white;
 $font-title: "Ubuntu", sans-serif;
 $font-text: "Lato", sans-serif;
 
@@ -42,6 +42,8 @@ $navigationMobileMenuBackground: $mainFeldgrau;
 //News
 $newsOutlineColor: $white;
 $newsOutlineColorActive: $mainNavajoWhite;
+$newsModalBackground: $mainDarkJungleGreen;
+$newsBorderColor: $mainArylideYellow;
 
 //FOOTER
 $footerBackground: $mainDarkJungleGreen;
