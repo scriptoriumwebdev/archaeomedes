@@ -1,26 +1,27 @@
 [
   {
+    "id": 0,
+    "linkSrc": "#",
+    "linkName": "Home"
+  },
+  {
     "id": 1,
     "linkSrc": "#news",
-    "linkName": "News",
-    "side": "L"
+    "linkName": "News"
   },
   {
     "id": 2,
     "linkSrc": "#aboutUs",
-    "linkName": "About us",
-    "side": "L"
+    "linkName": "About us"
   },
   {
     "id": 3,
     "linkSrc": "#services",
-    "linkName": "Services",
-    "side": "R"
+    "linkName": "Services"
   },
   {
     "id": 4,
     "linkSrc": "contact",
-    "linkName": "Contact",
-    "side": "R"
+    "linkName": "Contact"
   }
 ]

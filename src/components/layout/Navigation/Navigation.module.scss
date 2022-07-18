@@ -22,12 +22,12 @@
     transition: all 2s;
   }
   .burgerButton {
+    border: none;
     bottom: 2vh;
     outline: none;
     position: fixed;
     right: 2vh;
     z-index: 100;
-    border: none;
     span,
     span:before,
     span:after {
@@ -39,15 +39,15 @@
 
   .background {
     @include flex(column, center, flex-start);
+    background: $navigationBackground;
     height: 75%;
     width: 100%;
-    background: $navigationBackground;
   }
 
   .menu {
-    @include flex(row, center, center);
+    @include flex(row, center, space-around);
     position: absolute;
-    width: 100%;
+    width: 50%;
 
     &__hidden {
       @extend .menu;
@@ -56,8 +56,8 @@
     .navLink {
       color: $navigationColorLink;
       font-size: 1.15rem;
-      text-decoration: none;
       font-weight: 500;
+      text-decoration: none;
       text-transform: uppercase;
 
       &:hover {
@@ -112,11 +112,16 @@
       transition: all 0.5s;
       visibility: visible;
       width: 100%;
+      justify-content: center;
       &__hidden {
         border-radius: 50%;
         bottom: -80%;
         left: 100%;
         transform: scale(0.1);
+      }
+      & > div {
+        @include flex(column, center, center);
+        max-height: 3rem;
       }
     }
 
