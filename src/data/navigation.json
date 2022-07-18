@@ -1,5 +1,11 @@
 [
   {
+    "id": 0,
+    "linkSrc": "#",
+    "linkName": "Home",
+    "side": "L"
+  },
+  {
     "id": 1,
     "linkSrc": "#news",
     "linkName": "News",

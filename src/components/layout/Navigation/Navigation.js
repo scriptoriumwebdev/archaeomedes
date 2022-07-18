@@ -1,6 +1,6 @@
 /* eslint-disable comma-dangle */
 import React, { useState, useEffect, useRef } from 'react';
-
+import { useLocation } from 'react-router-dom';
 import { Col } from 'react-bootstrap';
 import { gsap } from 'gsap';
 import { NavHashLink } from 'react-router-hash-link';
@@ -14,14 +14,7 @@ const Navigation = () => {
   const [activeRWD, setActiveRWD] = useState(false);
   const menuRef = useRef(null);
   const menuLinksRef = useRef(null);
-
-  function scrollFunction() {
-    if (document.documentElement.scrollTop > 50) {
-      setScroll(true);
-    } else {
-      setScroll(false);
-    }
-  }
+  const location = useLocation();
 
   const timeline = gsap.timeline({
     duration: 0.3,
@@ -30,16 +23,40 @@ const Navigation = () => {
     },
   });
 
+  const scrollFunction = () => {
+    if (window.location.pathname === `/`) setScroll(false);
+    if (window.location.pathname !== `/`) setScroll(true);
+  };
+
   useEffect(() => {
-    window.onscroll = function () {
-      scrollFunction();
-    };
     const menuLinks = menuLinksRef.current.children;
 
     gsap.set([menuLinks], { autoAlpha: 0 });
 
     timeline.to(menuLinks, { autoAlpha: 1, stagger: 0.1, delay: 2 });
+
+    scrollFunction();
   }, []); // eslint-disable-line react-hooks/exhaustive-deps
+
+  const handleClick = (link) => {
+    setActiveRWD(false);
+    console.log(`link`, link);
+    if (link === `#`) setScroll(false);
+    if (link !== `#`) setScroll(true);
+  };
+
+  useEffect(() => {
+    window.onscroll = function () {
+      if (
+        document.documentElement.scrollTop < 50 &&
+        window.location.pathname === `/`
+      ) {
+        setScroll(false);
+      } else {
+        setScroll(true);
+      }
+    };
+  }, [location.pathname]);
 
   useEffect(() => {
     const menuLinks = menuLinksRef.current.children;
@@ -94,7 +111,7 @@ const Navigation = () => {
                   smooth
                   className={styles.navLink}
                   to={`/${item.linkSrc}`}
-                  onClick={() => setActiveRWD(false)}
+                  onClick={() => handleClick(item.linkSrc)}
                 >
                   {item.linkName}
                 </NavHashLink>
