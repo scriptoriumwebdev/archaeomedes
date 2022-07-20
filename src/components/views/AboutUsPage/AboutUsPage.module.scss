@@ -2,22 +2,28 @@
 
 .root {
   @include flex(column, none, start);
-  border: 1px solid blue;
-  min-height: 100vh;
   margin-bottom: 5vh;
   margin-top: 15vh;
+  min-height: 100vh;
   position: relative;
   z-index: 1;
 
   .aboutUsTextContainer {
     @include flex(column, center, center);
     align-self: center;
-    margin-bottom: 5rem;
-    margin-right: 2rem;
-    margin-top: 5rem;
+    margin: 5rem 0 5rem 0;
     position: relative;
     text-align: justify;
     width: 70%;
+
+    .aboutUsItem {
+      @include flex(column, center, center);
+      img {
+        height: auto;
+        margin: 1rem 0 1rem 0;
+        width: 80%;
+      }
+    }
   }
   .teamGridContainer {
     display: grid;

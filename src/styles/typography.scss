@@ -31,9 +31,9 @@ p {
 }
 
 a {
-  color: $mainArylideYellow;
+  color: $linkColor;
 
   &:hover {
-    color: $mainCamel;
+    color: $linkColorActive;
   }
 }

@@ -23,6 +23,12 @@
     margin: 0;
     padding: 0;
   }
+  a {
+    color: $linkColor-alt;
+    &:hover {
+      color: $linkColorActive-alt;
+    }
+  }
 }
 
 /* XXXL ExtraExtraLarge Devices, UltraWide Desktops  */

@@ -59,7 +59,7 @@ const AboutUs = () => {
     });
 
     ScrollTrigger.addEventListener(`refreshInit`, () =>
-      gsap.set(aboutText, { y: 0 })
+      gsap.set([aboutText, aboutPhoto], { y: 50, autoAlpha: 0 })
     );
   }, []);
 
