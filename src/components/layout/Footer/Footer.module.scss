@@ -2,6 +2,14 @@
 
 .root {
   @include flex(column, center, center);
+
+  a {
+    color: $mainFeldgrau;
+
+    &:hover {
+      color: $mainArylideYellow;
+    }
+  }
 }
 
 .yearBox {
@@ -18,14 +26,6 @@
 
 .textFooter {
   margin: 5px;
-}
-
-a {
-  color: $mainFeldgrau;
-
-  &:hover{
-    color: $mainArylideYellow;
-  }
 }
 
 /* XXXL ExtraExtraLarge Devices, UltraWide Desktops  */

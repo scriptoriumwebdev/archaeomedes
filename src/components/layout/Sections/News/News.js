@@ -1,12 +1,16 @@
 /* eslint-disable comma-dangle */
 import React, { useEffect, useRef } from 'react';
 import { Container } from 'react-bootstrap';
+
 import { gsap } from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
+
 import Button from '../../../common/Button/Button';
 import SectionHeader from '../../../common/SectionHeader/SectionHeader';
 import SingleNews from '../../../common/SingleNews/SingleNews';
+
 import styles from './News.module.scss';
+
 import newsData from '../../../../data/news.json';
 import utils from '../../../../data/utils.json';
 
@@ -26,10 +30,12 @@ const News = () => {
   useEffect(() => {
     const newsItem = newsRef.current.children;
     const newsButton = newsButtonRef.current;
+
     gsap.set([newsItem], {
       autoAlpha: 0,
       y: 50,
     });
+
     gsap.set([newsButton], {
       autoAlpha: 0,
       scaleY: 0.5,
@@ -59,8 +65,8 @@ const News = () => {
 
     ScrollTrigger.addEventListener(
       `refreshInit`,
-      () => gsap.set(newsItem, { y: 0 }),
-      gsap.set(newsButton, { scaleY: 0.5 })
+      () => gsap.set(newsItem, { y: 50, autoAlpha: 0 }),
+      gsap.set(newsButton, { scaleY: 0.5, autoAlpha: 0 })
     );
   }, []);
 

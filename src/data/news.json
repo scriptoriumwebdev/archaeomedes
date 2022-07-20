@@ -13,14 +13,17 @@
           "backgroundPhoto": "/images/news/20.06.2022/1.webp",
           "text": [
             {
+              "id": "62d6c88981a3ac0ac5f8d7be",
               "type": "paragraph",
               "value": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent ultricies orci mi, lobortis congue erat rutrum et."
             },
             {
+              "id": "62d6c88cb0382e7371a1b3dd",
               "type": "paragraph",
               "value": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent ultricies orci mi, lobortis congue erat rutrum et."
             },
             {
+              "id": "62d6c88f0340cffe3d7daaca",
               "type": "image",
               "value": "/images/news/20.06.2022/1.webp"
             }
@@ -42,14 +45,17 @@
           "backgroundPhoto": "/images/news/20.06.2022/1.webp",
           "text": [
             {
+              "id": "62d6c8778ea4ef97a02ef612",
               "type": "paragraph",
               "value": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent ultricies orci mi, lobortis congue erat rutrum et."
             },
             {
+              "id": "62d6c87a5c812962a1629cf0",
               "type": "paragraph",
               "value": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent ultricies orci mi, lobortis congue erat rutrum et."
             },
             {
+              "id": "62d6c87d70b3b56978d046b2",
               "type": "image",
               "value": "/images/news/20.06.2022/1.webp"
             }
@@ -63,14 +69,17 @@
           "backgroundPhoto": "/images/news/20.06.2022/1.webp",
           "text": [
             {
+              "id": "62d6c8649f258b0c0f33f160",
               "type": "paragraph",
               "value": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent ultricies orci mi, lobortis congue erat rutrum et."
             },
             {
+              "id": "62d6c8670668d9f5f25a523e",
               "type": "paragraph",
               "value": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent ultricies orci mi, lobortis congue erat rutrum et."
             },
             {
+              "id": "62d6c86ac24c697c0b660388",
               "type": "image",
               "value": "/images/news/20.06.2022/1.webp"
             }
@@ -84,22 +93,27 @@
           "backgroundPhoto": "/images/news/20.06.2022/1.webp",
           "text": [
             {
+              "id": "62d6c83ce49e8ac42817a28e",
               "type": "paragraph",
               "value": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent ultricies orci mi, lobortis congue erat rutrum et. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent ultricies orci mi, lobortis congue erat rutrum et. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent ultricies orci mi, lobortis congue erat rutrum et. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent ultricies orci mi, lobortis congue erat rutrum et."
             },
             {
+              "id": "62d6c8474196c2b9e4a78ae9",
               "type": "image",
               "value": "/images/news/20.06.2022/1.webp"
             },
             {
+              "id": "62d6c84cd99422a485b34f26",
               "type": "paragraph",
               "value": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent ultricies orci mi, lobortis congue erat rutrum et."
             },
             {
+              "id": "62d6c84f55ba9ca631b07313",
               "type": "image",
               "value": "/images/news/20.06.2022/1.webp"
             },
             {
+              "id": "62d6c852a9368bc0c6356530",
               "type": "paragraph",
               "value": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent ultricies orci mi, lobortis congue erat rutrum et."
             }
@@ -112,15 +126,31 @@
       "title": "News",
       "news": [
         {
-          "id": "62b1807474a3126537757ffc",
+          "id": "62b18dde049f9f3cd86b3faf",
           "date": "DD.MM.YYYY",
           "title": "Lorem ipsum 1",
           "shortText": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent ultricies orci mi, lobortis congue erat rutrum et.",
-          "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent ultricies orci mi, lobortis congue erat rutrum et. Fusce malesuada ullamcorper mi, eget ultricies lacus dapibus ut. Integer ut ipsum malesuada, tincidunt justo quis, tristique ligula. Duis et dolor non turpis euismod dapibus sit amet id velit. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. In vestibulum elementum euismod. Suspendisse aliquam dignissim ex, eget pretium turpis. Vestibulum eu ipsum sit amet ligula dignissim maximus. Duis eget egestas enim. Integer finibus vel dui quis auctor. Proin pretium nulla tincidunt erat mollis, non feugiat libero pharetra. Quisque fringilla lorem nec pharetra tincidunt. Maecenas pellentesque dictum blandit.",
-          "backgroundPhoto": "/images/news/20.06.2022/1.webp"
+          "backgroundPhoto": "/images/news/20.06.2022/1.webp",
+          "text": [
+            {
+              "id": "62d6c88981a3ac0ac5f8d7be",
+              "type": "paragraph",
+              "value": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent ultricies orci mi, lobortis congue erat rutrum et."
+            },
+            {
+              "id": "62d6c88cb0382e7371a1b3dd",
+              "type": "paragraph",
+              "value": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent ultricies orci mi, lobortis congue erat rutrum et."
+            },
+            {
+              "id": "62d6c88f0340cffe3d7daaca",
+              "type": "image",
+              "value": "/images/news/20.06.2022/1.webp"
+            }
+          ]
         },
         {
-          "id": "62b18dd00cba58bd583c4686",
+          "id": "62b18de25f2dba395f0b9c04",
           "date": "DD.MM.YYYY",
           "title": "Lorem ipsum 2",
           "shortText": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent ultricies orci mi, lobortis congue erat rutrum et.",
@@ -128,28 +158,86 @@
           "backgroundPhoto": "/images/news/20.06.2022/1.webp"
         },
         {
-          "id": "62b18dd4cea5570eb1c040a6",
+          "id": "62b18de513dd25e8d20d0b14",
           "date": "DD.MM.YYYY",
           "title": "Lorem ipsum 3",
           "shortText": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent ultricies orci mi, lobortis congue erat rutrum et.",
-          "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent ultricies orci mi, lobortis congue erat rutrum et. Fusce malesuada ullamcorper mi, eget ultricies lacus dapibus ut. Integer ut ipsum malesuada, tincidunt justo quis, tristique ligula. Duis et dolor non turpis euismod dapibus sit amet id velit. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. In vestibulum elementum euismod. Suspendisse aliquam dignissim ex, eget pretium turpis. Vestibulum eu ipsum sit amet ligula dignissim maximus. Duis eget egestas enim. Integer finibus vel dui quis auctor. Proin pretium nulla tincidunt erat mollis, non feugiat libero pharetra. Quisque fringilla lorem nec pharetra tincidunt. Maecenas pellentesque dictum blandit.",
-          "backgroundPhoto": "/images/news/20.06.2022/1.webp"
+          "backgroundPhoto": "/images/news/20.06.2022/1.webp",
+          "text": [
+            {
+              "id": "62d6c8778ea4ef97a02ef612",
+              "type": "paragraph",
+              "value": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent ultricies orci mi, lobortis congue erat rutrum et."
+            },
+            {
+              "id": "62d6c87a5c812962a1629cf0",
+              "type": "paragraph",
+              "value": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent ultricies orci mi, lobortis congue erat rutrum et."
+            },
+            {
+              "id": "62d6c87d70b3b56978d046b2",
+              "type": "image",
+              "value": "/images/news/20.06.2022/1.webp"
+            }
+          ]
         },
         {
-          "id": "62b18dd7e94478960495e37d",
+          "id": "62b18de84c394df809c1d1a3",
           "date": "DD.MM.YYYY",
           "title": "Lorem ipsum 4",
           "shortText": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent ultricies orci mi, lobortis congue erat rutrum et.",
-          "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent ultricies orci mi, lobortis congue erat rutrum et. Fusce malesuada ullamcorper mi, eget ultricies lacus dapibus ut. Integer ut ipsum malesuada, tincidunt justo quis, tristique ligula. Duis et dolor non turpis euismod dapibus sit amet id velit. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. In vestibulum elementum euismod. Suspendisse aliquam dignissim ex, eget pretium turpis. Vestibulum eu ipsum sit amet ligula dignissim maximus. Duis eget egestas enim. Integer finibus vel dui quis auctor. Proin pretium nulla tincidunt erat mollis, non feugiat libero pharetra. Quisque fringilla lorem nec pharetra tincidunt. Maecenas pellentesque dictum blandit.",
-          "backgroundPhoto": "/images/news/20.06.2022/1.webp"
+          "backgroundPhoto": "/images/news/20.06.2022/1.webp",
+          "text": [
+            {
+              "id": "62d6c8649f258b0c0f33f160",
+              "type": "paragraph",
+              "value": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent ultricies orci mi, lobortis congue erat rutrum et."
+            },
+            {
+              "id": "62d6c8670668d9f5f25a523e",
+              "type": "paragraph",
+              "value": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent ultricies orci mi, lobortis congue erat rutrum et."
+            },
+            {
+              "id": "62d6c86ac24c697c0b660388",
+              "type": "image",
+              "value": "/images/news/20.06.2022/1.webp"
+            }
+          ]
         },
         {
-          "id": "62b18ddbfe4416f603d560f9",
+          "id": "62b18debc411c9afd22c019e",
           "date": "DD.MM.YYYY",
           "title": "Lorem ipsum 5",
           "shortText": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent ultricies orci mi, lobortis congue erat rutrum et.",
-          "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent ultricies orci mi, lobortis congue erat rutrum et. Fusce malesuada ullamcorper mi, eget ultricies lacus dapibus ut. Integer ut ipsum malesuada, tincidunt justo quis, tristique ligula. Duis et dolor non turpis euismod dapibus sit amet id velit. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. In vestibulum elementum euismod. Suspendisse aliquam dignissim ex, eget pretium turpis. Vestibulum eu ipsum sit amet ligula dignissim maximus. Duis eget egestas enim. Integer finibus vel dui quis auctor. Proin pretium nulla tincidunt erat mollis, non feugiat libero pharetra. Quisque fringilla lorem nec pharetra tincidunt. Maecenas pellentesque dictum blandit.",
-          "backgroundPhoto": "/images/news/20.06.2022/1.webp"
+          "backgroundPhoto": "/images/news/20.06.2022/1.webp",
+          "text": [
+            {
+              "id": "62d6c83ce49e8ac42817a28e",
+              "type": "paragraph",
+              "value": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent ultricies orci mi, lobortis congue erat rutrum et. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent ultricies orci mi, lobortis congue erat rutrum et. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent ultricies orci mi, lobortis congue erat rutrum et. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent ultricies orci mi, lobortis congue erat rutrum et."
+            },
+            {
+              "id": "62d6c8474196c2b9e4a78ae9",
+              "type": "image",
+              "value": "/images/news/20.06.2022/1.webp"
+            },
+            {
+              "id": "62d6c84cd99422a485b34f26",
+              "type": "paragraph",
+              "value": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent ultricies orci mi, lobortis congue erat rutrum et."
+            },
+            {
+              "id": "62d6c84f55ba9ca631b07313",
+              "type": "image",
+              "value": "/images/news/20.06.2022/1.webp"
+            },
+            {
+              "id": "62d6c852a9368bc0c6356530",
+              "type": "paragraph",
+              "value": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent ultricies orci mi, lobortis congue erat rutrum et."
+            }
+          ]
         }
       ]
     }
