@@ -29,9 +29,6 @@ const Person = ({ data }) => {
           </div>
         </figcaption>
       </figure>
-      <svg>
-        <rect />
-      </svg>
     </div>
   );
 };

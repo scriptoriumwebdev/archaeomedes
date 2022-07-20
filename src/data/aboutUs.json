@@ -16,6 +16,16 @@
       "title": "Über uns",
       "teamTitle": "Unsere Team",
       "buttonTeam": "Unsere Team",
+      "aboutShortText": [
+        {
+          "id": "62d819d7769cc8eb82073a58",
+          "value": "ARCHÄOMEDES GbR, das ist ein eingespieltes Team von fünf Archäologen. Unsere Zusammenarbeit macht uns effizient, flexibel, schnell mit qualitativ hohen Standards."
+        },
+        {
+          "id": "62d819dc216b45d79ea7e108",
+          "value": "Für private und öffentliche Investoren bieten wir kompetente Beratung hinsichtlich der Vereinbarkeit von baulichen und archäologischen Belangen. Wir helfen Ihnen durch unsere Expertise von der Planungsphase und begleiten sie bei der Ausführung ihres Bauprojektes."
+        }
+      ],
       "aboutText": [
         {
           "id": "62a20060ca0c4f2bed344394",

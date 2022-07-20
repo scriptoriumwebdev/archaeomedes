@@ -47,31 +47,6 @@
       }
     }
   }
-  svg,
-  svg rect {
-    fill: transparent;
-    height: 100%;
-    left: 0;
-    position: absolute;
-    top: 0;
-    width: 100%;
-    z-index: 1;
-  }
-  svg rect {
-    stroke-dasharray: 30% 160%;
-    stroke-dashoffset: 0;
-    stroke-width: 4;
-    stroke: $teamCoverOutline;
-    transition: 1s;
-  }
-  &:hover {
-    svg rect {
-      stroke-dasharray: 160% 0%;
-      stroke-dashoffset: 0;
-      stroke: $teamCoverOutline-alt;
-      transition-delay: 0.3s;
-    }
-  }
 }
 
 /* XXXL ExtraExtraLarge Devices, UltraWide Desktops  */
