@@ -67,10 +67,9 @@ const AboutUs = () => {
     <Container className={styles.root}>
       <SectionHeader>{languageData.title}</SectionHeader>
       <div className={styles.aboutUsTextContainer} ref={aboutTextRef}>
-        <p>{languageData.aboutText[0] && languageData.aboutText[0].text}</p>
-        <p>{languageData.aboutText[1] && languageData.aboutText[1].text}</p>
-        {/* onClick={() => visitPage(`/aboutUs`)} */}
-        <Button>{UtilsButtons.buttonMore}</Button>
+        <p>{languageData.aboutText[0] && languageData.aboutText[0].value}</p>
+        <p>{languageData.aboutText[1] && languageData.aboutText[1].value}</p>
+        <a href="/about">{UtilsButtons.buttonMore}</a>
       </div>
       <img
         src={aboutUsData.mainpagePhotos[0].src}

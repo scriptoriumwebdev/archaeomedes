@@ -23,6 +23,8 @@ $text-color: $black;
 $text-color-alt: $white;
 $font-title: "Ubuntu", sans-serif;
 $font-text: "Lato", sans-serif;
+$linkColor: mainArylideYellow;
+$linkcoloractive: mainCamel;
 
 //HEADER
 $headerColor: $mainArylideYellow;
@@ -39,11 +41,16 @@ $navigationColorActiveLink: $mainCamel;
 $navigationBackground: $mainDarkJungleGreen;
 $navigationMobileMenuBackground: $mainFeldgrau;
 
-//News
+//NEWS
 $newsOutlineColor: $white;
 $newsOutlineColorActive: $mainNavajoWhite;
 $newsModalBackground: $mainDarkJungleGreen;
 $newsBorderColor: $mainArylideYellow;
+
+//ABOUT US
+$teamCoverPhotoBG: $mainDarkJungleGreen;
+$teamCoverOutline: $mainNavajoWhite;
+$teamCoverOutline-alt: $mainCamel;
 
 //FOOTER
 $footerBackground: $mainDarkJungleGreen;

@@ -63,7 +63,7 @@ const SingleNews = ({ post, buttonMore }) => {
               {post.text &&
                 Array.isArray(post.text) &&
                 post.text.map((item) => (
-                  <div className={styles.modalBodyText}>
+                  <div className={styles.modalBodyText} key={item.id}>
                     {item.type === `image` ? (
                       <img
                         src={item.value}
