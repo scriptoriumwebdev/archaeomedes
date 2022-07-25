@@ -4,6 +4,7 @@ import { Container } from 'react-bootstrap';
 
 import { gsap } from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
+import { NavHashLink } from 'react-router-hash-link';
 
 import Button from '../../../common/Button/Button';
 import SectionHeader from '../../../common/SectionHeader/SectionHeader';
@@ -89,7 +90,9 @@ const News = () => {
           ))}
       </div>
       <div className={styles.buttonContainer} ref={newsButtonRef}>
-        <Button>{UtilsButtons.buttonMoreNews}</Button>
+        <NavHashLink smooth to="/news">
+          <Button>{UtilsButtons.buttonMoreNews}</Button>
+        </NavHashLink>
       </div>
     </Container>
   );

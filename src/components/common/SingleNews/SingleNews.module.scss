@@ -27,6 +27,16 @@
         font-size: 0.9em;
       }
     }
+    .postBody {
+      @include flex(row, center, center);
+      img {
+        border-radius: 10px;
+        box-shadow: 8px 8px 24px 0px rgba(0, 0, 0, 1);
+        height: 80%;
+        object-fit: cover;
+        width: 80%;
+      }
+    }
   }
 
   svg,
