@@ -53,13 +53,12 @@ const NewsPage = () => {
       `refreshInit`,
       () => gsap.set(newsItem, { y: 50, autoAlpha: 0 }),
     );
-    console.log(`event`);
   }, []);
 
 
 
   const [currentPage, setCurrentPage] = useState(1);
-  const [postsPerPage] = useState(2);
+  const [postsPerPage] = useState(10);
 
   const indexOfLastPost = currentPage * postsPerPage;
   const indexOfFirstPost = indexOfLastPost - postsPerPage;

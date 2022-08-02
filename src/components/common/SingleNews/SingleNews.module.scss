@@ -28,10 +28,11 @@
       }
     }
     .postBody {
-      @include flex(row, center, center);
+      @include flex(row, flex-start, center);
+      overflow: hidden;
       img {
         border-radius: 10px;
-        box-shadow: 8px 8px 24px 0px rgba(0, 0, 0, 1);
+        box-shadow: 5px 5px 10px 0px rgba(0, 0, 0, 0.5);
         height: 80%;
         object-fit: cover;
         width: 80%;
@@ -75,6 +76,7 @@
 
     img {
       border-radius: 50%;
+      box-shadow: none;
       display: block;
       height: 100%;
       width: 100%;

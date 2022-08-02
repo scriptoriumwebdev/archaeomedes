@@ -109,8 +109,8 @@ const SingleNews = ({ post, variant, buttonMore }) => {
                 <Col className="col-6 d-flex justify-content-center align-items-center">
                   <img src={post.backgroundPhoto} alt={post.title} />
                 </Col>
-                <Col className="col-6 d-flex justify-content-center align-items-center">
-                  Text
+                <Col className="col-6">
+                  <p>{post.shortText}</p>
                 </Col>
               </Row>
             ) : (

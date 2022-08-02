@@ -15,6 +15,11 @@ body {
   background: $white;
 }
 
+img {
+  border-radius: $imageCorner;
+  box-shadow: $imageShadow;
+}
+
 ::-webkit-scrollbar {
   width: 10px;
 }
