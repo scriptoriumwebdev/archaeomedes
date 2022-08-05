@@ -33,7 +33,11 @@ const Navigation = () => {
 
     let linkDelay = 0.3;
 
-    if (document.documentElement.scrollTop < 50) linkDelay = 2;
+    if (
+      window.location.pathname === `/` &&
+      document.documentElement.scrollTop < 50
+    )
+      linkDelay = 2;
 
     gsap.set([menuLinks], { autoAlpha: 0 });
 

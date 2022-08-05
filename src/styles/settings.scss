@@ -27,6 +27,11 @@ $linkColor: $mainArylideYellow;
 $linkColorActive: $mainCamel;
 $linkColor-alt: $mainFeldgrau;
 $linkColorActive-alt: $mainArylideYellow;
+
+//Images
+$imageCorner: 10px;
+$imageShadow: 5px 5px 10px 0px rgba(0, 0, 0, 0.5);
+
 //HEADER
 $headerColor: $mainArylideYellow;
 
@@ -47,6 +52,7 @@ $newsOutlineColor: $white;
 $newsOutlineColorActive: $mainNavajoWhite;
 $newsModalBackground: $mainDarkJungleGreen;
 $newsBorderColor: $mainArylideYellow;
+$newsPageBackground: $mainDarkJungleGreen;
 
 //ABOUT US
 $teamCoverPhotoBG: $mainDarkJungleGreen;

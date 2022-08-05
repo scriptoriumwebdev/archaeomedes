@@ -68,7 +68,7 @@ const AboutUs = () => {
       <SectionHeader>{languageData.title}</SectionHeader>
       <div className={styles.aboutUsTextContainer} ref={aboutTextRef}>
         {languageData.aboutShortText.map((item) => (
-          <p>{item.value}</p>
+          <p key={item.id}>{item.value}</p>
         ))}
         <a href="/about">{UtilsButtons.buttonMore}</a>
       </div>

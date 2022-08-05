@@ -1,5 +1,45 @@
 @import "../../../styles/settings.scss";
 
+.root {
+  @include flex(column, none, start);
+  background-color: $newsPageBackground;
+  color: $text-color-alt;
+  min-height: 100vh;
+  padding-top: 10vh;
+  position: relative;
+  .newsContainer {
+    border-bottom: 2px solid $newsOutlineColorActive;
+    border-top: 2px solid $newsOutlineColorActive;
+    padding-bottom: 5vh;
+    padding-top: 5vh;
+    width: 80%;
+    .newsGridContainer {
+      display: grid;
+      grid-column-gap: 1rem;
+      grid-row-gap: 1rem;
+      grid-template-columns: repeat(1, 1fr);
+      height: 100%;
+      min-height: 25vh;
+      padding: 1rem;
+      width: 100%;
+    }
+  }
+}
+
+@media (min-width: 991px) {
+  .root .newsContainer {
+    .newsGridContainer {
+      grid-template-columns: repeat(4, 1fr);
+    }
+    .newsGridContainer > div {
+      grid-column: span 2;
+    }
+    .newsGridContainer > div:nth-last-child(1):nth-child(odd) {
+      grid-column: 2 / span 2;
+    }
+  }
+}
+
 /* XXXL ExtraExtraLarge Devices, UltraWide Desktops  */
 @media (min-width: 1921px) {
 }

@@ -1,10 +1,19 @@
-import React, { useState, useRef } from 'react';
+import React, { useEffect, useState, useRef } from 'react';
 import PropTypes from 'prop-types';
+
+import { Row, Col } from 'react-bootstrap';
+
 import styles from './SingleNews.module.scss';
 import Button from '../Button/Button';
 
-const SingleNews = ({ post, buttonMore }) => {
+const SingleNews = ({ post, variant, buttonMore }) => {
   const [modal, setModal] = useState(false);
+  const [largeNews, setLargeNews] = useState(false);
+
+  useEffect(() => {
+    if (variant === `newspage`) setLargeNews(true);
+  }, []);
+
   const [modalScrollArrow, setModalScrollArrow] = useState(false);
 
   const modalBody = useRef(null);
@@ -95,15 +104,28 @@ const SingleNews = ({ post, buttonMore }) => {
               <h6 className={styles.postTitle}>{post.title}</h6>
               <p>{post.date}</p>
             </div>
-            <p>{post.shortText}</p>
+            {largeNews ? (
+              <Row className={styles.postBody}>
+                <Col className="col-6 d-flex justify-content-center align-items-center">
+                  <img src={post.backgroundPhoto} alt={post.title} />
+                </Col>
+                <Col className="col-6">
+                  <p>{post.shortText}</p>
+                </Col>
+              </Row>
+            ) : (
+              <p>{post.shortText}</p>
+            )}
             <Button onClick={() => openModal()}>{buttonMore}</Button>
           </div>
           <svg>
             <rect />
           </svg>
-          <div className={styles.postBG}>
-            <img src={post.backgroundPhoto} alt={post.title} />
-          </div>
+          {largeNews ? null : (
+            <div className={styles.postBG}>
+              <img src={post.backgroundPhoto} alt={post.title} />
+            </div>
+          )}
         </div>
       )}
     </div>
@@ -112,6 +134,7 @@ const SingleNews = ({ post, buttonMore }) => {
 
 SingleNews.propTypes = {
   post: PropTypes.object,
+  variant: PropTypes.string,
   buttonMore: PropTypes.string,
 };
 export default SingleNews;

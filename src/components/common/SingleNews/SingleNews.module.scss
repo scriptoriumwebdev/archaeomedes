@@ -27,6 +27,17 @@
         font-size: 0.9em;
       }
     }
+    .postBody {
+      @include flex(row, flex-start, center);
+      overflow: hidden;
+      img {
+        border-radius: 10px;
+        box-shadow: 5px 5px 10px 0px rgba(0, 0, 0, 0.5);
+        height: 80%;
+        object-fit: cover;
+        width: 80%;
+      }
+    }
   }
 
   svg,
@@ -65,6 +76,7 @@
 
     img {
       border-radius: 50%;
+      box-shadow: none;
       display: block;
       height: 100%;
       width: 100%;
