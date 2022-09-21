@@ -5,14 +5,9 @@
     "linkName": "Home"
   },
   {
-    "id": 1,
-    "linkSrc": "#news",
-    "linkName": "News"
-  },
-  {
     "id": 2,
     "linkSrc": "#aboutUs",
-    "linkName": "About us"
+    "linkName": "About"
   },
   {
     "id": 3,

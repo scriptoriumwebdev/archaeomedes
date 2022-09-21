@@ -12,7 +12,7 @@
 }
 
 body {
-  background: $white;
+  background: $lightGreen;
 }
 
 img {
@@ -42,7 +42,6 @@ img {
 
 section {
   align-items: center;
-  border: 1px solid green;
   color: $text-color;
   display: flex;
   flex-direction: column;
@@ -51,19 +50,16 @@ section {
   min-width: 100%;
 
   &:nth-child(even) {
-    background: $mainDarkJungleGreen;
-    color: $text-color-alt;
+    background: $lightGreen;
   }
   &:nth-child(odd) {
-    background: $white;
-    box-shadow: inset 0px 3rem 2rem -1rem $mainDarkJungleGreen, inset 0px -3rem 2rem -1rem $mainDarkJungleGreen;
+    background: $lightGreen;
   }
   &:first-child {
     background: none;
     box-shadow: none;
   }
   &:last-child {
-    box-shadow: inset 0px 3rem 2rem -1rem $mainDarkJungleGreen, inset 0 0 0 0 $mainDarkJungleGreen;
   }
   > :first-child {
     @include sectionContainer;

@@ -4,10 +4,10 @@
   @include flex(column, center, center);
 
   a {
-    color: $mainFeldgrau;
+    // color: $mainFeldgrau;
 
     &:hover {
-      color: $mainArylideYellow;
+      font-weight: 700;
     }
   }
 }
@@ -15,7 +15,6 @@
 .yearBox {
   @include flex(column, center, center);
   background: $footerBackground;
-  color: $mainFeldgrau;
   width: 100%;
 }
 

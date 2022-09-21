@@ -7,22 +7,24 @@ $red: #cc0033;
 $darkWhite: #f0f0f0;
 $white: #ffffff;
 $yellow: #ffff00;
-$gold: #f8af20;
+$gold: #c9a300;
 $lightGray: #b2b2b2;
 
 $mainRichBlack: #040c0e;
 $mainDarkJungleGreen: #132226;
 $mainFeldgrau: #525b56;
+$lightGreen: #282c2e;
 $mainCamel: #be9063;
 $mainGlossyGrape: #a497be;
 $mainArylideYellow: #e9c974;
 $mainNavajoWhite: #ffe5a1;
+$philippineYellow: #faca00;
 
 // FONTS & TEXT
 $text-color: $black;
 $text-color-alt: $white;
-$font-title: "Ubuntu", sans-serif;
-$font-text: "Lato", sans-serif;
+$font-title: "Montserrat", sans-serif;
+$font-text: "Montserrat", sans-serif;
 $linkColor: $mainArylideYellow;
 $linkColorActive: $mainCamel;
 $linkColor-alt: $mainFeldgrau;
@@ -33,7 +35,7 @@ $imageCorner: 10px;
 $imageShadow: 5px 5px 10px 0px rgba(0, 0, 0, 0.5);
 
 //HEADER
-$headerColor: $mainArylideYellow;
+$headerColor: $white;
 
 // SECTION
 $padding-below-sections: 75px;
@@ -42,10 +44,12 @@ $padding-below-sections: 75px;
 $sectionButtonColor: $mainArylideYellow;
 
 //NAVIGATION
-$navigationColorLink: $mainArylideYellow;
+$navigationColorLink: $mainRichBlack;
 $navigationColorActiveLink: $mainCamel;
-$navigationBackground: $mainDarkJungleGreen;
+$navigationBackground: $white;
 $navigationMobileMenuBackground: $mainFeldgrau;
+$navLinkFont: "Montserrat";
+$scrollIcon: $philippineYellow;
 
 //NEWS
 $newsOutlineColor: $white;
@@ -60,4 +64,4 @@ $teamCoverOutline: $mainNavajoWhite;
 $teamCoverOutline-alt: $mainCamel;
 
 //FOOTER
-$footerBackground: $mainDarkJungleGreen;
+$footerBackground: $white;

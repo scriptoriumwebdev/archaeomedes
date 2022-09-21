@@ -1,26 +1,15 @@
 @import "../../../styles/settings.scss";
 
 .root {
-  @include flex(column, center, space-around);
-  height: 8rem;
+  @include flex(row, center, space-between);
+  height: 5rem;
   max-width: 100vw;
   position: fixed;
-  top: -2rem;
+  top: 0;
   width: 100vw;
   z-index: 1000;
-  .bottomCurve {
-    position: fixed;
-    top: 3.5rem;
-    transition: all 0.5s;
-    width: inherit;
-    height: inherit;
-  }
-  .bottomCurve__scroll {
-    @extend .bottomCurve;
-    top: -100%;
-    transform: scale(2), skew(45deg);
-    transition: all 2s;
-  }
+  transition: all 0.3s;
+
   .burgerButton {
     border: none;
     bottom: 2vh;
@@ -37,45 +26,61 @@
     }
   }
 
-  .background {
-    @include flex(column, center, flex-start);
+  .logoCol {
+    @include flex(row, center, flex-start);
     background: $navigationBackground;
-    height: 75%;
-    width: 100%;
+    height: 100%;
+    transform: all 0.3s;
+    padding-left: 2rem;
+    a {
+      height: 100%;
+      img {
+        height: 100%;
+        box-shadow: none;
+      }
+    }
   }
-
   .menu {
     @include flex(row, center, space-around);
-    position: absolute;
     width: 50%;
-
+    height: 100%;
+    background: $navigationBackground;
     &__hidden {
       @extend .menu;
     }
 
     .navLink {
       color: $navigationColorLink;
-      font-size: 1.15rem;
-      font-weight: 500;
+      font-family: $navLinkFont;
+      font-size: clamp(0.75rem, 1.1rem, 2rem);
+      font-weight: 400;
+      height: 100%;
       text-decoration: none;
-      text-transform: uppercase;
-
+      // transition: all 0.3s;
+      width: 100%;
       &:hover {
-        color: $navigationColorActiveLink;
-        text-decoration: underline;
+        font-weight: 800;
+        // text-decoration: underline;
       }
     }
 
     @media (pointer: coarse) {
       .navLink:active {
-        color: $navigationColorLink;
+        font-weight: 700;
         transition: 0s;
       }
     }
   }
 }
 
-@media only screen and (min-width: 1200px) {
+.root__scroll {
+  @extend .root;
+  transition: all 0.3s;
+  top: -2rem;
+  padding-top: 2rem;
+}
+
+@media only screen and (min-width: 768px) {
   .root {
     .menu {
       flex-direction: row;
@@ -87,18 +92,14 @@
   }
 }
 
-@media only screen and (min-width: 0px) and (max-width: 1199px) {
+@media only screen and (min-width: 0px) and (max-width: 767px) {
   .root {
-    .bottomCurve {
-      top: 5rem;
-    }
-    .bottomCurve__scroll {
-      top: -100%;
-      transform: scale(2), skew(45deg);
-      transition: all 2s;
+    .logoCol {
+      @include flex(row, center, center);
+      padding-left: 0;
     }
     .menu {
-      background: $navigationMobileMenuBackground;
+      background: $navigationBackground;
       border-radius: 0;
       bottom: 0;
       filter: drop-shadow(5px 5px 40px rgba(0, 0, 0, 0.4));
