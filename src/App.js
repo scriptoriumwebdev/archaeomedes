@@ -13,6 +13,7 @@ import Services from './components/views/ServicesPage/ServicesPage';
 import ContactPage from './components/views/ContactPage/ContactPage';
 import ScrollToTop from './components/utils/ScrollToTop';
 import Impressum from './components/views/ImpressumPage/ImpressumPage';
+import PrivacyPolicy from './components/views/PrivacyPolicyPage/PrivacyPolicyPage';
 
 function App() {
   gsap.registerPlugin(ScrollTrigger);
@@ -27,9 +28,9 @@ function App() {
             <Route path="/about" element={<AboutUs />} />
             {/* <Route path="/news" element={<News />} /> */}
             <Route path="/services" element={<Services />} />
-            <Route path="/contact" element={<ContactPage />} />
+            <Route path="/kontakt" element={<ContactPage />} />
             <Route path="/impressum" element={<Impressum />} />
-            <Route path="/services" element={<Services />} />
+            <Route path="/datenschutzerklarung" element={<PrivacyPolicy />} />
           </Routes>
         </MainLayout>
       </BrowserRouter>

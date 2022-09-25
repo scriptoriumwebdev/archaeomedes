@@ -1,0 +1,240 @@
+{
+  "id": "63307bb51d12bc54bd242f6d",
+  "data": [
+    {
+      "language": "DE",
+      "title": "Datenschutzerklärung",
+          "textData": [
+            {
+              "id": "63307e21877ba45e045d799c",
+              "type": "subtitle",
+              "value": "Vertreten durch:"
+            },
+            {
+              "id": "63307c97fe6b18137e880ecf",
+              "type": "paragraph",
+              "value": "Diese Datenschutzerklärung soll die Nutzer dieser Website über die Art, den Umfang und den Zweck der Erhebung und Verwendung personenbezogener Daten durch den Websitebetreiber „Archäomedes GbR“ informieren."
+            },
+            {
+              "id": "63307c97fe6b18137e880ecf",
+              "type": "paragraph",
+              "value": "Die verantwortliche Stelle für die Datenverarbeitung dieser Website ist:"
+            },
+            {
+              "id": "63307ce57af45bd2aaa9eedc",
+              "type": "list",
+              "value": "Rafael Roth"
+            },
+            {
+              "id": "63307d0bf5cf3ff6d0cdc4a7",
+              "type": "list",
+              "value": "Maastr. 12"
+            },
+            {
+              "id": "63307d332e584bc1ba4125d3",
+              "type": "list",
+              "value": "47634 Kevelaer"
+            },
+            {
+              "id": "63307d4120494d18f2f39827",
+              "type": "list",
+              "value": "Email: info@archaeomedes.de"
+            },
+            {
+              "id": "63307d74f9a8b4439c306c6b",
+              "type": "list",
+              "value": "Tel: 01578-4869505"
+            },
+            {
+              "id": "63307d8bd098c8d0eeb57a9d",
+              "type": "paragraph",
+              "value": "Der Websitebetreiber nimmt Ihren Datenschutz sehr ernst und behandelt Ihre personenbezogenen Daten vertraulich und entsprechend der gesetzlichen Vorschriften. Da durch neue Technologien und die ständige Weiterentwicklung dieser Webseite Änderungen an dieser Datenschutzerklärung vorgenommen werden können, empfehlen wir Ihnen sich die Datenschutzerklärung in regelmäßigen Abständen wieder durchzulesen."
+            },
+            {
+              "id": "63307d9620df8917cec6c943",
+              "type": "paragraph",
+              "value": "Definitionen der verwendeten Begriffe (z.B. “personenbezogene Daten” oder “Verarbeitung”) finden Sie in Art. 4 DSGVO."
+            },
+            {
+              "id": "63307daf59972a66d8f3b2fe",
+              "type": "paragraph",
+              "value": "Wenn Sie diese Website benutzen, werden verschiedene personenbezogene Daten erhoben. Personenbezogene Daten sind Daten, mit denen Sie persönlich identifiziert werden können."
+            },
+            {
+              "id": "63307dc4f44f23bced7b1180",
+              "type": "paragraph",
+              "value": "Die vorliegende Datenschutzerklärung erläutert, welche Daten wir erheben und wofür wir sie nutzen. Sie erläutert auch, wie und zu welchem Zweck das geschieht."
+            },
+            {
+              "id": "63307de1cd27bf3824d55dde",
+              "type": "paragraph",
+              "value": "Wir weisen darauf hin, dass die Datenübertragung im Internet (z. B. bei der Kommunikation per E-Mail) Sicherheitslücken aufweisen kann. Ein lückenloser Schutz der Daten vor dem Zugriff durch Dritte ist nicht möglich."
+            },
+            {
+              "id": "63307e21877ba45e045d799c",
+              "type": "subtitle",
+              "value": "Zugriffsdaten"
+            },
+            {
+              "id": "63307e672b32bd6468040caf",
+              "type": "paragraph",
+              "value": "Wir, der Websitebetreiber bzw. Seitenprovider, erheben aufgrund unseres berechtigten Interesses (s. Art. 6 Abs. 1 lit. f. DSGVO) Daten über Zugriffe auf die Website und speichern diese als „Server-Logfiles“ auf dem Server der Website ab. Folgende Daten werden so protokolliert:"
+            },
+            {
+              "id": "63307e9f998f25787a51bf51",
+              "type": "list",
+              "value": "• Besuchte Website"
+            },
+            {
+              "id": "63307eb89563f4b38bdadc73",
+              "type": "list",
+              "value": "• Uhrzeit zum Zeitpunkt des Zugriffes"
+            },
+            {
+              "id": "63307ec96e58000a10d99d0a",
+              "type": "list",
+              "value": "• Menge der gesendeten Daten in Byte"
+            },
+            {
+              "id": "63307ee2c3c299db04e84e7c",
+              "type": "list",
+              "value": "• Quelle/Verweis, von welchem Sie auf die Seite gelangten"
+            },
+            {
+              "id": "63307f013294adf930dccd07",
+              "type": "list",
+              "value": "• Verwendeter Browser"
+            },
+            {
+              "id": "63307f2453be359d504fda68",
+              "type": "list",
+              "value": "• Verwendetes Betriebssystem"
+            },
+            {
+              "id": "63307f39f15d677aacaaf9b2",
+              "type": "list",
+              "value": "• Verwendete IP-Adresse"
+            },
+            {
+              "id": "63307f76e91a34fd591c8e2f",
+              "type": "paragraph",
+              "value": "Die Server-Logfiles werden für maximal 7 Tage gespeichert und anschließend gelöscht. Die Speicherung der Daten erfolgt aus Sicherheitsgründen, um z. B. Missbrauchsfälle aufklären zu können. Müssen Daten aus Beweisgründen aufgehoben werden, sind sie solange von der Löschung ausgenommen bis der Vorfall endgültig geklärt ist."
+            },
+            {
+              "id": "63307f973f60990ae18a73f6",
+              "type": "subtitle",
+              "value": "Reichweitenmessung & Cookies"
+            },
+            {
+              "id": "63307fb12df9d9dce2692f9b",
+              "type": "paragraph",
+              "value": "Diese Website verwendet Cookies zur pseudonymisierten Reichweitenmessung, die entweder von unserem Server oder dem Server Dritter an den Browser des Nutzers übertragen werden. Bei Cookies handelt es sich um kleine Dateien, welche auf Ihrem Endgerät gespeichert werden. Ihr Browser greift auf diese Dateien zu. Durch den Einsatz von Cookies erhöht sich die Benutzerfreundlichkeit und Sicherheit dieser Website."
+            },
+            {
+              "id": "63307fd7ee3580d99accb2b3",
+              "type": "paragraph",
+              "value": "Falls Sie nicht möchten, dass Cookies zur Reichweitenmessung auf Ihrem Endgerät gespeichert werden, können Sie dem Einsatz dieser Dateien hier widersprechen:"
+            },
+            {
+              "id": "63307fe7ef3d716ad2caa283",
+              "type": "list",
+              "value": "• Cookie-Deaktivierungsseite der europäischen Website: http://optout.networkadvertising.org/?c=1#!/"
+            },
+            {
+              "id": "63308007d3a92571ff5d05a4",
+              "type": "paragraph",
+              "value": "Gängige Browser bieten die Einstellungsoption, Cookies nicht zuzulassen. Hinweis: Es ist nicht gewährleistet, dass Sie auf alle Funktionen dieser Website ohne Einschränkungen zugreifen können, wenn Sie entsprechende Einstellungen vornehmen."
+            },
+            {
+              "id": "63308020ee2f4c6c5a1b7b46",
+              "type": "subtitle",
+              "value": "Erfassung und Verarbeitung personenbezogener Daten"
+            },
+            {
+              "id": "633080436e8258a7cc03e291",
+              "type": "paragraph",
+              "value": "Der Websitebetreiber erhebt, nutzt und gibt Ihre personenbezogenen Daten nur dann weiter, wenn dies im gesetzlichen Rahmen erlaubt ist oder Sie in die Datenerhebung einwilligen. Als personenbezogene Daten gelten sämtliche Informationen, welche dazu dienen, Ihre Person zu bestimmen und welche zu Ihnen zurückverfolgt werden können – also beispielsweise Ihr Name, Ihre E-Mail-Adresse und Telefonnummer."
+            },
+            {
+              "id": "63308080debcd03d74e041fd",
+              "type": "paragraph",
+              "value": "Diese Website können Sie auch besuchen, ohne Angaben zu Ihrer Person zu machen. Zur Verbesserung unseres Online-Angebotes speichern wir jedoch (ohne Personenbezug) Ihre Zugriffsdaten auf diese Website. Zu diesen Zugriffsdaten gehören z. B. die von Ihnen angeforderte Datei oder der Name Ihres Internet-Providers. Durch die Anonymisierung der Daten sind Rückschlüsse auf Ihre Person nicht möglich. Eine Zusammenführung dieser Daten mit anderen Datenquellen behalten wir uns vor, wenn konkrete Anhaltspunkte für eine rechtswidrige Nutzung bekannt werden und dies im gesetzlichen Rahmen erforderlich ist."
+            },
+            {
+              "id": "6330809b3de0fdce351caede",
+              "type": "paragraph",
+              "value": "Grundlage für die Datenverarbeitung ist Art. 6 Abs. 1 lit. f DSGVO, der die Verarbeitung von Daten zur Erfüllung eines Vertrags oder vorvertraglicher Maßnahmen gestattet."
+            },
+            {
+              "id": "633080b9282b01b2547f9aeb",
+              "type": "subtitle",
+              "value": "Umgang mit Kontaktdaten"
+            },
+            {
+              "id": "633080d59ea2d3caac934523",
+              "type": "paragraph",
+              "value": "Nehmen Sie mit uns als Websitebetreiber durch die angebotenen Kontaktmöglichkeiten Verbindung auf, werden Ihre Angaben gespeichert, damit auf diese zur Bearbeitung und Beantwortung Ihrer Anfrage zurückgegriffen werden kann. Ohne Ihre Einwilligung werden diese Daten nicht an Dritte weitergegeben."
+            },
+            {
+              "id": "633080eeb962bd0b63906bc8",
+              "type": "subtitle",
+              "value": "Umgang mit Kommentaren und Beiträgen"
+            },
+            {
+              "id": "633081053ba0f2614b2fb1a2",
+              "type": "paragraph",
+              "value": "Hinterlassen Sie auf dieser Website einen Beitrag oder Kommentar, wird Ihre IP-Adresse gespeichert. Dies erfolgt aufgrund unserer berechtigten Interessen im Sinne des Art. 6 Abs. 1 lit. f. DSGVO und dient der Sicherheit von uns als Websitebetreiber: Denn sollte Ihr Kommentar gegen geltendes Recht verstoßen, können wir dafür belangt werden, weshalb wir ein Interesse an der Identität des Kommentar- bzw. Beitragsautors haben."
+            },
+            {
+              "id": "6330811c6e0bd9577542c2b5",
+              "type": "subtitle",
+              "value": "Rechte des Nutzers"
+            },
+            {
+              "id": "63308131eac4590274b95cf9",
+              "type": "paragraph",
+              "value": "Sie haben als Nutzer das Recht, auf Antrag eine kostenlose Auskunft darüber zu erhalten, welche personenbezogenen Daten über Sie gespeichert wurden. Sie haben außerdem das Recht auf Berichtigung falscher Daten und auf die Verarbeitungseinschränkung oder Löschung Ihrer personenbezogenen Daten. Falls zutreffend, können Sie auch Ihr Recht auf Datenportabilität geltend machen. Sollten Sie annehmen, dass Ihre Daten unrechtmäßig verarbeitet wurden, können Sie eine Beschwerde bei der zuständigen Aufsichtsbehörde einreichen."
+            },
+            {
+              "id": "6330814c91c6e21c8b71d603",
+              "type": "subtitle",
+              "value": "Löschung von Daten"
+            },
+            {
+              "id": "6330816163ac0fb56c241af1",
+              "type": "paragraph",
+              "value": "Sofern Ihr Wunsch nicht mit einer gesetzlichen Pflicht zur Aufbewahrung von Daten (z. B. Vorratsdatenspeicherung) kollidiert, haben Sie ein Anrecht auf Löschung Ihrer Daten. Von uns gespeicherte Daten werden, sollten sie für ihre Zweckbestimmung nicht mehr vonnöten sein und es keine gesetzlichen Aufbewahrungsfristen geben, gelöscht. Falls eine Löschung nicht durchgeführt werden kann, da die Daten für zulässige gesetzliche Zwecke erforderlich sind, erfolgt eine Einschränkung der Datenverarbeitung. In diesem Fall werden die Daten gesperrt und nicht für andere Zwecke verarbeitet."
+            },
+            {
+              "id": "633081e0cce23aa0a4294484",
+              "type": "subtitle",
+              "value": "Widerspruchsrecht"
+            },
+            {
+              "id": "633081f2dd063fc1d7ee140d",
+              "type": "paragraph",
+              "value": "Nutzer dieser Webseite können von ihrem Widerspruchsrecht Gebrauch machen und der Verarbeitung ihrer personenbezogenen Daten zu jeder Zeit widersprechen."
+            },
+            {
+              "id": "633082079cdb6f1c4a2fdb49",
+              "type": "paragraph",
+              "value": "Wenn Sie eine Berichtigung, Sperrung, Löschung oder Auskunft über die zu Ihrer Person gespeicherten personenbezogenen Daten wünschen oder Fragen bzgl. der Erhebung, Verarbeitung oder Verwendung Ihrer personenbezogenen Daten haben oder erteilte Einwilligungen widerrufen möchten, wenden Sie sich bitte an folgende E-Mail-Adresse: info@archaeomedes.de"
+            }
+          ]
+    },
+    {
+      "language": "EN",
+      "title": "Privacy Policy",
+      "contact": [
+        {
+          "id": "63307bb51d12bc54bd242f6d",
+          "textData": [
+            {
+              "text": "Clarenbachstraße 168"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

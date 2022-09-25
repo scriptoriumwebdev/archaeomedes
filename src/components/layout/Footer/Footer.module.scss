@@ -1,9 +1,30 @@
 @import "../../../styles/settings.scss";
 
 .root {
+  // border: 1px solid red;
   @include flex(column, center, center);
-  color: $white;
+  color: $darkWhite;
   z-index: 10;
+  width: 100%;
+  margin-right: 0;
+  margin-left: 0;
+  position: absolute;
+  padding: 2rem 0 2rem 0;
+
+  .footerRow {
+    // border: 1px solid greenyellow;
+    // width: 90%;
+    @include flex(row, center, center);
+    // display: flex;
+    // flex-direction: row;
+    // align-items: center;
+    // justify-content:space-around;
+
+
+    .footerInformationsLinks{
+      @include flex(column, center, center);
+    }
+  }
 }
 
 .yearBox {
