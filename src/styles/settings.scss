@@ -21,14 +21,24 @@ $mainNavajoWhite: #ffe5a1;
 $philippineYellow: #faca00;
 
 // FONTS & TEXT
-$text-color: $black;
+$text-color: $white;
 $text-color-alt: $white;
 $font-title: "Montserrat", sans-serif;
 $font-text: "Montserrat", sans-serif;
 $linkColor: $mainArylideYellow;
-$linkColorActive: $mainCamel;
-$linkColor-alt: $mainFeldgrau;
+$linkColorActive: $mainArylideYellow;
+$linkColor-alt: $white;
 $linkColorActive-alt: $mainArylideYellow;
+
+a {
+  color: $linkColor;
+
+  &:hover {
+    color: $linkColorActive;
+    text-shadow: -0.25px -0.25px 0 $linkColorActive, 0.25px 0.25px $linkColorActive;
+    // font-weight: 800;
+  }
+}
 
 //Images
 $imageCorner: 10px;
@@ -36,6 +46,7 @@ $imageShadow: 5px 5px 10px 0px rgba(0, 0, 0, 0.5);
 
 //HEADER
 $headerColor: $white;
+$sectionHeader: $gold;
 
 // SECTION
 $padding-below-sections: 75px;
@@ -64,4 +75,4 @@ $teamCoverOutline: $mainNavajoWhite;
 $teamCoverOutline-alt: $mainCamel;
 
 //FOOTER
-$footerBackground: $white;
+$footerBackground: $lightGreen;

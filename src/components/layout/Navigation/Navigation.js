@@ -116,6 +116,7 @@ const Navigation = () => {
               className={styles.navLink}
               to={`/${item.linkSrc}`}
               onClick={() => handleClick(item.linkSrc)}
+              title={item.linkName}
             >
               {item.linkName}
             </NavHashLink>

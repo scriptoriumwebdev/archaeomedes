@@ -5,26 +5,29 @@
   height: 100vh;
   position: relative;
   width: 100%;
+  background: none;
   overflow: hidden;
+  z-index: 1;
   img {
+    border-radius: 0;
     box-shadow: none;
     height: 85%;
     object-fit: cover;
-    opacity: 0.1;
     overflow: hidden;
     position: fixed;
     top: 0;
     width: 100%;
-    z-index: -1;
+    z-index: -2;
   }
-  &::before {
+  &::after {
     background-color: $lightGreen;
     content: "";
     height: 100%;
+    opacity: 0.4;
     position: absolute;
     top: 0;
     width: 100%;
-    z-index: -2;
+    z-index: -1;
   }
   .headerContainer {
     @include flex(column, flex-start, center);
@@ -61,6 +64,7 @@
       animation-duration: 1.5s;
       animation-iteration-count: infinite;
       animation-name: scroll;
+      box-shadow: 3px 3px 0px rgba(0, 0, 0, 0.2);
     }
   }
   .icon__scrollHidden {
@@ -73,9 +77,12 @@
 
 .header {
   width: 100%;
+  text-shadow: 6px 6px 0px rgba(0, 0, 0, 0.2);
 }
 
 .subheader {
+  font-weight: 400;
+  text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.2);
 }
 
 /* XXXL ExtraExtraLarge Devices, UltraWide Desktops  */

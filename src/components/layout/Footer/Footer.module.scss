@@ -2,19 +2,12 @@
 
 .root {
   @include flex(column, center, center);
-
-  a {
-    // color: $mainFeldgrau;
-
-    &:hover {
-      font-weight: 700;
-    }
-  }
+  color: $white;
+  z-index: 10;
 }
 
 .yearBox {
   @include flex(column, center, center);
-  background: $footerBackground;
   width: 100%;
 }
 

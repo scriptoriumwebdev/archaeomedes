@@ -58,9 +58,17 @@
       text-decoration: none;
       // transition: all 0.3s;
       width: 100%;
+      // letter-spacing: 0.36px;
       &:hover {
-        font-weight: 800;
-        // text-decoration: underline;
+        text-shadow: -0.25px -0.25px 0 black, 0.25px 0.25px black;
+      }
+      ::before {
+        display: block;
+        content: attr(title);
+        font-weight: bold;
+        height: 0;
+        overflow: hidden;
+        visibility: hidden;
       }
     }
 

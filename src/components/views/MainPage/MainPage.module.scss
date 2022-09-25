@@ -1,6 +1,7 @@
 @import "../../../styles/settings.scss";
 
 .root {
+  @include flex(column, center, center);
 }
 
 /* ExtraExtraLarge Devices, UltraWide Desktops  */
@@ -25,4 +26,3 @@
 /* Extra Small Devices, Phones */
 @media only screen and (min-width: 0px) and (max-width: 479px) {
 }
-

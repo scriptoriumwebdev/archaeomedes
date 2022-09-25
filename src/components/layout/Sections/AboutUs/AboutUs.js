@@ -1,6 +1,6 @@
 /* eslint-disable comma-dangle */
 import React, { useEffect, useRef } from 'react';
-import { Container } from 'react-bootstrap';
+import { Container, Row, Col } from 'react-bootstrap';
 import { gsap } from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import Button from '../../../common/Button/Button';
