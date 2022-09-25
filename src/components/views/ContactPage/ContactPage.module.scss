@@ -2,14 +2,21 @@
 
 .root {
   @include flex(column, flex-start, space-between);
+  margin-top: 55px;
   height: 100vh;
   position: relative;
   width: 100%;
+  justify-content: center;
+  .contactList {
+    margin-top: 20px;
+    margin-left: -5px;
+  }
   .contactRow {
     align-self: center;
-    height: 33vh;
+    // height: 33vh;
     width: 80%;
     .contactCol {
+      // height: 65vh;
       @include flex(column, center, center);
       ul li {
         list-style: none;
@@ -25,6 +32,14 @@
   }
   a {
     color: $linkColor-alt;
+  }
+  .divMap {
+  border: 1px solid red;
+  width: 100%;
+    height: 100%;
+    margin-bottom: 25px;
+    position: relative;
+    display: flex;
   }
 }
 
@@ -60,14 +75,43 @@
 
 /* SM Small Devices, Small tablets Large Phones */
 @media only screen and (min-width: 576px) and (max-width: 767px) {
-  .root {
-  }
+  // .root {
+  //   .contactRow {
+  //     .contactCol {
+  //       height: 35vh;
+  //     }
+  //   }
+  //   .divMap {
+  //     border: 1px solid red;
+  //     width: 100%;
+  //     height: 100%;
+  //     margin-bottom: 25px;
+  //     position: relative;
+  //     display: flex;
+  //   }
+  // }
 }
 
 /* Extra Small Devices, Phones */
 @media only screen and (min-width: 0px) and (max-width: 575px) {
-  .root {
-  }
+  // .root {
+  //   height: 100vh;
+
+  //   .contactRow {
+  //     .contactCol {
+  //       height: 90%;
+  //       width: 120%;
+  //     }
+  //   }
+  //   .divMap {
+  //     border: 1px solid red;
+  //     width: 130%;
+  //     height: 100%;
+  //     // margin-bottom: 25px;
+  //     position: relative;
+  //     display: flex;
+  //   }
+  // }
 }
 
 /* Media pointer*/
