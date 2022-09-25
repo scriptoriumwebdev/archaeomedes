@@ -1,19 +1,18 @@
 import React from 'react';
-import { Row, Col, Container } from 'react-bootstrap';
-// import Link from 'react-router';
+import { Row, Col } from 'react-bootstrap';
 import { NavLink } from 'react-router-dom';
 
 import styles from './Footer.module.scss';
 
 const Footer = () => (
   <footer className={styles.root}>
-    <Container className={styles.footerRow}>
-      <Col col-12 col-lg-4>
+    <Row className={styles.footerRow}>
+      <Col className={`col-12 col-lg-4 ${styles.footerCol}`}>
         <div className={styles.yearBox}>
           <p>Archaomedes GbR</p>
         </div>
       </Col>
-      <Col col-12 col-lg-4>
+      <Col className={`col-12 col-lg-4 ${styles.footerCol}`}>
         <div className={styles.yearBox}>
           <div className={styles.linkBox}>
             <p className={styles.textFooter}>© 2022</p>
@@ -32,13 +31,13 @@ const Footer = () => (
           </p>
         </div>
       </Col>
-      <Col col-12 col-lg-4>
+      <Col className={`col-12 col-lg-4 ${styles.footerCol}`}>
         <div className={styles.footerInformationsLinks}>
           <NavLink to="/impressum">Impressum</NavLink>
           <NavLink to="/datenschutzerklarung">Datenschutzerklärung</NavLink>
         </div>
       </Col>
-    </Container>
+    </Row>
   </footer>
 );
 
