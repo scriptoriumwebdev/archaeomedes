@@ -1,0 +1,140 @@
+{
+  "id": "63307bb51d12bc54bd242f6d",
+  "data": [
+    {
+      "language": "DE",
+      "title": "Impressum",
+          "textData": [
+            {
+              "id": "63305f8a242d970aecb8db0a",
+              "type": "subtitle",
+              "value": "Vertreten durch:"
+            },
+            {
+              "id": "63306b42cdcb446eb64189cc",
+              "type": "paragraph",
+              "value": "Roth, Rafael"
+            },
+            {
+              "id": "63306b7de032e231d853cbc3",
+              "type": "paragraph",
+              "value": "Maasstr. 12"
+            },
+            {
+              "id": "63306b848622a25adcdaa23e",
+              "type": "paragraph",
+              "value": "47623 Kevelaer"
+            },
+            {
+              "id": "63306b96285398fdfb59feca",
+              "type": "subtitle",
+              "value": "Kontaktaufnahme:"
+            },
+            {
+              "id": "63306bd37fe5b835f79756f1",
+              "type": "paragraph",
+              "value": "Email: info@archaeomedes.de"
+            },
+            {
+              "id": "63306be16d35d92d02f84f1c",
+              "type": "paragraph",
+              "value": "Tel: 01578-4869505"
+            },
+            {
+              "id": "63306bfcc13846121ecfaf36",
+              "type": "subtitle",
+              "value": "Steuer-Nr.:"
+            },
+            {
+              "id": "63306c5e7d85cfec6bfd7513",
+              "type": "paragraph",
+              "value": "113/5819/209"
+            },
+            {
+              "id": "63306c74e681188cad029430",
+              "type": "subtitle",
+              "value": "Haftungsausschluss – Disclaimer:"
+            },
+            {
+              "id": "63306c8a3e15d905ccd70f57",
+              "type": "subtitle",
+              "value": "Haftung für Inhalte"
+            },
+            {
+              "id": "63306ca0b67fb799093ae9b3",
+              "type": "paragraph",
+              "value": "Alle Inhalte unseres Internetauftritts wurden mit größter Sorgfalt und nach bestem Gewissen erstellt. Für die Richtigkeit, Vollständigkeit und Aktualität der Inhalte können wir jedoch keine Gewähr übernehmen. Als Diensteanbieter sind wir gemäß § 7 Abs.1 TMG für eigene Inhalte auf diesen Seiten nach den allgemeinen Gesetzen verantwortlich. Nach §§ 8 bis 10 TMG sind wir als Diensteanbieter jedoch nicht verpflichtet, übermittelte oder gespeicherte fremde Informationen zu überwachen oder nach Umständen zu forschen, die auf eine rechtswidrige Tätigkeit hinweisen. Verpflichtungen zur Entfernung oder Sperrung der Nutzung von Informationen nach den allgemeinen Gesetzen bleiben hiervon unberührt."
+            },
+            {
+              "id": "63306cda29e833cfb1eef9ee",
+              "type": "paragraph",
+              "value": "Eine diesbezügliche Haftung ist jedoch erst ab dem Zeitpunkt der Kenntniserlangung einer konkreten Rechtsverletzung möglich. Bei Bekanntwerden von den o.g. Rechtsverletzungen werden wir diese Inhalte unverzüglich entfernen."
+            },
+            {
+              "id": "63306d01ead489ef7f2c562d",
+              "type": "subtitle",
+              "value": "Haftungsbeschränkung für externe Links"
+            },
+            {
+              "id": "63306d10bb2d3467b28d7e25",
+              "type": "paragraph",
+              "value": "Unsere Webseite enthält Links auf externe Webseiten Dritter. Auf die Inhalte dieser direkt oder indirekt verlinkten Webseiten haben wir keinen Einfluss. Daher können wir für die „externen Links“ auch keine Gewähr auf Richtigkeit der Inhalte übernehmen. Für die Inhalte der externen Links sind die jeweiligen Anbieter oder Betreiber (Urheber) der Seiten verantwortlich."
+            },
+            {
+              "id": "63306d37513e2e9e718df5ef",
+              "type": "paragraph",
+              "value": "Die externen Links wurden zum Zeitpunkt der Linksetzung auf eventuelle Rechtsverstöße überprüft und waren im Zeitpunkt der Linksetzung frei von rechtswidrigen Inhalten. Eine ständige inhaltliche Überprüfung der externen Links ist ohne konkrete Anhaltspunkte einer Rechtsverletzung nicht möglich. Bei direkten oder indirekten Verlinkungen auf die Webseiten Dritter, die außerhalb unseres Verantwortungsbereichs liegen, würde eine Haftungsverpflichtung ausschließlich in dem Fall nur bestehen, wenn wir von den Inhalten Kenntnis erlangen und es uns technisch möglich und zumutbar wäre, die Nutzung im Falle rechtswidriger Inhalte zu verhindern."
+            },
+            {
+              "id": "63306d4e07eb37d2c543dffa",
+              "type": "paragraph",
+              "value": "Diese Haftungsausschlusserklärung gilt auch innerhalb des eigenen Internetauftrittes „Archaeomedes.de“ gesetzten Links und Verweise von Fragestellern, Blogeinträgern, Gästen des Diskussionsforums. Für illegale, fehlerhafte oder unvollständige Inhalte und insbesondere für Schäden, die aus der Nutzung oder Nichtnutzung solcherart dargestellten Informationen entstehen, haftet allein der Diensteanbieter der Seite, auf welche verwiesen wurde, nicht derjenige, der über Links auf die jeweilige Veröffentlichung lediglich verweist."
+            },
+            {
+              "id": "63306d637ab2710d4c4216cf",
+              "type": "paragraph",
+              "value": "Werden uns Rechtsverletzungen bekannt, werden die externen Links durch uns unverzüglich entfernt."
+            },
+            {
+              "id": "63306d7a39bc241dc79ff7f1",
+              "type": "subtitle",
+              "value": "Urheberrecht"
+            },
+            {
+              "id": "63306d89b6f21d0bbecbcff5",
+              "type": "paragraph",
+              "value": "Die auf unserer Webseite veröffentlichen Inhalte und Werke unterliegen dem deutschen Urheberrecht."
+            },
+            {
+              "id": "63306da5769a1cce0df58f90",
+              "type": "paragraph",
+              "value": "Die Vervielfältigung, Bearbeitung, Verbreitung und jede Art der Verwertung des geistigen Eigentums in ideeller und materieller Sicht des Urhebers außerhalb der Grenzen des Urheberrechtes bedürfen der vorherigen schriftlichen Zustimmung des jeweiligen Urhebers i.S.d. Urhebergesetzes. Downloads und Kopien dieser Seite sind nur für den privaten und nicht kommerziellen Gebrauch erlaubt."
+            },
+            {
+              "id": "63306dc3e2b8da4d23ab1c62",
+              "type": "paragraph",
+              "value": "Sind die Inhalte auf unserer Webseite nicht von uns erstellt wurden, sind die Urheberrechte Dritter zu beachten. Die Inhalte Dritter werden als solche kenntlich gemacht."
+            },
+            {
+              "id": "63306dde96286af03d392924",
+              "type": "paragraph",
+              "value": "Sollten Sie trotzdem auf eine Urheberrechtsverletzung aufmerksam werden, bitten wir um einen entsprechenden Hinweis. Bei Bekanntwerden von Rechtsverletzungen werden wir derartige Inhalte unverzüglich entfernen."
+            }
+          ]
+    },
+    {
+      "language": "EN",
+      "title": "Impressum",
+      "contact": [
+        {
+          "id": "63305f91fc3977f649bddb56",
+          "textData": [
+            {
+              "text": "Clarenbachstraße 168"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

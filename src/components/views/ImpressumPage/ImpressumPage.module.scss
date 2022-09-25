@@ -1,107 +1,89 @@
 @import "../../../styles/settings.scss";
 
 .root {
-  @include flex(column, flex-start, space-between);
-  margin: 50px 0 50px 0;
+  @include flex(column, none, start);
+  margin-bottom: 5vh;
+  margin-top: 15vh;
   min-height: 100vh;
+  width: 100vh;
   position: relative;
-  width: 100%;
-  justify-content: center;
-
-  .contactList {
-    margin-top: 20px;
-    margin-left: -5px;
+  z-index: 1;
+  color: $impressumTextColor;
+  :first-child {
+    align-self: flex-start;
   }
 
-  .contactRow {
-    align-self: center;
-    height: 100%;
-    width: 100%;
+  .impressumSubtitle {
+    margin: 25px 0 0 0;
+    font-weight: bold;
+    color: $impressumTextColor;
+    font-size: 0.9rem;
+  }
 
-    .contactCol {
+  .impressumText {
+    font-size: 0.9rem;
+  }
+
+  .impressumTextContainer {
+    @include flex(column, start, center);
+    align-self: center;
+    margin: 5rem 0 5rem 0;
+    position: relative;
+    text-align: justify;
+
+    .impressumItem {
       @include flex(column, center, center);
-      height: 100vh;
-      ul li {
-        list-style: none;
-      }
-      .contactLink {
-        text-decoration: none;
+      img {
+        height: auto;
+        margin: 1rem 0 1rem 0;
+        width: 80%;
       }
     }
   }
-  p {
-    margin: 0;
-    padding: 0;
-  }
-  a {
-    color: $linkColor-alt;
-  }
-  .divMap {
-    width: 100%;
-    height: 100%;
-    // padding: 0;
-    // margin-bottom: 25px;
-    // position: relative;
-    // display: flex;
-  }
+}
+
+@media (min-width: 991px) {
 }
 
 /* XXXL ExtraExtraLarge Devices, UltraWide Desktops  */
 @media (min-width: 1921px) {
-  .root {
-  }
 }
 
 /* XXL Extra Extra Large Devices, Desktops  */
 @media (min-width: 1400px) and (max-width: 1920px) {
-  .root {
-  }
 }
 
 /* XL Extra Extra Large Devices, Laptops  */
 @media (min-width: 1200px) and (max-width: 1399px) {
   .root {
+    width: 100%;
   }
 }
 
 /* LG Large Devices, Tablets iPad Pro */
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
   .root {
+    width: 100%;
   }
 }
 
 /* MD Medium Devices, Tablets iPad */
 @media only screen and (min-width: 768px) and (max-width: 991px) {
   .root {
+    width: 100%;
   }
 }
 
 /* SM Small Devices, Small tablets Large Phones */
 @media only screen and (min-width: 576px) and (max-width: 767px) {
   .root {
-    .contactCol {
-      height: 35vh;
-    }
+    width: 100%;
   }
 }
 
 /* Extra Small Devices, Phones */
 @media only screen and (min-width: 0px) and (max-width: 575px) {
   .root {
-    .contactCol {
-      height: 35vh;
-    }
-  }
-}
-
-/* Media pointer*/
-@media (hover: hover) and (pointer: fine) {
-  .root {
-  }
-}
-
-/* Media touchable */
-@media (pointer: coarse) {
-  .root {
+    width: 100%;
   }
 }

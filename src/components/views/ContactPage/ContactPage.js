@@ -1,3 +1,4 @@
+/* eslint-disable react/style-prop-object */
 /* eslint-disable comma-dangle */
 import React, { useEffect, useRef } from 'react';
 import { Container, Row, Col } from 'react-bootstrap';
@@ -58,58 +59,63 @@ const Contact = () => {
   };
 
   return (
-    <Container className={styles.root}>
-      <SectionHeader>{languageData.title}</SectionHeader>
+    <div className={styles.root}>
       <Row className={styles.contactRow}>
-        <Col className={`col-12 col-lg-6 ${styles.contactCol}`}>
-          <ul ref={contactInfoRef}>
-            {languageData.contact.map((item) => (
-              <li key={item.id}>
-                <a
-                  href={handleLink(item.value, item.type)}
-                  className={styles.contactLink}
-                >
-                  <Row>
-                    <Col className="col-3 pt-2 pb-2 d-flex  align-items-center justify-content-center">
-                      <IconsGenerator
-                        iconName={item.icon}
-                        iconsList={item.icon !== `faFacebook` ? fas : fab}
-                        alternativeIcon={faIcons}
-                        size={2}
-                      />
-                    </Col>
-                    <Col className="col-9 pt-2 pb-2  d-flex flex-column align-items-start justify-content-center">
-                      {Array.isArray(item.textData) ? (
-                        item.textData.map((i) => <p>{i.text}</p>)
-                      ) : (
-                        <p>{item.textData}</p>
-                      )}
-                    </Col>
-                  </Row>
-                </a>
-              </li>
-            ))}
-          </ul>
+        <Col className={`col-12 col-lg-3 ${styles.contactCol}`}>
+          <SectionHeader>{languageData.title}</SectionHeader>
+          <div className={styles.contactList}>
+            <ul ref={contactInfoRef}>
+              {languageData.contact.map((item) => (
+                <li key={item.id}>
+                  <a
+                    href={handleLink(item.value, item.type)}
+                    className={styles.contactLink}
+                  >
+                    <Row>
+                      <Col className="col-2 pt-3 pb-3 d-flex  align-items-center justify-content-center">
+                        <IconsGenerator
+                          iconName={item.icon}
+                          iconsList={item.icon !== `faFacebook` ? fas : fab}
+                          alternativeIcon={faIcons}
+                          size={2}
+                        />
+                      </Col>
+                      <Col className="col-10 pt-2 pb-2  d-flex flex-column align-items-start justify-content-center">
+                        {Array.isArray(item.textData) ? (
+                          item.textData.map((i) => <p>{i.text}</p>)
+                        ) : (
+                          <p>{item.textData}</p>
+                        )}
+                      </Col>
+                    </Row>
+                  </a>
+                </li>
+              ))}
+            </ul>
+          </div>
         </Col>
         <Col
-          className={`col-12 col-lg-6 ${styles.contactCol}`}
+          className={`col-12 col-lg-9 ${styles.contactCol}`}
           ref={contactMapRef}
         >
-          MAP.
-          {/* <iframe
-            src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d2562.175487500164!2d18.692627765716793!3d50.0455438294216!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47114ddc4e2e9861%3A0x6be395ae1cfd8964!2sFraternia%20Zakonna!5e0!3m2!1spl!2spl!4v1657717562483!5m2!1spl!2spl"
-            title="mapy"
-            width="600"
-            height="450"
-            // style="border:0;"
-            allowFullScreen=""
-            loading="lazy"
-            referrerpolicy="no-referrer-when-downgrade"
-          /> */}
+          <div className={styles.divMap}>
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d81679.65335426765!2d6.184447498163711!3d51.57145138543581!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c76666e58f2ff3%3A0x844d66f39ee850c2!2sMaasstra%C3%9Fe%2012%2C%2047623%20Kevelaer%2C%20Niemcy!5e0!3m2!1spl!2spl!4v1664104728227!5m2!1spl!2spl"
+              title="Archeomedes Localization"
+              width="100%"
+              height="100%"
+              // position="fixed"
+              // display="flex"
+              // style="border:0"
+              allowFullScreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+            />
+          </div>
         </Col>
       </Row>
       <div />
-    </Container>
+    </div>
   );
 };
 

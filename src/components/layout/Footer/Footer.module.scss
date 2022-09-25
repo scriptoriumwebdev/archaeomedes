@@ -2,18 +2,32 @@
 
 .root {
   @include flex(column, center, center);
-  color: $white;
-  z-index: 10;
+  color: $darkWhite;
+  overflow: hidden;
+  // padding: 2rem 0 2rem 0;
+
+  .footerRow {
+    @include flex(row, center, center);
+    width: 100%;
+
+    .footerCol{
+      margin: 20px 0 0 0;
+    }
+
+    .footerInformationsLinks{
+      @include flex(column, center, center);
+    }
+  }
 }
 
 .yearBox {
   @include flex(column, center, center);
-  width: 100%;
+  // width: 100%;
 }
 
 .linkBox {
   display: flex;
-  flex-direction: row;
+  // flex-direction: row;
 }
 
 .textFooter {

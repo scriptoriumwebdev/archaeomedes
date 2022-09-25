@@ -21,9 +21,6 @@ const MainPage = () => (
     <section id="services">
       <Services />
     </section>
-    <section id="services">
-      <ContactPage />
-    </section>
   </div>
 );
 
