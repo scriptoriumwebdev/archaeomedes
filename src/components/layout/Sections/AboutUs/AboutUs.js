@@ -1,8 +1,9 @@
 /* eslint-disable comma-dangle */
 import React, { useEffect, useRef } from 'react';
-import { Container, Row, Col } from 'react-bootstrap';
+import { Row, Col } from 'react-bootstrap';
 import { gsap } from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
+import { HashLink } from 'react-router-hash-link';
 import Button from '../../../common/Button/Button';
 import SectionHeader from '../../../common/SectionHeader/SectionHeader';
 import styles from './AboutUs.module.scss';
@@ -31,7 +32,7 @@ const AboutUs = () => {
 
     gsap.set([aboutPhoto], {
       autoAlpha: 0,
-      x: -50,
+      x: 50,
     });
 
     ScrollTrigger.batch([aboutText], {
@@ -50,7 +51,7 @@ const AboutUs = () => {
       start: `top bottom -=200px`,
       onEnter: (batch) =>
         gsap.to(batch, {
-          autoAlpha: 0.1,
+          autoAlpha: 1,
           delay: 0.5,
           overwrite: true,
           stagger: { each: 0.15 },
@@ -59,27 +60,46 @@ const AboutUs = () => {
     });
 
     ScrollTrigger.addEventListener(`refreshInit`, () =>
-      gsap.set([aboutText, aboutPhoto], { y: 50, autoAlpha: 0 })
+      gsap.set([aboutText, aboutPhoto], { y: 0, x: 0, autoAlpha: 1 })
     );
   }, []);
 
   return (
-    <Container className={styles.root}>
-      <SectionHeader>{languageData.title}</SectionHeader>
-      <div className={styles.aboutUsTextContainer} ref={aboutTextRef}>
-        {languageData.aboutShortText.map((item) => (
-          <p key={item.id}>{item.value}</p>
-        ))}
-        <a href="/about">{UtilsButtons.buttonMore}</a>
-      </div>
-      <img
-        src={aboutUsData.mainpagePhotos[0].src}
-        alt="&nbsp;"
-        className={styles.backgroundImage1}
-        ref={aboutPhotoRef}
-      />
-      <div />
-    </Container>
+    <div className={styles.root}>
+      <Row className={styles.aboutUsRow}>
+        <Col className={`col-12 col-lg-6 ${styles.aboutUsTextCol}`}>
+          <SectionHeader>{languageData.title}</SectionHeader>
+          <img
+            src={aboutUsData.mainpagePhotos[0].src}
+            alt="&nbsp;"
+            className={styles.backgroundImage}
+            ref={aboutPhotoRef}
+          />
+          <div className={styles.aboutUsTextContainer} ref={aboutTextRef}>
+            <p>{languageData.aboutText[0].value}</p>
+            <p>{languageData.aboutText[2].value}</p>
+            {/* {languageData.aboutShortText.map((item) => (
+            ))} */}
+            <HashLink smooth to="/about">
+              <Button>{UtilsButtons.buttonMore} ➔</Button>
+            </HashLink>
+            {/* <a href="/about"></a> */}
+          </div>
+          <div />
+        </Col>
+        <Col
+          className={`col-0 col-lg-6 ${styles.aboutUsImgCol}`}
+          ref={aboutPhotoRef}
+        >
+          <img
+            src={aboutUsData.mainpagePhotos[0].src}
+            alt="&nbsp;"
+            className={styles.backgroundImage}
+            ref={aboutPhotoRef}
+          />
+        </Col>
+      </Row>
+    </div>
   );
 };
 

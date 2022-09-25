@@ -1,9 +1,9 @@
 @import "../../../styles/settings.scss";
 
 .root {
-  @include flex(column, none, start);
+  @include flex(column, center, center);
   margin-bottom: 5vh;
-  margin-top: 15vh;
+  margin-top: 5vh;
   min-height: 100vh;
   position: relative;
   z-index: 1;
@@ -13,35 +13,40 @@
     align-self: center;
     margin: 5rem 0 5rem 0;
     position: relative;
-    text-align: justify;
+    text-align: left;
     width: 70%;
+    > :first-child {
+      align-self: flex-start;
+      margin-bottom: 5rem;
+    }
 
     .aboutUsItem {
       @include flex(column, center, center);
+      width: 100%;
       img {
         height: auto;
-        margin: 1rem 0 1rem 0;
-        width: 80%;
+        margin: 2rem 0 2rem 0;
+        width: 100%;
       }
     }
   }
-  .teamGridContainer {
-    display: grid;
-    grid-column-gap: 1rem;
-    grid-row-gap: 1rem;
-    grid-template-columns: repeat(1, 1fr);
-    height: 100%;
-    min-height: 30vh;
-    padding: 1rem;
-    width: 100%;
-  }
+  // .teamGridContainer {
+  //   display: grid;
+  //   grid-column-gap: 1rem;
+  //   grid-row-gap: 1rem;
+  //   grid-template-columns: repeat(1, 1fr);
+  //   height: 100%;
+  //   min-height: 30vh;
+  //   padding: 1rem;
+  //   width: 100%;
+  // }
 }
 
 @media (min-width: 991px) {
   .root {
-    .teamGridContainer {
-      grid-template-columns: repeat(3, 1fr);
-    }
+    // .teamGridContainer {
+    //   grid-template-columns: repeat(3, 1fr);
+    // }
   }
 }
 

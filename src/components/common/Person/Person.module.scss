@@ -35,7 +35,7 @@
       padding: 0.5rem;
       position: absolute;
       top: 0;
-      transition: all 0.3s ease;
+      transition: $animation;
       width: 100%;
       z-index: 2;
 
@@ -50,7 +50,7 @@
         @extend .caption;
         border-radius: none;
         top: 16.5rem;
-        transition: all 0.3s;
+        transition: $animation;
       }
     }
   }

@@ -7,16 +7,16 @@
   {
     "id": 2,
     "linkSrc": "#aboutUs",
-    "linkName": "About"
+    "linkName": "Über uns"
   },
   {
     "id": 3,
     "linkSrc": "#services",
-    "linkName": "Services"
+    "linkName": "Leistungen"
   },
   {
     "id": 4,
     "linkSrc": "contact",
-    "linkName": "Contact"
+    "linkName": "Kontakt"
   }
 ]
