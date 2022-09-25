@@ -1,24 +1,28 @@
 import React from 'react';
-import LandingPage from '../../layout/Sections/LandingPage/LandingPage';
+import Hero from '../../layout/Sections/Hero/Hero';
 import News from '../../layout/Sections/News/News';
 import AboutUs from '../../layout/Sections/AboutUs/AboutUs';
 import Services from '../../layout/Sections/Services/Services';
+import ContactPage from '../ContactPage/ContactPage';
 
 import styles from './MainPage.module.scss';
 
 const MainPage = () => (
   <div className={styles.root}>
     <section>
-      <LandingPage />
+      <Hero />
     </section>
-    <section id="news">
+    {/* <section id="news">
       <News />
-    </section>
+    </section> */}
     <section id="aboutUs">
       <AboutUs />
     </section>
     <section id="services">
       <Services />
+    </section>
+    <section id="services">
+      <ContactPage />
     </section>
   </div>
 );

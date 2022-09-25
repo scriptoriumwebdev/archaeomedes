@@ -12,7 +12,7 @@
 }
 
 body {
-  background: $white;
+  background: $lightGreen;
 }
 
 img {
@@ -41,73 +41,61 @@ img {
 }
 
 section {
-  align-items: center;
-  border: 1px solid green;
+  @include flex(column, center, center);
+  @include sectionContainer;
+  background: $lightGreen;
   color: $text-color;
   display: flex;
-  flex-direction: column;
-  justify-content: center;
   min-height: 100vh;
-  min-width: 100%;
+  width: 100%;
+  height: auto;
+  z-index: 1;
+  position: relative;
 
-  &:nth-child(even) {
-    background: $mainDarkJungleGreen;
-    color: $text-color-alt;
-  }
-  &:nth-child(odd) {
-    background: $white;
-    box-shadow: inset 0px 3rem 2rem -1rem $mainDarkJungleGreen, inset 0px -3rem 2rem -1rem $mainDarkJungleGreen;
+  &::before {
+    background: $sectionHeader;
+    bottom: 0;
+    content: "";
+    display: block;
+    height: 2px;
+    left: 0;
+    margin-left: auto;
+    margin-right: auto;
+    position: absolute;
+    right: 0;
+    width: 20vw;
+    z-index: 1;
   }
   &:first-child {
-    background: none;
-    box-shadow: none;
+    &::before {
+      display: none;
+    }
   }
-  &:last-child {
-    box-shadow: inset 0px 3rem 2rem -1rem $mainDarkJungleGreen, inset 0 0 0 0 $mainDarkJungleGreen;
-  }
-  > :first-child {
-    @include sectionContainer;
+  > div {
+    @include flex(column, flex-start, space-between);
+    min-height: 80vh;
   }
 }
 
 /* ExtraExtraLarge Devices, UltraWide Desktops  */
 @media (min-width: 1921px) {
-  section {
-    max-width: 1200px;
-    width: 55vw;
-  }
 }
 
 /* ExtraLarge Devices, Desktops  */
 @media (min-width: 1200px) and (max-width: 1920px) {
-  section {
-    width: 55%;
-  }
 }
 /* Large Devices, Laptops, Large Tablets iPad Pro */
 @media only screen and (min-width: 1024px) and (max-width: 1199px) {
-  section {
-    width: 80%;
-  }
 }
 
 /* Medium Devices, Tablets iPad */
 @media only screen and (min-width: 768px) and (max-width: 1023px) {
-  section {
-    width: 95%;
-  }
 }
 
 /* Small Devices, Small tablets Large Phones */
 @media only screen and (min-width: 480px) and (max-width: 767px) {
-  section {
-    width: 95%;
-  }
 }
 
 /* Extra Small Devices, Phones */
 @media only screen and (min-width: 0px) and (max-width: 479px) {
-  section {
-    width: 95%;
-  }
 }

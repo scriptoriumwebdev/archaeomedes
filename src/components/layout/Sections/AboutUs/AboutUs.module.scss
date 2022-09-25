@@ -1,24 +1,21 @@
 @import "../../../../styles/settings.scss";
 
 .root {
-  @include flex(column, none, space-between);
-  position: relative;
-  z-index: 1;
   .aboutUsTextContainer {
-    @include flex(column, center, center);
-    align-self: flex-end;
-    margin-right: 2rem;
-    text-align: justify;
-    width: 60%;
+    // @include flex(column, center, center);
+    // align-self: flex-end;
+    // margin-right: 2rem;
+    // text-align: justify;
+    // width: 60%;
   }
 
   .backgroundImage1 {
-    border-radius: 50%;
-    box-shadow: none;
+    // border-radius: 50%;
+    // box-shadow: none;
     display: inline-block;
     left: 2rem;
     opacity: 0.2;
-    position: absolute;
+    // position: absolute;
     top: 2rem;
     width: 45%;
     z-index: -1;

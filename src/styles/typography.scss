@@ -2,6 +2,7 @@
 
 @import url("https://fonts.googleapis.com/css2?family=Lato&family=Ubuntu:wght@700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Playfair+Display:ital@1&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
 
 h1,
 h2,
@@ -11,29 +12,34 @@ h5,
 h6 {
   color: $headerColor;
   font-family: $font-title;
-  text-shadow: 0 0 6px rgba(0, 0, 0, 1);
+  position: relative;
 }
 
 h1 {
-  font-size: clamp(1rem, 10vw, 6rem);
+  font-size: clamp(0.5rem, 12vw, 71px);
   margin-bottom: 0.2rem;
+  letter-spacing: -4%;
+  font-weight: 500;
 }
 
 h2 {
-  font-family: "Playfair Display", serif;
-  font-size: clamp(0.5rem, 5vw, 2rem);
+  font-size: clamp(0.5rem, 6vw, 28px);
+  &::after {
+    background: $sectionHeader;
+    box-shadow: 3px 3px 0px rgba(0, 0, 0, 0.2);
+    content: "";
+    display: block;
+    height: 12px;
+    left: -1%;
+    position: absolute;
+    top: 70%;
+    width: 102%;
+    z-index: -1;
+  }
 }
 
 p {
   font-family: $font-text;
   font-size: 1rem;
   margin-bottom: 0.5rem;
-}
-
-a {
-  color: $linkColor;
-
-  &:hover {
-    color: $linkColorActive;
-  }
 }

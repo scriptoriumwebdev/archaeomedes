@@ -2,6 +2,25 @@
 
 .root {
   color: $headerColor;
-  font-size: 2rem;
-  font-weight: 900;
+  p {
+    font-size: 2rem;
+    z-index: 1;
+    font-weight: 700;
+    letter-spacing: -4%;
+    text-shadow: 3px 3px 0px rgba(0, 0, 0, 0.2);
+    margin: 0;
+    padding: 0;
+    &::after {
+      background: $sectionHeader;
+      box-shadow: 3px 3px 0px rgba(0, 0, 0, 0.2);
+      content: "";
+      display: block;
+      height: 12px;
+      left: -1%;
+      position: absolute;
+      top: 70%;
+      width: 102%;
+      z-index: -2;
+    }
+  }
 }

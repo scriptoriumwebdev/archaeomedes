@@ -1,8 +1,8 @@
 @import "../../../../styles/settings.scss";
 
 .root {
-  @include flex(column, flex-start, space-between);
-  min-height: 100%;
+  // @include flex(column, flex-start, space-between);
+  // min-height: 100%;
   .cardGrid {
     align-self: center;
     display: grid;

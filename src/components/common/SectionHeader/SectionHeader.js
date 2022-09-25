@@ -28,22 +28,13 @@ const SectionHeader = ({ variant = ``, ...otherProps }) => {
     });
 
     ScrollTrigger.addEventListener(`refreshInit`, () =>
-      gsap.set(headerItem, { scaleY: 0.5 })
+      gsap.set(headerItem, { scaleY: 1 })
     );
   }, []);
 
   return (
-    <div ref={headerRef}>
-      <p
-        {...otherProps}
-        className={
-          styles.root +
-          variant
-            .split(` `)
-            .map((name) => ` ${styles[name] || name}`)
-            .join(``)
-        }
-      />
+    <div ref={headerRef} className={styles.root}>
+      <p {...otherProps} />
     </div>
   );
 };
