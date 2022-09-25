@@ -12,6 +12,7 @@ import News from './components/views/NewsPage/NewsPage';
 import Services from './components/views/ServicesPage/ServicesPage';
 import ContactPage from './components/views/ContactPage/ContactPage';
 import ScrollToTop from './components/utils/ScrollToTop';
+import Impressum from './components/views/ImpressumPage/ImpressumPage';
 
 function App() {
   gsap.registerPlugin(ScrollTrigger);
@@ -27,6 +28,8 @@ function App() {
             {/* <Route path="/news" element={<News />} /> */}
             <Route path="/services" element={<Services />} />
             <Route path="/contact" element={<ContactPage />} />
+            <Route path="/impressum" element={<Impressum />} />
+            <Route path="/services" element={<Services />} />
           </Routes>
         </MainLayout>
       </BrowserRouter>

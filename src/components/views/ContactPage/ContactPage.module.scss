@@ -3,7 +3,7 @@
 .root {
   @include flex(column, flex-start, space-between);
   margin-top: 55px;
-  height: 100vh;
+  min-height: 100vh;
   position: relative;
   width: 100%;
   justify-content: center;

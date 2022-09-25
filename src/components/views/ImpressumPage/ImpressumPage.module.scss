@@ -1,0 +1,84 @@
+@import "../../../styles/settings.scss";
+
+.root {
+  @include flex(column, none, start);
+  margin-bottom: 5vh;
+  margin-top: 15vh;
+  min-height: 100vh;
+  width: 90vh;
+  position: relative;
+  z-index: 1;
+  color: $impressumTextColor;
+  :first-child {
+    align-self: flex-start;
+  }
+
+  .impressumSubtitle {
+    margin: 25px 0 0 0;
+    font-weight: bold;
+    color: $impressumTextColor;
+  }
+
+  .impressumTextContainer {
+    @include flex(column, start, center);
+    align-self: center;
+    margin: 5rem 0 5rem 0;
+    position: relative;
+    text-align: justify;
+
+    .impressumItem {
+      @include flex(column, center, center);
+      img {
+        height: auto;
+        margin: 1rem 0 1rem 0;
+        width: 80%;
+      }
+    }
+  }
+}
+
+@media (min-width: 991px) {
+}
+
+/* XXXL ExtraExtraLarge Devices, UltraWide Desktops  */
+@media (min-width: 1921px) {
+}
+
+/* XXL Extra Extra Large Devices, Desktops  */
+@media (min-width: 1400px) and (max-width: 1920px) {
+}
+
+/* XL Extra Extra Large Devices, Laptops  */
+@media (min-width: 1200px) and (max-width: 1399px) {
+  .root {
+    width: 100%;
+  }
+}
+
+/* LG Large Devices, Tablets iPad Pro */
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+  .root {
+    width: 100%;
+  }
+}
+
+/* MD Medium Devices, Tablets iPad */
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .root {
+    width: 100%;
+  }
+}
+
+/* SM Small Devices, Small tablets Large Phones */
+@media only screen and (min-width: 576px) and (max-width: 767px) {
+  .root {
+    width: 100%;
+  }
+}
+
+/* Extra Small Devices, Phones */
+@media only screen and (min-width: 0px) and (max-width: 575px) {
+  .root {
+    width: 100%;
+  }
+}
