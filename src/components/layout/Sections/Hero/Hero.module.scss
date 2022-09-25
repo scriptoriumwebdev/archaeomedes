@@ -71,7 +71,7 @@
     @extend .icon__scroll;
     visibility: hidden;
     opacity: 0;
-    transition: all 0.3s;
+    transition: $animation;
   }
 }
 

@@ -21,13 +21,13 @@ $mainNavajoWhite: #ffe5a1;
 $philippineYellow: #faca00;
 
 // FONTS & TEXT
-$text-color: $white;
-$text-color-alt: $white;
+$text-color: $darkWhite;
+$text-color-alt: $darkWhite;
 $font-title: "Montserrat", sans-serif;
 $font-text: "Montserrat", sans-serif;
 $linkColor: $mainArylideYellow;
 $linkColorActive: $mainArylideYellow;
-$linkColor-alt: $white;
+$linkColor-alt: $darkWhite;
 $linkColorActive-alt: $mainArylideYellow;
 
 a {
@@ -40,13 +40,20 @@ a {
   }
 }
 
-//Images
+$animation: 0.3s all ease;
+
+//IMAGES
 $imageCorner: 10px;
 $imageShadow: 5px 5px 10px 0px rgba(0, 0, 0, 0.5);
 
+//BUTTON
+$buttonBg: $philippineYellow;
+$buttonBgActive: $mainArylideYellow;
+$buttonColor: $mainRichBlack;
+
 //HEADER
 $headerColor: $white;
-$sectionHeader: $gold;
+$sectionHeader: $philippineYellow;
 
 // SECTION
 $padding-below-sections: 75px;
@@ -56,7 +63,7 @@ $sectionButtonColor: $mainArylideYellow;
 
 //NAVIGATION
 $navigationColorLink: $mainRichBlack;
-$navigationColorActiveLink: $mainCamel;
+$navigationColorActiveLink: $philippineYellow;
 $navigationBackground: $white;
 $navigationMobileMenuBackground: $mainFeldgrau;
 $navLinkFont: "Montserrat";

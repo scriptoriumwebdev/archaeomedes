@@ -51,29 +51,9 @@ section {
   height: auto;
   z-index: 1;
   position: relative;
-
-  &::before {
-    background: $sectionHeader;
-    bottom: 0;
-    content: "";
-    display: block;
-    height: 2px;
-    left: 0;
-    margin-left: auto;
-    margin-right: auto;
-    position: absolute;
-    right: 0;
-    width: 20vw;
-    z-index: 1;
-  }
-  &:first-child {
-    &::before {
-      display: none;
-    }
-  }
   > div {
     @include flex(column, flex-start, space-between);
-    min-height: 80vh;
+    min-height: 100vh;
   }
 }
 
