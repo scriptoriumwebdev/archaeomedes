@@ -12,7 +12,6 @@ h5,
 h6 {
   color: $headerColor;
   font-family: $font-title;
-  // text-shadow: 0 0 6px rgba(0, 0, 0, 1);
   position: relative;
 }
 
@@ -43,14 +42,4 @@ p {
   font-family: $font-text;
   font-size: 1rem;
   margin-bottom: 0.5rem;
-}
-
-a {
-  color: $linkColor;
-
-  &:hover {
-    color: $linkColor;
-    text-shadow: -0.25px -0.25px 0 $linkColor, 0.25px 0.25px $linkColor;
-    // font-weight: 800;
-  }
 }
