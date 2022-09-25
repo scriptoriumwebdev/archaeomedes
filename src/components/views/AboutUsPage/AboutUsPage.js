@@ -18,14 +18,14 @@ const AboutUsPage = () => {
     (i) => i.language === utils.language,
   );
 
-  const teamRef = useRef(null);
+  // const teamRef = useRef(null);
   const aboutTextRef = useRef(null);
 
   useEffect(() => {
     const aboutText = aboutTextRef.current.children;
-    const teamItem = teamRef.current.children;
-
-    gsap.set([aboutText, teamItem], {
+    // const teamItem = teamRef.current.children;
+    // teamItem
+    gsap.set([aboutText], {
       autoAlpha: 0,
       y: 50,
     });
@@ -42,27 +42,28 @@ const AboutUsPage = () => {
         }),
     });
 
-    ScrollTrigger.batch([teamItem], {
-      start: `top bottom -=200px`,
-      onEnter: (batch) =>
-        gsap.to(batch, {
-          autoAlpha: 1,
-          delay: 0.5,
-          overwrite: true,
-          stagger: { each: 0.3 },
-          y: 0,
-        }),
-    });
+    // ScrollTrigger.batch([teamItem], {
+    //   start: `top bottom -=200px`,
+    //   onEnter: (batch) =>
+    //     gsap.to(batch, {
+    //       autoAlpha: 1,
+    //       delay: 0.5,
+    //       overwrite: true,
+    //       stagger: { each: 0.3 },
+    //       y: 0,
+    //     }),
+    // });
 
+    // teamItem
     ScrollTrigger.addEventListener(`refreshInit`, () =>
-      gsap.set([aboutText, teamItem], { y: 50, autoAlpha: 0 })
+      gsap.set([aboutText], { y: 0, x: 0, autoAlpha: 1 })
     );
   }, []);
 
   return (
     <Container className={styles.root}>
-      <SectionHeader>{languageData.title}</SectionHeader>
       <div className={styles.aboutUsTextContainer} ref={aboutTextRef}>
+        <SectionHeader>{languageData.title}</SectionHeader>
         {languageData.aboutText &&
           Array.isArray(languageData.aboutText) &&
           languageData.aboutText.map((item) => (
@@ -75,16 +76,18 @@ const AboutUsPage = () => {
                   )}`}
                 />
               ) : null}
-              {item.type === `paragraph` ? <p>{item.value}</p> : null}
+              {item.type === `paragraph` ? (
+                <p key={item.id}>{item.value}</p>
+              ) : null}
             </div>
           ))}
       </div>
-      <SectionHeader>{languageData.teamTitle}</SectionHeader>
-      <div className={styles.teamGridContainer} ref={teamRef}>
+      {/* <SectionHeader>{languageData.teamTitle}</SectionHeader> */}
+      {/* <div className={styles.teamGridContainer} ref={teamRef}>
         {languageData.team.map((item) => (
           <Person data={item} key={item.id} />
         ))}
-      </div>
+      </div> */}
     </Container>
   );
 };

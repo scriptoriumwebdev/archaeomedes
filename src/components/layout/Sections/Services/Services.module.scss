@@ -1,27 +1,41 @@
 @import "../../../../styles/settings.scss";
 
 .root {
-  // @include flex(column, flex-start, space-between);
   // min-height: 100%;
+  @include flex(column, center, start);
+  // min-height: 100vh;
+  // padding-top: 10vh;
+  position: relative;
+  width: 100%;
+  padding-left: 10%;
+  padding-top: 5%;
+  > :first-child {
+    align-self: flex-start;
+  }
   .cardGrid {
-    align-self: center;
     display: grid;
     grid-column-gap: 1rem;
     grid-row-gap: 1rem;
     grid-template-columns: repeat(1, 1fr);
-    max-width: 1200px;
+    height: 100%;
+    min-height: 25vh;
     padding: 1rem;
-    width: 80%;
+    width: 90%;
+    margin-top: 5vw;
     .card {
       color: $white;
       list-style: none;
       position: relative;
       text-decoration: none;
+      h4 {
+        text-shadow: 3px 3px 0px rgba(0, 0, 0, 0.2);
+        text-align: center;
+      }
     }
     .card:before {
       content: "";
       display: block;
-      padding-bottom: 150%;
+      padding-bottom: 100%;
       width: 100%;
     }
     .cardBackground {
@@ -45,15 +59,16 @@
     }
     .card:hover {
       color: $navigationColorLink;
+      box-shadow: none;
+
       .cardBackground {
-        box-shadow: 0px 0px 50px 0px rgba(255, 255, 255, 1);
         transform: scale(1.05) translateZ(0);
       }
     }
   }
-  .cardGrid:hover > .card:not(:hover) .cardBackground {
-    filter: brightness(0.5) saturate(0) contrast(1.2) blur(20px);
-  }
+  // .cardGrid:hover > .card:not(:hover) .cardBackground {
+  //   filter: brightness(0.5) saturate(0) contrast(1.2) blur(20px);
+  // }
   .cardContent {
     bottom: 0;
     left: 50%;
@@ -63,72 +78,14 @@
   }
 }
 
-@media (min-width: 576px) {
-  .root {
-    .cardGrid {
-      grid-template-columns: repeat(2, 1fr);
-    }
-  }
-}
-
 @media (min-width: 991px) {
-  .root {
-    .cardGrid {
-      grid-template-columns: repeat(4, 1fr);
-    }
+  .root .cardGrid {
+    grid-template-columns: repeat(3, 1fr);
   }
-}
-
-/* XXXL ExtraExtraLarge Devices, UltraWide Desktops  */
-@media (min-width: 1921px) {
-  .root {
+  .cardGrid > div {
+    grid-column: span 2;
   }
-}
-
-/* XXL Extra Extra Large Devices, Desktops  */
-@media (min-width: 1400px) and (max-width: 1920px) {
-  .root {
-  }
-}
-
-/* XL Extra Extra Large Devices, Laptops  */
-@media (min-width: 1200px) and (max-width: 1399px) {
-  .root {
-  }
-}
-
-/* LG Large Devices, Tablets iPad Pro */
-@media only screen and (min-width: 992px) and (max-width: 1199px) {
-  .root {
-  }
-}
-
-/* MD Medium Devices, Tablets iPad */
-@media only screen and (min-width: 768px) and (max-width: 991px) {
-  .root {
-  }
-}
-
-/* SM Small Devices, Small tablets Large Phones */
-@media only screen and (min-width: 576px) and (max-width: 767px) {
-  .root {
-  }
-}
-
-/* Extra Small Devices, Phones */
-@media only screen and (min-width: 0px) and (max-width: 575px) {
-  .root {
-  }
-}
-
-/* Media pointer*/
-@media (hover: hover) and (pointer: fine) {
-  .root {
-  }
-}
-
-/* Media touchable */
-@media (pointer: coarse) {
-  .root {
+  .cardGrid > div:nth-last-child(1):nth-child(odd) {
+    grid-column: 2 / span 2;
   }
 }

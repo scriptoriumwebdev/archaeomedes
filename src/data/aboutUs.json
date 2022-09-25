@@ -16,21 +16,11 @@
       "title": "Über uns",
       "teamTitle": "Unsere Team",
       "buttonTeam": "Unsere Team",
-      "aboutShortText": [
-        {
-          "id": "62d819d7769cc8eb82073a58",
-          "value": "ARCHÄOMEDES GbR, das ist ein eingespieltes Team von fünf Archäologen. Unsere Zusammenarbeit macht uns effizient, flexibel, schnell mit qualitativ hohen Standards."
-        },
-        {
-          "id": "62d819dc216b45d79ea7e108",
-          "value": "Für private und öffentliche Investoren bieten wir kompetente Beratung hinsichtlich der Vereinbarkeit von baulichen und archäologischen Belangen. Wir helfen Ihnen durch unsere Expertise von der Planungsphase und begleiten sie bei der Ausführung ihres Bauprojektes."
-        }
-      ],
       "aboutText": [
         {
-          "id": "62a20060ca0c4f2bed344394",
+          "id": "62d819d7769cc8eb82073a58",
           "type": "paragraph",
-          "value": "ARCHÄOMEDES GbR, das ist ein eingespieltes Team von fünf Archäologen. Unsere Zusammenarbeit macht uns effizient, flexibel, schnell mit qualitativ hohen Standards."
+          "value": "ARCHÄOMEDES GbR ist ein überregional tätiges Archäologen-Team. Unsere erprobte Zusammenarbeit macht uns effizient, flexibel, schnell, und mit qualitativ hohen Standards."
         },
         {
           "id": "62d81349c5d93557724e18ce",
@@ -38,27 +28,22 @@
           "value": "/images/news/20.06.2022/1.webp"
         },
         {
-          "id": "62a200a9f865b85583922080",
+          "id": "62d819dc216b45d79ea7e108",
           "type": "paragraph",
-          "value": "Für private und öffentliche Investoren bieten wir kompetente Beratung hinsichtlich der Vereinbarkeit von baulichen und archäologischen Belangen. Wir helfen Ihnen durch unsere Expertise von der Planungsphase und begleiten sie bei der Ausführung ihres Bauprojektes."
+          "value": "Wir begleiten Sie bei der Planung und Ausführung Ihres Projektes, um bauliche und archäologische Belange in Einklang zu bringen. Dazu bieten wir Ihnen eine kompetente, bauvorgreifende Beratung, und garantieren die effiziente Ausführung der bodendenkmalrechtlichen Vorgaben."
         },
         {
-          "id": "62a200ef448c5f6aaf000d4d",
-          "type": "paragraph",
-          "value": "Unser Erfahrungsschatz erstreckt sich über die verschiedenen archäologischen Zeithorizonte und Kulturepochen von Steinzeit, Bronze- und Eisenzeit, römische Zeit, Mittelalter- bis Neuzeit. "
-        },
-        {
-          "id": "62a201140d59dca02f8a1dfd",
-          "type": "paragraph",
-          "value": "Zahlreiche Baubegleitungen, Stadtkernuntersuchungen, Gas- und Kabelleitungstrassen, Windenergieanlagen und bei großen bauvorvorgreifenden Flächengrabungen gehören zu unserer Erfahrung."
-        },
-        {
-          "id": "62a2021b348ff4085e25423b",
+          "id": "63304a1234b4644f56e68276",
           "type": "paragraph",
           "value": "Unsere Stärke ist, dass wir unsere Dienstleistung überregional und personell flexibel anbieten. Im Bedarfsfalle können wir unser Team schnell aufstocken."
         },
         {
-          "id": "62a200f38f1dacd0bcdc3e8c",
+          "id": "63304a19b552ab9d7bb02fa6",
+          "type": "paragraph",
+          "value": "Wir haben langjährige Erfahrung in Flächengrabungen, Baubegleitungen, Stadtkernuntersuchungen, bei Gas- und Kabelleitungstrassen, sowie Windenergieanlagen. Dabei haben wir zahlreiche archäologische Hinterlassenschaften sachgerecht bearbeitet, welche aus Steinzeit, Bronze- und Eisenzeit, römischer Zeit, Mittelalter oder Neuzeit stammten."
+        },
+        {
+          "id": "63304a40874d88d700721d21",
           "type": "paragraph",
           "value": "Unsere internationalen Kontakte nach Großbritannien, in die Niederlande, nach Polen, Südamerika und die USA unterstützen uns bei unserer Arbeit. Dies gilt auch für eine fachübergreifende Zusammenarbeit mit Anthropologen und Archäobotanikern."
         }
