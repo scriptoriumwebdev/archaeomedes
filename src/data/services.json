@@ -8,31 +8,31 @@
         {
           "id": "62a723e63268d0c651dee865",
           "title": "Beratung",
-          "photo": "/images/services/consulting.webp",
+          "photo": "/images/services/service1.webp",
           "text": ""
         },
         {
           "id": "62a723eb41c243582576cb7c",
           "title": "Prospektion",
-          "photo": "/images/services/prospection.webp",
+          "photo": "/images/services/service2.webp",
           "text": ""
         },
         {
           "id": "62a723effdd03dc166a04e7d",
           "title": "Sachverhaltsermittlung",
-          "photo": "/images/services/facts.webp",
+          "photo": "/images/services/service3.webp",
           "text": ""
         },
         {
           "id": "62a723f1848068635bbf24f8",
           "title": "Ausgrabung",
-          "photo": "/images/services/dig.webp",
+          "photo": "/images/services/service4.webp",
           "text": ""
         },
         {
           "id": "62a723f1848068635bbf24f8",
           "title": "Moderner Technik",
-          "photo": "/images/services/modern.webp",
+          "photo": "/images/services/service5.webp",
           "text": ""
         }
       ]
