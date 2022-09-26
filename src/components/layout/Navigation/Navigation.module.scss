@@ -65,7 +65,7 @@
         content: "";
         width: 0;
         left: 0;
-        bottom: 0;
+        bottom: -25%;
         height: 3px;
         background: $navigationColorActiveLink;
       }
@@ -169,6 +169,21 @@
 
     .burgerButton {
       display: flex;
+    }
+  }
+  .navLink {
+    &:after {
+      top: 150%;
+    }
+    &:hover {
+      &:after {
+        top: 150%;
+      }
+    }
+  }
+  .navLink__active {
+    &:after {
+      bottom: -50%;
     }
   }
 }

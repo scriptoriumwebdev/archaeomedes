@@ -47,6 +47,7 @@ const Navigation = () => {
   }, []); // eslint-disable-line react-hooks/exhaustive-deps
 
   const handleClick = (link) => {
+    console.log(`handle`);
     setActiveRWD(false);
     if (link === `#`) setScroll(false);
     if (link !== `#`) setScroll(true);
@@ -69,6 +70,7 @@ const Navigation = () => {
     const menuLinks = menuLinksRef.current.children;
 
     if (activeRWD) {
+      console.log(`activeRWD`, activeRWD);
       gsap.set([menuLinks], { autoAlpha: 0 });
 
       timeline.to(menuLinks, { autoAlpha: 1, stagger: 0.1, delay: 0.3 });
@@ -144,6 +146,7 @@ const Navigation = () => {
             <NavHashLink
               smooth
               to={`/${item.linkSrc}`}
+              onClick={() => handleClick(item.linkSrc)}
               className={
                 `${location.pathname}${location.hash}` === `/${item.linkSrc}`
                   ? `${styles.navLink__active}`

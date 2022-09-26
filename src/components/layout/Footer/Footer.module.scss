@@ -3,18 +3,18 @@
 .root {
   @include flex(column, center, center);
   color: $darkWhite;
-  overflow: hidden;
-  // padding: 2rem 0 2rem 0;
+  // overflow: hidden;
+  padding: 2rem 0 2rem 0;
 
   .footerRow {
     @include flex(row, center, center);
     width: 100%;
 
-    .footerCol{
+    .footerCol {
       margin: 20px 0 0 0;
     }
 
-    .footerInformationsLinks{
+    .footerInformationsLinks {
       @include flex(column, center, center);
     }
   }

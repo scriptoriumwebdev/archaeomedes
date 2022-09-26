@@ -14,7 +14,6 @@ const SectionHeader = ({ variant = ``, ...otherProps }) => {
     const headerItem = headerRef.current;
     gsap.set([headerItem], {
       autoAlpha: 0,
-      scaleY: 0.5,
     });
 
     ScrollTrigger.batch(headerItem, {
@@ -28,7 +27,7 @@ const SectionHeader = ({ variant = ``, ...otherProps }) => {
     });
 
     ScrollTrigger.addEventListener(`refreshInit`, () =>
-      gsap.set(headerItem, { scaleY: 1 })
+      gsap.set(headerItem, { scaleY: 1, autoAlpha: 1 })
     );
   }, []);
 
