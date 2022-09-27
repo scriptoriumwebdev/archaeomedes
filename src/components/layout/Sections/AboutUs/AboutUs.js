@@ -76,8 +76,12 @@ const AboutUs = () => {
             ref={aboutPhotoRef}
           />
           <div className={styles.aboutUsTextContainer} ref={aboutTextRef}>
-            <p>{languageData.aboutText[0].value}</p>
-            <p>{languageData.aboutText[2].value}</p>
+            <p className={styles.aboutText}>
+              {languageData.aboutText[0].value}
+            </p>
+            <p className={styles.aboutText}>
+              {languageData.aboutText[2].value}
+            </p>
             {/* {languageData.aboutShortText.map((item) => (
             ))} */}
             <HashLink smooth to="/about">

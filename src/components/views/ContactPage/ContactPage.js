@@ -104,7 +104,6 @@ const Contact = () => {
               title="Archeomedes Localization"
               width="100%"
               height="100%"
-              // style="border:0;"
               allowFullScreen=""
               loading="lazy"
               referrerpolicy="no-referrer-when-downgrade"

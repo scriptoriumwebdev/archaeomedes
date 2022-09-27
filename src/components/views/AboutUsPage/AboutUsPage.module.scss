@@ -68,12 +68,54 @@
 
 /* MD Medium Devices, Tablets iPad */
 @media only screen and (min-width: 768px) and (max-width: 991px) {
+  .root {
+    .aboutUsTextContainer {
+      width: 97%;
+      > :first-child {
+        align-self: flex-start;
+        margin-bottom: 5rem;
+      }
+      .aboutUsItem{
+        .aboutUsPageText{
+          font-size: 0.9rem;
+        }
+      }
+    }
+  }
 }
 
 /* SM Small Devices, Small tablets Large Phones */
 @media only screen and (min-width: 576px) and (max-width: 767px) {
+  .root {
+    .aboutUsTextContainer {
+      width: 97%;
+      > :first-child {
+        align-self: flex-start;
+        margin-bottom: 5rem;
+      }
+      .aboutUsItem{
+        .aboutUsPageText{
+          font-size: 0.9rem;
+        }
+      }
+    }
+  }
 }
 
 /* Extra Small Devices, Phones */
 @media only screen and (min-width: 0px) and (max-width: 575px) {
+  .root {
+    .aboutUsTextContainer {
+      width: 97%;
+      > :first-child {
+        align-self: flex-start;
+        margin-bottom: 5rem;
+      }
+      .aboutUsItem{
+        .aboutUsPageText{
+          font-size: 0.9rem;
+        }
+      }
+    }
+  }
 }

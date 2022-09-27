@@ -27,7 +27,7 @@
     img {
       align-self: center;
       display: none;
-      width: 80%;
+      width: 95%;
     }
   }
   .aboutUsImgCol {
@@ -60,25 +60,30 @@
 /* Medium Devices, Tablets iPad */
 @media only screen and (min-width: 768px) and (max-width: 1023px) {
   .root {
-  }
-}
-
-/* Below Medium Devices,*/
-@media only screen and (min-width: 0) and (max-width: 1023px) {
-  .root {
-    .aboutUsTextContainer {
-      align-self: center;
-      margin-right: 0;
-      width: 80%;
-    }
     .aboutUsRow {
-      position: relative;
-    }
-    .aboutUsTextCol {
-      padding-right: 10%;
-      img {
-        margin: 2rem 0 2rem 0;
-        display: block;
+      width: 97%;
+
+      .aboutUsTextCol {
+        width: 100%;
+        padding-left: 0;
+        padding-right: 0;
+
+        > :first-child {
+          margin-left: 1rem;
+          align-self: flex-start;
+        }
+        img {
+          display: block;
+        }
+
+        .aboutUsTextContainer {
+          width: 95%;
+          margin: 1rem;
+
+          .aboutText{
+            font-size: 0.9rem;
+          }
+        }
       }
     }
   }
@@ -86,8 +91,64 @@
 
 /* Small Devices, Small tablets Large Phones */
 @media only screen and (min-width: 480px) and (max-width: 767px) {
+  .root {
+    .aboutUsRow {
+      width: 97%;
+
+      .aboutUsTextCol {
+        width: 100%;
+        padding-left: 0;
+        padding-right: 0;
+
+        > :first-child {
+          margin-left: 1rem;
+          align-self: flex-start;
+        }
+        img {
+          display: block;
+        }
+
+        .aboutUsTextContainer {
+          width: 95%;
+          margin: 1rem;
+
+          .aboutText{
+            font-size: 0.9rem;
+          }
+        }
+      }
+    }
+  }
 }
 
 /* Extra Small Devices, Phones */
 @media only screen and (min-width: 0px) and (max-width: 479px) {
+  .root {
+    .aboutUsRow {
+      width: 97%;
+
+      .aboutUsTextCol {
+        width: 100%;
+        padding-left: 0;
+        padding-right: 0;
+
+        > :first-child {
+          margin-left: 1rem;
+          align-self: flex-start;
+        }
+        img {
+          display: block;
+        }
+
+        .aboutUsTextContainer {
+          width: 95%;
+          margin: 1rem;
+
+          .aboutText{
+            font-size: 0.9rem;
+          }
+        }
+      }
+    }
+  }
 }

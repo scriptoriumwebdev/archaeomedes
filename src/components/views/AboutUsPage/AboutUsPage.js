@@ -77,7 +77,9 @@ const AboutUsPage = () => {
                 />
               ) : null}
               {item.type === `paragraph` ? (
-                <p key={item.id}>{item.value}</p>
+                <p className={styles.aboutUsPageText} key={item.id}>
+                  {item.value}
+                </p>
               ) : null}
             </div>
           ))}
