@@ -7,9 +7,10 @@
   // padding-top: 10vh;
   position: relative;
   width: 100%;
+  overflow-x: hidden;
   padding-top: 5%;
   > :first-child {
-    margin-left: 10%;
+    margin-left: 1rem;
     align-self: flex-start;
   }
   .cardGrid {
@@ -18,10 +19,11 @@
     grid-row-gap: 1rem;
     grid-template-columns: repeat(1, 1fr);
     height: 100%;
+    margin-top: 5vw;
+    max-width: 1200px;
     min-height: 25vh;
     padding: 1rem;
-    width: 90%;
-    margin-top: 5vw;
+    width: 80%;
     .card {
       color: $white;
       list-style: none;
@@ -79,9 +81,15 @@
 }
 
 @media (min-width: 991px) {
+  .root {
+    > :first-child {
+      margin-left: 10%;
+    }
+  }
   .root .cardGrid {
     grid-template-columns: repeat(3, 1fr);
   }
+
   .cardGrid > div {
     grid-column: span 2;
   }
