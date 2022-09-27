@@ -100,13 +100,11 @@ const Contact = () => {
         >
           <div className={styles.divMap}>
             <iframe
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d81679.65335426765!2d6.184447498163711!3d51.57145138543581!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c76666e58f2ff3%3A0x844d66f39ee850c2!2sMaasstra%C3%9Fe%2012%2C%2047623%20Kevelaer%2C%20Niemcy!5e0!3m2!1spl!2spl!4v1664104728227!5m2!1spl!2spl"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6812.637337727449!2d6.237752585078448!3d51.582725650128644!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c76666e58f2ff3%3A0x844d66f39ee850c2!2sMaasstra%C3%9Fe%2012%2C%2047623%20Kevelaer%2C%20Germany!5e0!3m2!1sen!2spl!4v1664301450862!5m2!1sen!2spl"
               title="Archeomedes Localization"
               width="100%"
               height="100%"
-              // position="fixed"
-              // display="flex"
-              // style="border:0"
+              // style="border:0;"
               allowFullScreen=""
               loading="lazy"
               referrerpolicy="no-referrer-when-downgrade"

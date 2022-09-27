@@ -7,34 +7,46 @@ import styles from './Footer.module.scss';
 const Footer = () => (
   <footer className={styles.root}>
     <Row className={styles.footerRow}>
-      <Col className={`col-12 col-lg-4 ${styles.footerCol}`}>
+      <Col className={`col-12 col-lg-4 order-2 order-md-1 ${styles.footerCol}`}>
         <div className={styles.yearBox}>
-          <p>Archaomedes GbR</p>
+          <p className={styles.textFooter}>Archaomedes GbR</p>
+          <p className={styles.textFooter}>Maasstraße 12</p>
+          <p className={styles.textFooter}>47623 Kevelaer</p>
+          <p className={styles.textFooter}>Nordrhein-Westfalen, Deutschland</p>
         </div>
       </Col>
-      <Col className={`col-12 col-lg-4 ${styles.footerCol}`}>
+      <Col className={`col-12 col-lg-4 order-2 order-md-2 ${styles.footerCol}`}>
         <div className={styles.yearBox}>
-          <div className={styles.linkBox}>
-            <p className={styles.textFooter}>© 2022</p>
+          <p className={styles.textFooter}>
+            © 2022
+            {` `}
             <a
+              className={styles.footerLinks}
               href="https://www.archaeomedes.de/"
-              className={styles.textFooter}
             >
               Archaeomedes
             </a>
-          </div>
+          </p>
           <p className={styles.textFooter}>
+            Designed & Coded by
             {` `}
-            Designed & Coded by{` `}
-            <a href="mailto:info@scriptorium.dev">Scriptorium</a>
-            {` `}
+            <a
+              className={styles.footerLinks}
+              href="mailto:info@scriptorium.dev"
+            >
+              Scriptorium
+            </a>
           </p>
         </div>
       </Col>
-      <Col className={`col-12 col-lg-4 ${styles.footerCol}`}>
+      <Col className={`col-12 col-lg-4 order-1 order-md-3 ${styles.footerCol}`}>
         <div className={styles.footerInformationsLinks}>
-          <NavLink to="/impressum">Impressum</NavLink>
-          <NavLink to="/datenschutzerklarung">Datenschutzerklärung</NavLink>
+          <NavLink className={styles.textFooter} to="/impressum">
+            Impressum
+          </NavLink>
+          <NavLink className={styles.textFooter} to="/datenschutzerklarung">
+            Datenschutzerklärung
+          </NavLink>
         </div>
       </Col>
     </Row>

@@ -2,16 +2,16 @@
 
 .root {
   @include flex(column, center, center);
+  border-top: 1px solid gold;
   color: $darkWhite;
-  // overflow: hidden;
-  padding: 2rem 0 2rem 0;
+  width: 100%;
 
   .footerRow {
     @include flex(row, center, center);
     width: 100%;
 
     .footerCol {
-      margin: 20px 0 0 0;
+      margin: 10px 0 10px 0;
     }
 
     .footerInformationsLinks {
@@ -22,16 +22,16 @@
 
 .yearBox {
   @include flex(column, center, center);
-  // width: 100%;
-}
-
-.linkBox {
-  display: flex;
-  // flex-direction: row;
 }
 
 .textFooter {
-  margin: 5px;
+  margin: 0 5px 0 0;
+  text-decoration: none;
+  font-size: 0.8rem;
+}
+
+.footerLinks {
+  text-decoration: none;
 }
 
 /* XXXL ExtraExtraLarge Devices, UltraWide Desktops  */
@@ -48,16 +48,28 @@
 
 /* LG Large Devices, Tablets iPad Pro */
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
+  .yearBox {
+    @include flex(column, center, center);
+  }
 }
 
 /* MD Medium Devices, Tablets iPad */
 @media only screen and (min-width: 768px) and (max-width: 991px) {
+  .yearBox {
+    @include flex(column, center, center);
+  }
 }
 
 /* SM Small Devices, Small tablets Large Phones */
 @media only screen and (min-width: 576px) and (max-width: 767px) {
+  .yearBox {
+    @include flex(column, center, center);
+  }
 }
 
 /* Extra Small Devices, Phones */
 @media only screen and (min-width: 0px) and (max-width: 575px) {
+  .yearBox {
+    @include flex(column, center, center);
+  }
 }
