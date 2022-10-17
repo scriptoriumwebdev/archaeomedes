@@ -5,11 +5,11 @@
   border-top: 1px solid gold;
   color: $darkWhite;
   width: 100%;
-
   .footerRow {
     @include flex(row, center, center);
     width: 100%;
-
+    background-color: $lightGreen;
+    z-index: 1;
     .footerCol {
       margin: 10px 0 10px 0;
     }

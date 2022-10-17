@@ -17,6 +17,9 @@ const Navigation = () => {
   const menuRef = useRef(null);
   const menuLinksRef = useRef(null);
 
+  const location = useLocation();
+  const sections = document.getElementsByTagName(`section`);
+
   const timeline = gsap.timeline({
     duration: 0.3,
     defaults: {
@@ -25,7 +28,9 @@ const Navigation = () => {
   });
 
   const scrollFunction = () => {
-    if (window.location.pathname === `/`) setScroll(false);
+    if (window.location.pathname === `/`) {
+      setScroll(false);
+    }
     if (window.location.pathname !== `/`) setScroll(true);
   };
 
@@ -46,16 +51,13 @@ const Navigation = () => {
     scrollFunction();
   }, []); // eslint-disable-line react-hooks/exhaustive-deps
 
-  const handleClick = (link) => {
-    setActiveRWD(false);
-    if (link === `#`) setScroll(false);
-    if (link !== `#`) {
-      setScroll(true);
+  useEffect(() => {
+    const nonActiveLink = [`/datenschutzerklarung`, `/impressum`];
+    if (nonActiveLink.includes(location.pathname)) {
+      setActiveLink(`none`);
     }
-    if (!link.startsWith(`#`)) {
-      setActiveLink(link.replace(`#`, ``));
-    }
-  };
+    setActiveLink(location.pathname.replace(`/`, ``));
+  }, [location]);
 
   useEffect(() => {
     window.onscroll = function () {
@@ -80,6 +82,23 @@ const Navigation = () => {
     }
   }, [activeRWD]); // eslint-disable-line react-hooks/exhaustive-deps
 
+  function isInViewport(el) {
+    const rect = el.getBoundingClientRect();
+    if (
+      Math.floor(Math.round(rect.bottom)) >= 0 &&
+      Math.floor(Math.round(rect.bottom)) <= rect.height + 50
+    ) {
+      setActiveLink(el.id);
+      // console.log(`scroll`);
+    }
+  }
+
+  window.addEventListener(`scroll`, (event) => {
+    for (const section of sections) {
+      isInViewport(section);
+    }
+  });
+
   const useOutsideMenu = (ref) => {
     useEffect(() => {
       function handleClickOutside(e) {
@@ -96,28 +115,17 @@ const Navigation = () => {
 
   useOutsideMenu(menuRef);
 
-  const location = useLocation();
-  const sections = document.getElementsByTagName(`section`);
-
-  function isInViewport(el) {
-    const rect = el.getBoundingClientRect();
-    if (
-      Math.floor(Math.round(rect.bottom)) >= 0 &&
-      Math.floor(Math.round(rect.bottom)) <= rect.height + 50
-    ) {
-      if (activeLink) setActiveLink(el.id);
+  const handleClick = (link) => {
+    setActiveRWD(false);
+    if (link === `#`) setScroll(false);
+    if (link !== `#`) {
+      setScroll(true);
     }
-  }
-
-  window.addEventListener(`scroll`, (event) => {
-    for (const section of sections) {
-      isInViewport(section);
+    if (activeLink !== link) {
+      setActiveLink(link.replace(`#`, ``));
     }
-  });
+  };
 
-  useEffect(() => {
-    console.log(`activeLink`, activeLink);
-  }, [activeLink]);
   return (
     <nav className={scroll ? styles.root__scroll : styles.root} ref={menuRef}>
       <Col className={`${styles.mobileNavi} col-12 col-md-6`}>
