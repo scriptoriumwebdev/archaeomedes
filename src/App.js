@@ -14,6 +14,7 @@ import ContactPage from './components/views/ContactPage/ContactPage';
 import ScrollToTop from './components/utils/ScrollToTop';
 import Impressum from './components/views/ImpressumPage/ImpressumPage';
 import PrivacyPolicy from './components/views/PrivacyPolicyPage/PrivacyPolicyPage';
+import NotFound from './components/views/NotFound/NotFound';
 
 function App() {
   gsap.registerPlugin(ScrollTrigger);
@@ -31,6 +32,7 @@ function App() {
             <Route path="/kontakt" element={<ContactPage />} />
             <Route path="/impressum" element={<Impressum />} />
             <Route path="/datenschutzerklarung" element={<PrivacyPolicy />} />
+            <Route element={<NotFound />} path="*" exact />
           </Routes>
         </MainLayout>
       </BrowserRouter>
