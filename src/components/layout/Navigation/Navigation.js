@@ -12,7 +12,7 @@ import navigation from '../../../data/navigation.json';
 const Navigation = () => {
   const [scroll, setScroll] = useState(true);
   const [activeRWD, setActiveRWD] = useState(false);
-  const [activeLink, setActiveLink] = useState(false);
+  const [activeLink, setActiveLink] = useState(`/`);
 
   const menuRef = useRef(null);
   const menuLinksRef = useRef(null);
@@ -50,6 +50,7 @@ const Navigation = () => {
     setActiveRWD(false);
     if (link === `#`) setScroll(false);
     if (link !== `#`) setScroll(true);
+    console.log(`link`, link.replace(`#`, ``));
   };
 
   useEffect(() => {
@@ -69,7 +70,6 @@ const Navigation = () => {
     const menuLinks = menuLinksRef.current.children;
 
     if (activeRWD) {
-      console.log(`activeRWD`, activeRWD);
       gsap.set([menuLinks], { autoAlpha: 0 });
 
       timeline.to(menuLinks, { autoAlpha: 1, stagger: 0.1, delay: 0.3 });
@@ -95,32 +95,25 @@ const Navigation = () => {
   const location = useLocation();
   const sections = document.getElementsByTagName(`section`);
 
-  // function isInViewport(el) {
-  //   // console.log(`element`, el);
-  //   const rect = el.getBoundingClientRect();
-  //   if (
-  //     Math.floor(Math.round(rect.bottom)) >= 0 &&
-  //     Math.floor(Math.round(rect.bottom)) <= rect.height
-  //   ) {
-  //     if (activeLink) setActiveLink(el.id);
+  function isInViewport(el) {
+    const rect = el.getBoundingClientRect();
+    if (
+      Math.floor(Math.round(rect.bottom)) >= 0 &&
+      Math.floor(Math.round(rect.bottom)) <= rect.height + 50
+    ) {
+      if (activeLink) setActiveLink(el.id);
+    }
+  }
 
-  //     // if (activeLink !== el.id) {
-  //     //   setLink(el.id);
-  //     // }
-  //   }
-  // }
+  window.addEventListener(`scroll`, (e) => {
+    for (const section of sections) {
+      isInViewport(section);
+    }
+  });
 
-  // window.addEventListener(`scroll`, (event) => {
-  //   // console.log(`section`, sections);
-  //   // console.log(`loc`, location.hash);
-  //   // console.log(`loc`, location.pathname);
-  //   for (const item of sections) {
-  //     isInViewport(item);
-  //   }
-  //   console.log(`active link`, activeLink);
-  // });
-
-  // sections.forEach(isInViewport);
+  useEffect(() => {
+    console.log(`activeLink`, activeLink);
+  }, [activeLink]);
   return (
     <nav className={scroll ? styles.root__scroll : styles.root} ref={menuRef}>
       <Col className={`${styles.mobileNavi} col-12 col-md-6`}>
@@ -150,11 +143,17 @@ const Navigation = () => {
               smooth
               to={`/${item.linkSrc}`}
               onClick={() => handleClick(item.linkSrc)}
-              className={
-                `${location.pathname}${location.hash}` === `/${item.linkSrc}`
-                  ? `${styles.navLink__active}`
-                  : `${styles.navLink}`
-              }
+              // className={
+              //   `${location.pathname}${location.hash}` === `/${item.linkSrc}` &&
+              //   activeLink
+              //     ? `${styles.navLink__active}`
+              //     : `${styles.navLink}`
+              // }
+              className={`${styles.navLink} ${
+                activeLink === `${item.linkSrc.replace(`#`, ``)}`
+                  ? styles.navLink__active
+                  : ``
+              }`}
             >
               {item.linkName}
             </NavHashLink>
