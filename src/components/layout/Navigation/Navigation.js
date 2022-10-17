@@ -49,8 +49,12 @@ const Navigation = () => {
   const handleClick = (link) => {
     setActiveRWD(false);
     if (link === `#`) setScroll(false);
-    if (link !== `#`) setScroll(true);
-    setActiveLink(link.replace(`#`, ``));
+    if (link !== `#`) {
+      setScroll(true);
+    }
+    if (!link.startsWith(`#`)) {
+      setActiveLink(link.replace(`#`, ``));
+    }
   };
 
   useEffect(() => {
