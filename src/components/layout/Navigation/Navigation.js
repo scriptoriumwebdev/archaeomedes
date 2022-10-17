@@ -32,7 +32,7 @@ const Navigation = () => {
   useEffect(() => {
     const menuLinks = menuLinksRef.current.children;
 
-    let linkDelay = 0.3;
+    let linkDelay = 0.1;
 
     if (
       window.location.pathname === `/` &&
@@ -47,7 +47,6 @@ const Navigation = () => {
   }, []); // eslint-disable-line react-hooks/exhaustive-deps
 
   const handleClick = (link) => {
-    console.log(`handle`);
     setActiveRWD(false);
     if (link === `#`) setScroll(false);
     if (link !== `#`) setScroll(true);
@@ -124,16 +123,20 @@ const Navigation = () => {
   // sections.forEach(isInViewport);
   return (
     <nav className={scroll ? styles.root__scroll : styles.root} ref={menuRef}>
-      <HamburgerSqueeze
-        className={styles.burgerButton}
-        id="burgerButton"
-        isActive={activeRWD}
-        onClick={() => setActiveRWD(!activeRWD)}
-      />
-      <Col className={`${styles.logoCol} col-12 col-md-6`}>
-        <NavHashLink smooth to="/#" onClick={() => handleClick(`#`)}>
-          <img src="/images/logo.png" alt="Archaeomedes" />
-        </NavHashLink>
+      <Col className={`${styles.mobileNavi} col-12 col-md-6`}>
+        <Col className={`col-9 col-md-6 ${styles.colLogo}`}>
+          <NavHashLink smooth to="/#" onClick={() => handleClick(`#`)}>
+            <img src="/images/logo.png" alt="Archaeomedes" />
+          </NavHashLink>
+        </Col>
+        <Col className="col-3 col-md-6">
+          <HamburgerSqueeze
+            className={styles.burgerButton}
+            id="burgerButton"
+            isActive={activeRWD}
+            onClick={() => setActiveRWD(!activeRWD)}
+          />
+        </Col>
       </Col>
       <Col
         className={`${

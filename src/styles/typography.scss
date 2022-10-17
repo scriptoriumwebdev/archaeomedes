@@ -24,18 +24,6 @@ h1 {
 
 h2 {
   font-size: clamp(0.5rem, 6vw, 28px);
-  &::after {
-    background: $sectionHeader;
-    box-shadow: 3px 3px 0px rgba(0, 0, 0, 0.2);
-    content: "";
-    display: block;
-    height: 12px;
-    left: -1%;
-    position: absolute;
-    top: 70%;
-    width: 102%;
-    z-index: -1;
-  }
 }
 
 p {
