@@ -50,7 +50,7 @@ const Navigation = () => {
     setActiveRWD(false);
     if (link === `#`) setScroll(false);
     if (link !== `#`) setScroll(true);
-    console.log(`link`, link.replace(`#`, ``));
+    setActiveLink(link.replace(`#`, ``));
   };
 
   useEffect(() => {
@@ -105,7 +105,7 @@ const Navigation = () => {
     }
   }
 
-  window.addEventListener(`scroll`, (e) => {
+  window.addEventListener(`scroll`, (event) => {
     for (const section of sections) {
       isInViewport(section);
     }
@@ -143,12 +143,6 @@ const Navigation = () => {
               smooth
               to={`/${item.linkSrc}`}
               onClick={() => handleClick(item.linkSrc)}
-              // className={
-              //   `${location.pathname}${location.hash}` === `/${item.linkSrc}` &&
-              //   activeLink
-              //     ? `${styles.navLink__active}`
-              //     : `${styles.navLink}`
-              // }
               className={`${styles.navLink} ${
                 activeLink === `${item.linkSrc.replace(`#`, ``)}`
                   ? styles.navLink__active
