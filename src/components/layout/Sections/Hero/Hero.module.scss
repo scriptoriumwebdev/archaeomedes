@@ -14,7 +14,7 @@
     height: 85%;
     object-fit: cover;
     overflow: hidden;
-    // position: fixed;
+    position: fixed;
     top: 0;
     width: 100%;
     z-index: -2;
@@ -83,6 +83,17 @@
 .subheader {
   font-weight: 400;
   text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.2);
+  &:after {
+    background: $sectionHeader;
+    box-shadow: 3px 3px 0px rgba(0, 0, 0, 0.2);
+    content: "";
+    display: block;
+    height: 2px;
+    position: absolute;
+    bottom: -10%;
+    width: 102%;
+    z-index: -2;
+  }
 }
 
 /* XXXL ExtraExtraLarge Devices, UltraWide Desktops  */

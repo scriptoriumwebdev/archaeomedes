@@ -12,10 +12,13 @@ import navigation from '../../../data/navigation.json';
 const Navigation = () => {
   const [scroll, setScroll] = useState(true);
   const [activeRWD, setActiveRWD] = useState(false);
-  const [activeLink, setActiveLink] = useState(false);
+  const [activeLink, setActiveLink] = useState(`/`);
 
   const menuRef = useRef(null);
   const menuLinksRef = useRef(null);
+
+  const location = useLocation();
+  const sections = document.getElementsByTagName(`section`);
 
   const timeline = gsap.timeline({
     duration: 0.3,
@@ -25,14 +28,16 @@ const Navigation = () => {
   });
 
   const scrollFunction = () => {
-    if (window.location.pathname === `/`) setScroll(false);
+    if (window.location.pathname === `/`) {
+      setScroll(false);
+    }
     if (window.location.pathname !== `/`) setScroll(true);
   };
 
   useEffect(() => {
     const menuLinks = menuLinksRef.current.children;
 
-    let linkDelay = 0.3;
+    let linkDelay = 0.1;
 
     if (
       window.location.pathname === `/` &&
@@ -46,12 +51,13 @@ const Navigation = () => {
     scrollFunction();
   }, []); // eslint-disable-line react-hooks/exhaustive-deps
 
-  const handleClick = (link) => {
-    console.log(`handle`);
-    setActiveRWD(false);
-    if (link === `#`) setScroll(false);
-    if (link !== `#`) setScroll(true);
-  };
+  useEffect(() => {
+    const nonActiveLink = [`/datenschutzerklarung`, `/impressum`];
+    if (nonActiveLink.includes(location.pathname)) {
+      setActiveLink(`none`);
+    }
+    setActiveLink(location.pathname.replace(`/`, ``));
+  }, [location]);
 
   useEffect(() => {
     window.onscroll = function () {
@@ -70,12 +76,28 @@ const Navigation = () => {
     const menuLinks = menuLinksRef.current.children;
 
     if (activeRWD) {
-      console.log(`activeRWD`, activeRWD);
       gsap.set([menuLinks], { autoAlpha: 0 });
 
       timeline.to(menuLinks, { autoAlpha: 1, stagger: 0.1, delay: 0.3 });
     }
   }, [activeRWD]); // eslint-disable-line react-hooks/exhaustive-deps
+
+  function isInViewport(el) {
+    const rect = el.getBoundingClientRect();
+    if (
+      Math.floor(Math.round(rect.bottom)) >= 0 &&
+      Math.floor(Math.round(rect.bottom)) <= rect.height + 50
+    ) {
+      setActiveLink(el.id);
+      // console.log(`scroll`);
+    }
+  }
+
+  window.addEventListener(`scroll`, (event) => {
+    for (const section of sections) {
+      isInViewport(section);
+    }
+  });
 
   const useOutsideMenu = (ref) => {
     useEffect(() => {
@@ -93,47 +115,33 @@ const Navigation = () => {
 
   useOutsideMenu(menuRef);
 
-  const location = useLocation();
-  const sections = document.getElementsByTagName(`section`);
+  const handleClick = (link) => {
+    setActiveRWD(false);
+    if (link === `#`) setScroll(false);
+    if (link !== `#`) {
+      setScroll(true);
+    }
+    if (activeLink !== link) {
+      setActiveLink(link.replace(`#`, ``));
+    }
+  };
 
-  // function isInViewport(el) {
-  //   // console.log(`element`, el);
-  //   const rect = el.getBoundingClientRect();
-  //   if (
-  //     Math.floor(Math.round(rect.bottom)) >= 0 &&
-  //     Math.floor(Math.round(rect.bottom)) <= rect.height
-  //   ) {
-  //     if (activeLink) setActiveLink(el.id);
-
-  //     // if (activeLink !== el.id) {
-  //     //   setLink(el.id);
-  //     // }
-  //   }
-  // }
-
-  // window.addEventListener(`scroll`, (event) => {
-  //   // console.log(`section`, sections);
-  //   // console.log(`loc`, location.hash);
-  //   // console.log(`loc`, location.pathname);
-  //   for (const item of sections) {
-  //     isInViewport(item);
-  //   }
-  //   console.log(`active link`, activeLink);
-  // });
-
-  // sections.forEach(isInViewport);
   return (
     <nav className={scroll ? styles.root__scroll : styles.root} ref={menuRef}>
-      <HamburgerSqueeze
-        className={styles.burgerButton}
-        id="burgerButton"
-        isActive={activeRWD}
-        onClick={() => setActiveRWD(!activeRWD)}
-      />
-      <Col className={`${styles.logoCol} col-12 col-md-6`}>
-        <NavHashLink smooth to="/#" onClick={() => handleClick(`#`)}>
-          <img src="/images/logo.png" alt="Archaeomedes" />
-        </NavHashLink>
+      <Col className={`${styles.mobileNavi} col-12 col-md-6`}>
+        <Col className={`col-9 col-md-6 ${styles.colLogo}`}>
+          <NavHashLink smooth to="/#" onClick={() => handleClick(`#`)}>
+            <img src="/images/logo.png" alt="Archaeomedes" />
+          </NavHashLink>
+        </Col>
+        <Col className="col-3 col-md-6">
+          <HamburgerSqueeze
+            className={styles.burgerButton}
+            id="burgerButton"
+            isActive={activeRWD}
+            onClick={() => setActiveRWD(!activeRWD)}
+          />
+        </Col>
       </Col>
       <Col
         className={`${
@@ -147,11 +155,11 @@ const Navigation = () => {
               smooth
               to={`/${item.linkSrc}`}
               onClick={() => handleClick(item.linkSrc)}
-              className={
-                `${location.pathname}${location.hash}` === `/${item.linkSrc}`
-                  ? `${styles.navLink__active}`
-                  : `${styles.navLink}`
-              }
+              className={`${styles.navLink} ${
+                activeLink === `${item.linkSrc.replace(`#`, ``)}`
+                  ? styles.navLink__active
+                  : ``
+              }`}
             >
               {item.linkName}
             </NavHashLink>

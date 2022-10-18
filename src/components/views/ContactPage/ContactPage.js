@@ -82,7 +82,9 @@ const Contact = () => {
                       </Col>
                       <Col className="col-10 pt-2 pb-2  d-flex flex-column align-items-start justify-content-center">
                         {Array.isArray(item.textData) ? (
-                          item.textData.map((i) => <p>{i.text}</p>)
+                          item.textData.map((i, index) => (
+                            <p key={index}>{i.text}</p>
+                          ))
                         ) : (
                           <p>{item.textData}</p>
                         )}

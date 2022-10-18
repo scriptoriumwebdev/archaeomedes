@@ -14,29 +14,30 @@
     border: none;
     bottom: 2vh;
     outline: none;
-    position: fixed;
     right: 2vh;
     z-index: 100;
     span,
     span:before,
     span:after {
-      outline-style: solid;
-      outline-width: 1px;
-      outline-color: $darkWhite;
+      outline: none;
+      background-color: $pearlNightBlue;
     }
   }
 
-  .logoCol {
+  .mobileNavi {
     @include flex(row, center, flex-start);
     background: $navigationBackground;
     height: 100%;
     transform: $animation;
     padding-left: 2rem;
-    a {
+    .colLogo {
       height: 100%;
-      img {
+      a {
         height: 100%;
-        box-shadow: none;
+        img {
+          height: 100%;
+          box-shadow: none;
+        }
       }
     }
   }
@@ -61,7 +62,7 @@
       width: 100%;
       &:after {
         position: absolute;
-        transition: 0.3s;
+        transition: 0.1s;
         content: "";
         width: 0;
         left: 0;
@@ -128,7 +129,7 @@
 
 @media only screen and (min-width: 0px) and (max-width: 767px) {
   .root {
-    .logoCol {
+    .mobileNavi {
       @include flex(row, center, center);
       padding-left: 0;
       position: relative;
@@ -136,30 +137,25 @@
         margin-right: 0;
         margin-left: 0;
         position: absolute;
-        transform: translate(-50%, 0);
       }
     }
     .menu {
       background: $navigationBackground;
       border-radius: 0;
-      bottom: 0;
+      top: 0;
       filter: drop-shadow(5px 5px 40px rgba(0, 0, 0, 0.4));
       flex-direction: column;
       height: 100%;
       right: 0;
       margin: 0;
       position: fixed;
-      text-align: left;
-      transform: scale(1);
       transition: all 0.5s;
       visibility: visible;
-      width: 35%;
+      width: 100%;
       justify-content: center;
+      z-index: -1;
       &__hidden {
-        border-radius: 50%;
-        bottom: -80%;
-        right: -100%;
-        transform: scale(0.1);
+        top: -100%;
       }
       & > div {
         @include flex(column, center, center);

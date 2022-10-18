@@ -30,7 +30,6 @@ const Impressum = () => {
               {item.type === `paragraph` ? (
                 <p className={styles.impressumText}>{item.value}</p>
               ) : null}
-              {console.log(item)}
             </div>
           ))}
       </div>
