@@ -1,0 +1,134 @@
+@import "../../../styles/settings.scss";
+
+.root {
+  @include flex(column, center, center);
+  margin-bottom: 5vh;
+  margin-top: 5vh;
+  min-height: 100vh;
+  position: relative;
+  z-index: 1;
+
+  .aboutUsTextContainer {
+    @include flex(column, center, center);
+    align-self: center;
+    margin: 5rem 0 5rem 0;
+    position: relative;
+    text-align: left;
+    width: 70%;
+    > :first-child {
+      align-self: flex-start;
+      margin-bottom: 5rem;
+    }
+
+    .aboutUsItem {
+      // @include flex(column, center, center);
+      width: 100%;
+      // min-height: 40vh;
+
+      img {
+        height: auto;
+        margin: 2rem 0 2rem 0;
+        width: 100%;
+      }
+    }
+
+    .serviceList {
+      list-style: none;
+      color: white;
+    }
+
+    // .serviceSpan {
+    //   color: white;
+    //   padding: 0;
+    //   margin: 0;
+    // }
+  }
+  // .teamGridContainer {
+  //   display: grid;
+  //   grid-column-gap: 1rem;
+  //   grid-row-gap: 1rem;
+  //   grid-template-columns: repeat(1, 1fr);
+  //   height: 100%;
+  //   min-height: 30vh;
+  //   padding: 1rem;
+  //   width: 100%;
+  // }
+}
+
+@media (min-width: 991px) {
+  .root {
+    // .teamGridContainer {
+    //   grid-template-columns: repeat(3, 1fr);
+    // }
+  }
+}
+
+/* XXXL ExtraExtraLarge Devices, UltraWide Desktops  */
+@media (min-width: 1921px) {
+}
+
+/* XXL Extra Extra Large Devices, Desktops  */
+@media (min-width: 1400px) and (max-width: 1920px) {
+}
+
+/* XL Extra Extra Large Devices, Laptops  */
+@media (min-width: 1200px) and (max-width: 1399px) {
+}
+
+/* LG Large Devices, Tablets iPad Pro */
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+}
+
+/* MD Medium Devices, Tablets iPad */
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .root {
+    .aboutUsTextContainer {
+      width: 97%;
+      > :first-child {
+        align-self: flex-start;
+        margin-bottom: 5rem;
+      }
+      .aboutUsItem{
+        .aboutUsPageText{
+          font-size: 0.9rem;
+        }
+      }
+    }
+  }
+}
+
+/* SM Small Devices, Small tablets Large Phones */
+@media only screen and (min-width: 576px) and (max-width: 767px) {
+  .root {
+    .aboutUsTextContainer {
+      width: 97%;
+      > :first-child {
+        align-self: flex-start;
+        margin-bottom: 5rem;
+      }
+      .aboutUsItem{
+        .aboutUsPageText{
+          font-size: 0.9rem;
+        }
+      }
+    }
+  }
+}
+
+/* Extra Small Devices, Phones */
+@media only screen and (min-width: 0px) and (max-width: 575px) {
+  .root {
+    .aboutUsTextContainer {
+      width: 97%;
+      > :first-child {
+        align-self: flex-start;
+        margin-bottom: 5rem;
+      }
+      .aboutUsItem{
+        .aboutUsPageText{
+          font-size: 0.9rem;
+        }
+      }
+    }
+  }
+}

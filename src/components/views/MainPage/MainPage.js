@@ -1,9 +1,8 @@
 import React from 'react';
 import Hero from '../../layout/Sections/Hero/Hero';
-import News from '../../layout/Sections/News/News';
+// import News from '../../layout/Sections/News/News';
 import AboutUs from '../../layout/Sections/AboutUs/AboutUs';
 import Services from '../../layout/Sections/Services/Services';
-import ContactPage from '../ContactPage/ContactPage';
 
 import styles from './MainPage.module.scss';
 
@@ -15,10 +14,10 @@ const MainPage = () => (
     {/* <section id="news">
       <News />
     </section> */}
-    <section id="aboutUs">
+    <section id="uber-uns">
       <AboutUs />
     </section>
-    <section id="services">
+    <section id="leistungen">
       <Services />
     </section>
   </div>

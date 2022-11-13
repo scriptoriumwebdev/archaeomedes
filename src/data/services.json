@@ -7,31 +7,85 @@
       "services": [
         {
           "id": "62a723e63268d0c651dee865",
-          "title": "Beratung",
+          "title": "Beratung und Fachgutachten",
+          "titleUrl": "beratung-und-fachgutachten",
           "photo": "/images/services/service1-1.webp",
-          "text": ""
+          "text": "",
+          "serviceData" :[
+            {
+              "id": "636e6aad6f10d45319e53a88",
+              "type": "paragraph",
+              "value": "Wir bieten unsere Fachexpertise, um Sie bei der Planung Ihres Vorhabens im Hinblick auf mögliche denkmalrechtliche Auflagen umfassend zu beraten. Dabei entwickeln wir für Sie konzeptionelle, sachgerechte Lösungswege. Mithilfe unseres Partnernetzwerks können wir bei Bedarf verschiedene Fachgutachten erstellen: "
+            },
+            {
+              "id": "636e6c0180e84584957c3bfd",
+              "type": "list",
+              "value": "Archäologie,"
+            },
+            {
+              "id": "636e6c4d20ce6f3f9f58b1c2",
+              "type": "list",
+              "value": "Anthropologie,"
+            },
+            {
+              "id": "636e6c0180e84584957c3bfd",
+              "type": "list",
+              "value": "Archäobotanik."
+            }
+          ]
         },
         {
           "id": "62a723eb41c243582576cb7c",
-          "title": "Prospektion",
+          "title": "Prospektion und Sachverhaltsermittlung",
+          "titleUrl": "prospektion-und-sachverhaltsermittlung",
           "photo": "/images/services/service2.webp",
-          "text": ""
+          "text": "",
+          "serviceData" :[
+            {
+              "id": "636e81385c2af78dd6cfeee3",
+              "type": "paragraph",
+              "value": "Eine qualifizierte archäologische Prospektion umfasst einen "
+            },
+            {
+              "id": "636e813d339497074bbe9291",
+              "type": "strong",
+              "value": "Survey"
+            },
+            {
+              "id": "636e8142cd427c5a7d48426e",
+              "type": "paragraph",
+              "value": "mit Einzelfundeinmessung, zur grobräumlichen Lokalisierung von Fundstellen. Daraufhin findet in signifikanten Fundkonzentrationen eine "
+            },
+            {
+              "id": "636e814a1d7299586e1630a5",
+              "type": "strong",
+              "value": "Sachverhaltsermittlung "
+            },
+            {
+              "id": "636e8190915936782371250a",
+              "type": "paragraph",
+              "value": "statt, welche durch die Anlage von geringflächigen Sondagen die Ausdehnung der Fundstelle, ihre Zeitstellung und den Erhaltungszustand des archäologischen Kontexts ermittelt. Die beiden Methoden dienen zur genaueren Einhegung der archäologischen Hinterlassenschaften und helfen Ihnen für eine bessere Planung Ihres Vorhabens."
+            }
+          ]
         },
         {
           "id": "62a723effdd03dc166a04e7d",
           "title": "Sachverhaltsermittlung",
+          "titleUrl": "sachverhaltsermittlung",
           "photo": "/images/services/service3.webp",
           "text": ""
         },
         {
           "id": "62a723f1848068635bbf24f8",
           "title": "Ausgrabung",
+          "titleUrl": "ausgrabung",
           "photo": "/images/services/service4.webp",
           "text": ""
         },
         {
           "id": "62a723f1848068635bbf24f7",
           "title": "3D Technik",
+          "titleUrl": "3d-technik",
           "photo": "/images/services/service5.webp",
           "text": ""
         }
