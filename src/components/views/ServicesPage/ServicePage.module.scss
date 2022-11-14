@@ -2,6 +2,10 @@
 
 .root {
   @include flex(column, center, center);
+
+  .servicePageHeader {
+    margin-top: 15vh;
+  }
 }
 
 

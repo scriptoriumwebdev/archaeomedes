@@ -2,11 +2,14 @@
 
 .root {
   @include flex(column, none, start);
-  margin-bottom: 5vh;
-  margin-top: 5vh;
+  margin-bottom: 25vh;
+  margin-top: 15vh;
   // min-height: 100vh;
   position: relative;
   z-index: 1;
+  overflow-x: hidden;
+  // border: 1px solid red;
+
 
   .aboutUsTextContainer {
     @include flex(column, none, start);
@@ -14,11 +17,26 @@
     margin: 5rem 0 5rem 0;
     position: relative;
     text-align: left;
-    width: 70%;
+    // width: 70%;
     > :first-child {
       align-self: flex-start;
       margin-bottom: 5rem;
     }
+  }
+
+  .serviceText {
+    // border: 1px solid aqua;
+    // width: 100%;
+  }
+
+  .serviceImage {
+    width: 100%;
+    height: 50vh;
+    object-fit: cover;
+  }
+
+  .serviceCol {
+    // border: 1px solid greenyellow;
   }
 
   .spanWord {

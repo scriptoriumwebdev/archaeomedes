@@ -6,17 +6,34 @@ import Beratung from '../../layout/Sections/SingleService/Beratung/Beratung';
 import Geophysik from '../../layout/Sections/SingleService/Geophysik/Geophysik';
 import Prospektion from '../../layout/Sections/SingleService/Prospektion/Prospektion';
 
+import SectionHeader from '../../common/SectionHeader/SectionHeader';
+
 import styles from './ServicePage.module.scss';
 
 const ServicePage = () => (
   <div className={styles.root}>
+    <div className={styles.servicePageHeader}>
+      <SectionHeader>Leistungen</SectionHeader>
+    </div>
     <div>
-      <Ausgrabung />
-      <Beratung />
-      <Prospektion />
-      <Baubegleitung />
-      <Technik />
-      <Geophysik />
+      <div id="geophysikalische-prospektion">
+        <Geophysik />
+      </div>
+      <div id="ausgrabung">
+        <Ausgrabung />
+      </div>
+      <div id="prospektion-und-sachverhaltsermittlung">
+        <Prospektion />
+      </div>
+      <div id="3d-technik">
+        <Technik />
+      </div>
+      <div id="beratung-und-fachgutachten">
+        <Beratung />
+      </div>
+      <div id="baubegleitung">
+        <Baubegleitung />
+      </div>
     </div>
   </div>
 );
