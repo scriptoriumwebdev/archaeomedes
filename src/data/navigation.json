@@ -6,12 +6,12 @@
   },
   {
     "id": 2,
-    "linkSrc": "#aboutUs",
+    "linkSrc": "#uber-uns",
     "linkName": "Über uns"
   },
   {
     "id": 3,
-    "linkSrc": "#services",
+    "linkSrc": "leistungen",
     "linkName": "Leistungen"
   },
   {

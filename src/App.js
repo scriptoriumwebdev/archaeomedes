@@ -8,13 +8,14 @@ import './styles/global.scss';
 import MainLayout from './components/layout/MainLayout/MainLayout';
 import MainPage from './components/views/MainPage/MainPage';
 import AboutUs from './components/views/AboutUsPage/AboutUsPage';
-import News from './components/views/NewsPage/NewsPage';
-import Services from './components/views/ServicesPage/ServicesPage';
+// import News from './components/views/NewsPage/NewsPage';
+// import Services from './components/views/ServicesPage/ServicesPage';
 import ContactPage from './components/views/ContactPage/ContactPage';
 import ScrollToTop from './components/utils/ScrollToTop';
 import Impressum from './components/views/ImpressumPage/ImpressumPage';
 import PrivacyPolicy from './components/views/PrivacyPolicyPage/PrivacyPolicyPage';
 import NotFound from './components/views/NotFound/NotFound';
+import ServicePage from './components/views/ServicesPage/ServicePage';
 
 function App() {
   gsap.registerPlugin(ScrollTrigger);
@@ -28,7 +29,7 @@ function App() {
             <Route path="/" element={<MainPage />} />
             <Route path="/about" element={<AboutUs />} />
             {/* <Route path="/news" element={<News />} /> */}
-            <Route path="/services" element={<Services />} />
+            <Route path="/leistungen" element={<ServicePage />} />
             <Route path="/kontakt" element={<ContactPage />} />
             <Route path="/impressum" element={<Impressum />} />
             <Route path="/datenschutzerklarung" element={<PrivacyPolicy />} />

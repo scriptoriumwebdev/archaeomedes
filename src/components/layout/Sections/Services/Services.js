@@ -47,22 +47,26 @@ const Services = () => {
       <div className={styles.cardGrid} ref={servicesRef}>
         {/* //TODO dodać link do usługi */}
         {languageData.services.map((item) => (
-          // <a
-          //   href={`/services/#${item.title}`}
-          //   className={styles.card}
-          //   key={item.id}
-          // >
-          <figure key={item.id} className={styles.card}>
-            <img
-              src={item.photo}
-              alt={item.title}
-              className={styles.cardBackground}
-            />
-            <div className={styles.cardContent}>
-              <h4 className="">{item.title}</h4>
-            </div>
-          </figure>
-          // </a>
+          <a
+            href={`/leistungen/#${item.titleUrl}`}
+            // className={styles.card}
+            key={item.id}
+          >
+            <figure key={item.id} className={styles.card}>
+              <img
+                src={item.photo}
+                alt={item.title}
+                className={styles.cardBackground}
+              />
+              <div className={styles.cardContent}>
+                <h4 className="">{item.title}</h4>
+              </div>
+              <div>
+                <p className="">{item.text}</p>
+              </div>
+            </figure>
+            {` `}
+          </a>
         ))}
       </div>
       <div />

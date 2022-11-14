@@ -1,0 +1,112 @@
+@import "../../../../../styles/settings.scss";
+
+.root {
+  @include flex(column, none, start);
+  margin-bottom: 25vh;
+  // margin-top: 15vh;
+  // min-height: 100vh;
+  position: relative;
+  z-index: 1;
+  overflow-x: hidden;
+  // border: 1px solid red;
+
+
+  .aboutUsTextContainer {
+    @include flex(column, none, start);
+    align-self: center;
+    margin: 5rem 0 5rem 0;
+    position: relative;
+    text-align: left;
+    // width: 70%;
+    > :first-child {
+      align-self: flex-start;
+      margin-bottom: 5rem;
+    }
+  }
+
+  .serviceText {
+    // border: 1px solid aqua;
+    // width: 100%;
+  }
+
+  .serviceImage {
+    width: 100%;
+    height: 50vh;
+    object-fit: cover;
+  }
+
+  .serviceCol {
+    // border: 1px solid greenyellow;
+  }
+
+  .spanWord {
+    font-weight: bolder;
+    color: gold;
+  }
+}
+
+/* XXXL ExtraExtraLarge Devices, UltraWide Desktops  */
+@media (min-width: 1921px) {
+  .root {
+  }
+}
+
+/* XXL Extra Extra Large Devices, Desktops  */
+@media (min-width: 1400px) and (max-width: 1920px) {
+  .root {
+  }
+}
+
+/* XL Extra Extra Large Devices, Laptops  */
+@media (min-width: 1200px) and (max-width: 1399px) {
+  .root {
+  }
+}
+
+/* LG Large Devices, Tablets iPad Pro */
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+  .root {
+  }
+}
+
+/* MD Medium Devices, Tablets iPad */
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .root {
+  }
+}
+
+/* SM Small Devices, Small tablets Large Phones */
+@media only screen and (min-width: 576px) and (max-width: 767px) {
+  .root {
+  }
+}
+
+/* Extra Small Devices, Phones */
+@media only screen and (min-width: 0px) and (max-width: 575px) {
+  .root {
+    .aboutUsTextContainer {
+      width: 97%;
+      > :first-child {
+        align-self: flex-start;
+        margin-bottom: 5rem;
+      }
+      // .aboutUsItem{
+      //   .aboutUsPageText{
+      //     font-size: 0.9rem;
+      //   }
+      // }
+    }
+  }
+}
+
+/* Media pointer*/
+@media (hover: hover) and (pointer: fine) {
+  .root {
+  }
+}
+
+/* Media touchable */
+@media (pointer: coarse) {
+  .root {
+  }
+}
