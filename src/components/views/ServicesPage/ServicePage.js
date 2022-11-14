@@ -16,22 +16,25 @@ const ServicePage = () => (
       <SectionHeader>Leistungen</SectionHeader>
     </div>
     <div>
-      <div id="geophysikalische-prospektion">
+      <div id="geophysikalische-prospektion" className={styles.serviceSection}>
         <Geophysik />
       </div>
-      <div id="ausgrabung">
+      <div id="ausgrabung" className={styles.serviceSection}>
         <Ausgrabung />
       </div>
-      <div id="prospektion-und-sachverhaltsermittlung">
+      <div
+        id="prospektion-und-sachverhaltsermittlung"
+        className={styles.serviceSection}
+      >
         <Prospektion />
       </div>
-      <div id="3d-technik">
+      <div id="3d-technik" className={styles.serviceSection}>
         <Technik />
       </div>
-      <div id="beratung-und-fachgutachten">
+      <div id="beratung-und-fachgutachten" className={styles.serviceSection}>
         <Beratung />
       </div>
-      <div id="baubegleitung">
+      <div id="baubegleitung" className={styles.serviceSection}>
         <Baubegleitung />
       </div>
     </div>

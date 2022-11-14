@@ -3,6 +3,7 @@ import React, { useEffect, useRef } from 'react';
 import { Container } from 'react-bootstrap';
 import { gsap } from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
+import { HashLink } from 'react-router-hash-link';
 import styles from './Services.module.scss';
 import SectionHeader from '../../../common/SectionHeader/SectionHeader';
 
@@ -47,10 +48,15 @@ const Services = () => {
       <div className={styles.cardGrid} ref={servicesRef}>
         {/* //TODO dodać link do usługi */}
         {languageData.services.map((item) => (
-          <a
-            href={`/leistungen/#${item.titleUrl}`}
+          // <NavHashLink smooth to="/#" onClick={() => handleClick(`#`)}>
+
+          <HashLink
+            to={`/leistungen/#${item.titleUrl}`}
             // className={styles.card}
             key={item.id}
+            scroll={(el) =>
+              el.scrollIntoView({ behavior: `auto`, block: `end` })
+            }
           >
             <figure key={item.id} className={styles.card}>
               <img
@@ -66,7 +72,7 @@ const Services = () => {
               </div>
             </figure>
             {` `}
-          </a>
+          </HashLink>
         ))}
       </div>
       <div />
