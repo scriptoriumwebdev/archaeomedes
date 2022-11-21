@@ -9,7 +9,7 @@ const Prospektion = () => (
     <Row>
       <Col className={`col-12 col-lg-6 ${styles.serviceCol}`}>
         <img
-          src="/images/services/service3.webp"
+          src="/images/services/prosp.webp"
           alt="&nbsp;"
           className={styles.serviceImage}
         />

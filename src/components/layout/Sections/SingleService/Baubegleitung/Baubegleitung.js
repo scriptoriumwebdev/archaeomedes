@@ -14,10 +14,10 @@ const Baubegleitung = () => (
           <SectionHeader>Baubegleitung</SectionHeader>
           <p className={styles.serviceText}>
             Einige Maßnahmen aus Kanal-, Straßen- oder Trassenbau erfordern eine
-            archäologische{` `}
+            archäologisch {` `}
             <span className={styles.spanWord}>baubegleitende Betreuung</span>
             {` `}
-            Hier Hier steht Ihnen unser Archäologenteam mit flexiblem
+            Hier steht Ihnen unser Archäologenteam mit flexiblem
             Personalaufgebot zur Seite, um sämtliche denkmalrechtlich relevante
             Belange fachgerecht zu beurteilen und zu bearbeiten. Wir haben
             Erfahrung in der Zusammenarbeit mit den verschiedenen
@@ -27,7 +27,7 @@ const Baubegleitung = () => (
       </Col>
       <Col className={`col-12 col-lg-6 ${styles.serviceCol}`}>
         <img
-          src="/images/hero.webp"
+          src="/images/services/baubegleitung.webp"
           alt="&nbsp;"
           className={styles.serviceImage}
         />

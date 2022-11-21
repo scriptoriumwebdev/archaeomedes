@@ -9,7 +9,7 @@ const Footer = () => (
     <Row className={styles.footerRow}>
       <Col className={`col-12 col-lg-4 order-2 order-md-1 ${styles.footerCol}`}>
         <div className={styles.yearBox}>
-          <p className={styles.textFooter}>Archaomedes GbR</p>
+          <p className={styles.textFooter}>Archaemedes GbR</p>
           <p className={styles.textFooter}>Maasstraße 12</p>
           <p className={styles.textFooter}>47623 Kevelaer</p>
           <p className={styles.textFooter}>Nordrhein-Westfalen, Deutschland</p>

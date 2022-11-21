@@ -9,23 +9,23 @@
           "id": "63728bc8d7b116abac739c3a",
           "title": "Geophysikalische Prospektion",
           "titleUrl": "geophysikalische-prospektion",
-          "photo": "/images/services/service6.webp",
+          "photo": "/images/services/geophysic.webp",
           "text": ""
         },
         {
           "id": "62a723f1848068635bbf24f8",
           "title": "Ausgrabung",
           "titleUrl": "ausgrabung",
-          "photo": "/images/services/service4.webp",
+          "photo": "/images/services/dig.webp",
           "text": ""
         },
         {
           "id": "62a723eb41c243582576cb7c",
           "title": "Prospektion und Sachverhaltsermittlung",
           "titleUrl": "prospektion-und-sachverhaltsermittlung",
-          "photo": "/images/services/service2.webp",
+          "photo": "/images/services/prosp.webp",
           "text": "",
-          "serviceData" :[
+          "serviceData": [
             {
               "id": "636e81385c2af78dd6cfeee3",
               "type": "paragraph",
@@ -57,16 +57,16 @@
           "id": "62a723f1848068635bbf24f7",
           "title": "3D Technik",
           "titleUrl": "3d-technik",
-          "photo": "/images/services/service5.webp",
+          "photo": "/images/services/3d.webp",
           "text": ""
         },
         {
           "id": "62a723e63268d0c651dee865",
           "title": "Beratung und Fachgutachten",
           "titleUrl": "beratung-und-fachgutachten",
-          "photo": "/images/services/service1-1.webp",
+          "photo": "/images/services/beratung.webp",
           "text": "",
-          "serviceData" :[
+          "serviceData": [
             {
               "id": "636e6aad6f10d45319e53a88",
               "type": "paragraph",
@@ -93,7 +93,7 @@
           "id": "63728e4adfc04ffab20e2595",
           "title": "Baubegleitung",
           "titleUrl": "baubegleitung",
-          "photo": "/images/hero.webp",
+          "photo": "/images/services/baubegleitung.webp",
           "text": ""
         }
       ]

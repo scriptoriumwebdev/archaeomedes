@@ -19,16 +19,16 @@ const Ausgrabung = () => (
             {` `}
             <span className={styles.spanWord}>Stadtkern, </span> an{` `}
             <span className={styles.spanWord}>Windenergiestandorten, </span>
-            sowie sowie entlang von{` `}
-            <span className={styles.spanWord}>Gas- oder Stromtrassen. </span>
-            Danach Danach wird die ausgegrabene Fläche denkmalrechtlich
-            freigegeben, und die Baugenehmigung kann erteilt werden.
+            sowie entlang von{` `}
+            <span className={styles.spanWord}>Gas- oder Stromtrassen. </span>.
+            Danach wird die ausgegrabene Fläche denkmalrechtlich freigegeben,
+            und die Baugenehmigung kann erteilt werden.
           </p>
         </div>
       </Col>
       <Col className={`col-12 col-lg-6 ${styles.serviceCol}`}>
         <img
-          src="/images/services/service4.webp"
+          src="/images/services/dig.webp"
           alt="&nbsp;"
           className={styles.serviceImage}
         />

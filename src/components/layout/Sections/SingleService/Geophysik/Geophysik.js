@@ -9,7 +9,7 @@ const Geophysik = () => (
     <Row>
       <Col className={`col-12 col-lg-6 ${styles.serviceColGeophysik}`}>
         <img
-          src="/images/services/service6.webp"
+          src="/images/services/geophysic.webp"
           alt="&nbsp;"
           className={styles.serviceImageGeophysik}
         />

@@ -9,7 +9,7 @@ const Beratung = () => (
     <Row>
       <Col className={`col-12 col-lg-6 ${styles.serviceCol}`}>
         <img
-          src="/images/services/service1-1.webp"
+          src="/images/services/beratung.webp"
           alt="&nbsp;"
           className={styles.serviceImage}
         />
@@ -24,7 +24,7 @@ const Beratung = () => (
             Vorhabens im Hinblick auf mögliche denkmalrechtliche Auflagen
             umfassend zu beraten. Dabei entwickeln wir für Sie konzeptionelle,
             sachgerechte Lösungswege. Mithilfe unseres Partnernetzwerks können
-            wir bei Bedarf verschiedene Fachgutachten erstellen:{` `}
+            wir bei Bedarf verschiedene Fachgutachten erstellen:
           </p>
           <ul className={styles.beratungList}>
             <li>Archäologie,</li>
