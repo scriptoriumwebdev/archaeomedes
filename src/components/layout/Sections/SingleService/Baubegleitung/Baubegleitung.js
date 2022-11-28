@@ -15,7 +15,7 @@ const Baubegleitung = () => (
           <p className={styles.serviceText}>
             Einige Maßnahmen aus Kanal-, Straßen- oder Trassenbau erfordern eine
             archäologisch {` `}
-            <span className={styles.spanWord}>baubegleitende Betreuung</span>
+            <span className={styles.spanWord}>baubegleitende Betreuung</span>.
             {` `}
             Hier steht Ihnen unser Archäologenteam mit flexiblem
             Personalaufgebot zur Seite, um sämtliche denkmalrechtlich relevante

@@ -26,8 +26,7 @@ const Technik = () => (
               digitale Geländemodelle (DGM, DOM)
             </span>
             {` `}
-            sowie <span className={styles.spanWord}>3D-Laserscans</span>
-            {` `}
+            sowie <span className={styles.spanWord}>3D-Laserscans</span>.{` `}
             Unsere archäologischen Ergebnisse werden dadurch in einem
             weitgefassten räumlichen Kontext abgebildet. Die 3D-Technik
             vereinfacht die digitale Aufarbeitung, steigert unsere Effizienz und

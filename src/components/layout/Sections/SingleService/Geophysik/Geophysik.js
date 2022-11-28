@@ -26,7 +26,7 @@ const Geophysik = () => (
             Ausgrabungsmaßnahmen. Anthropogene Eingriffe können vorläufig
             bestimmt und bewertet werden, auch hinsichtlich der flächenmässigen
             Ausdehnung eines archäologischen Fundplatzes. Dies erleichtert eine
-            vorläufige Schätzung zu Dauer und Aufwand eine archäologische
+            vorläufige Schätzung zu Dauer und Aufwand einer archäologischen
             Ausgrabung. Zielgerichtet können spezifische Zonen und deren
             archäologisches Potenzial in einem Untersuchungsfeld bestimmt werden
             wie z.B. Rückschlüsse auf die Anzahl archäologischer Objekte oder
@@ -35,7 +35,7 @@ const Geophysik = () => (
             archäologischer Befunde weitgehend ausgeschlossen werden. Aus diesem
             Grunde kann die geophysikalische Prospektion die Planung von
             Erdeingriffen in Verbindung mit den archäologischen Arbeiten
-            erleichtern. Weiter dient diese Methode, das Wissen über eine
+            erleichtern. Weiter dient diese Methode dazu, das Wissen über eine
             archäologische Stätte zu vervollständigen und die anschließende
             Auswertung in einen größeren Zusammenhang zu stellen.
           </p>

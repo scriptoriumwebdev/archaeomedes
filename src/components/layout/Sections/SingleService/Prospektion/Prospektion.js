@@ -9,7 +9,7 @@ const Prospektion = () => (
     <Row>
       <Col className={`col-12 col-lg-6 ${styles.serviceCol}`}>
         <img
-          src="/images/services/prosp.webp"
+          src="/images/services/prosp2.webp"
           alt="&nbsp;"
           className={styles.serviceImage}
         />
@@ -22,19 +22,19 @@ const Prospektion = () => (
             Prospektion und <br /> Sachverhaltsermittlung
           </SectionHeader>
           <p className={styles.serviceText}>
-            Eine qualifizierte archäologische Prospektion umfasst einen{` `}
+            Eine qualifizierte archäologische Prospektion umfasst einen {` `}
             <span className={styles.spanWord}>Survey</span> mit
-            Einzelfundeinmessung, zur grobräumlichen Lokalisierung von
+            Einzelfundeinmessung zur grobräumlichen Lokalisierung von
             Fundstellen. Daraufhin findet in signifikanten Fundkonzentrationen
             eine{` `}
             <span className={styles.spanWord}>Sachverhaltsermittlung</span>
             {` `}
-            statt, statt, welche durch die Anlage von geringflächigen Sondagen
-            die Ausdehnung der Fundstelle, ihre Zeitstellung und den
-            Erhaltungszustand des archäologischen Kontexts ermittelt. Die beiden
-            Methoden dienen zur genaueren Einhegung der archäologischen
-            Hinterlassenschaften und helfen Ihnen für eine bessere Planung Ihres
-            Vorhabens.
+            statt, welche durch die Anlage von geringflächigen Sondagen die
+            Ausdehnung der Fundstelle, ihre Zeitstellung und den
+            Erhaltungszustand des archäologischen Kontextes ermittelt. Die
+            beiden Methoden dienen zur genaueren Einhegung der archäologischen
+            Hinterlassenschaften und unterstützen Sie zielgerichtet bei der
+            Planung Ihres Vorhabens.
           </p>
         </div>
       </Col>
