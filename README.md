@@ -36,7 +36,7 @@ yarn test
 
 👤 **Scriptorium**
 
-* Website: info@crucialfix.pl
+* Website: https://scriptorium.dev
 * Github: [@scriptoriumwebdev](https://github.com/scriptoriumwebdev)
 
 ## Show your support
