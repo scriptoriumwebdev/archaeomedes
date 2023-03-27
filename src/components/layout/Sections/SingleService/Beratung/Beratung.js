@@ -9,7 +9,7 @@ const Beratung = () => (
     <Row>
       <Col className={`col-12 col-lg-6 ${styles.serviceCol}`}>
         <img
-          src="/images/services/beratung.webp"
+          src="/images/services/beratungv2.webp"
           alt="&nbsp;"
           className={styles.serviceImage}
         />
