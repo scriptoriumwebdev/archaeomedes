@@ -34,10 +34,10 @@ yarn test
 
 ## Author
 
-👤 **CrucialFix**
+👤 **Scriptorium**
 
-* Website: info@crucialfix.pl
-* Github: [@crucialfixpl](https://github.com/crucialfixpl)
+* Website: https://scriptorium.dev
+* Github: [@scriptoriumwebdev](https://github.com/scriptoriumwebdev)
 
 ## Show your support
 
