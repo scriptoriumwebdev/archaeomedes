@@ -1,5 +1,6 @@
 import React from 'react';
 import { Container, Row, Col } from 'react-bootstrap';
+import { Link } from 'react-router-dom';
 import styles from './Beratung.module.scss';
 
 import SectionHeader from '../../../../common/SectionHeader/SectionHeader';
@@ -17,20 +18,25 @@ const Beratung = () => (
       <Col
         className={`col-12 col-lg-6 order-first order-lg-0 ${styles.serviceCol}`}
       >
-        <div className={styles.aboutUsTextContainer}>
-          <SectionHeader>Beratung und Fachgutachten</SectionHeader>
+        <div className={styles.serviceTextContainer}>
+          <SectionHeader>Archäologische Beratung </SectionHeader>
+          <p className={styles.serviceKeywords}>Konzepte – Fachgutachten</p>
           <p className={styles.serviceText}>
-            Wir bieten unsere Fachexpertise, um Sie bei der Planung Ihres
-            Vorhabens im Hinblick auf mögliche denkmalrechtliche Auflagen
-            umfassend zu beraten. Dabei entwickeln wir für Sie konzeptionelle,
-            sachgerechte Lösungswege. Mithilfe unseres Partnernetzwerks können
-            wir bei Bedarf verschiedene Fachgutachten erstellen:
+            Wir entwickeln Konzepte, um Ihr Bauvorhaben durch sachgerechte,
+            effiziente Lösungswege aufzugleisen.
           </p>
-          <ul className={styles.beratungList}>
+          {/* <ul className={styles.beratungList}>
             <li>Archäologie,</li>
             <li>Anthropologie,</li>
             <li>Archäobotanik.</li>
-          </ul>
+          </ul> */}
+          <p className={styles.serviceText}>
+            Wir gießen unsere wissenschaftliche Expertise in Fachgutachten, um
+            den Erfolg ihres Projekts sicherzustellen.
+          </p>
+          <Link className={styles.serviceLink} to="/kontakt">
+            Kontakt
+          </Link>
         </div>
       </Col>
     </Row>

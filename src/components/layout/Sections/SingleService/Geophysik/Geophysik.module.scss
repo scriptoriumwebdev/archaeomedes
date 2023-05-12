@@ -3,16 +3,15 @@
 .root {
   @include flex(column, none, start);
   margin-bottom: 25vh;
-  // margin-top: 15vh;
+  margin-top: 5vh;
   // min-height: 100vh;
   position: relative;
   z-index: 1;
   overflow-x: hidden;
   // border: 1px solid red;
 
-
-  .aboutUsTextContainer {
-    @include flex(column, center, start);
+  .serviceTextContainer {
+    @include flex(column, start, start);
     // align-self: center;
     margin: 5rem 0 5rem 0;
     position: relative;
@@ -21,6 +20,14 @@
     > :first-child {
       align-self: flex-start;
       margin-bottom: 5rem;
+    }
+    .serviceLink {
+      margin-top: 1rem;
+    }
+    .serviceKeywords {
+      font-style: italic;
+      margin-top: -3rem;
+      margin-bottom: 2rem;
     }
   }
 
@@ -89,7 +96,7 @@
 /* Extra Small Devices, Phones */
 @media only screen and (min-width: 0px) and (max-width: 575px) {
   .root {
-    .aboutUsTextContainer {
+    .serviceTextContainer {
       width: 97%;
       > :first-child {
         align-self: flex-start;

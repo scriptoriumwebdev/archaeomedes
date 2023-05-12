@@ -10,8 +10,7 @@
   overflow-x: hidden;
   // border: 1px solid red;
 
-
-  .aboutUsTextContainer {
+  .serviceTextContainer {
     @include flex(column, none, start);
     align-self: center;
     margin: 5rem 0 5rem 0;
@@ -21,6 +20,14 @@
     > :first-child {
       align-self: flex-start;
       margin-bottom: 5rem;
+    }
+    .serviceLink {
+      margin-top: 1rem;
+    }
+    .serviceKeywords {
+      font-style: italic;
+      margin-top: -3rem;
+      margin-bottom: 2rem;
     }
   }
 
@@ -39,9 +46,9 @@
     // border: 1px solid greenyellow;
   }
 
-  .beratungList {
-    color: gold;
-  }
+  // .beratungList {
+  //   color: gold;
+  // }
 }
 
 /* XXXL ExtraExtraLarge Devices, UltraWide Desktops  */
@@ -83,7 +90,7 @@
 /* Extra Small Devices, Phones */
 @media only screen and (min-width: 0px) and (max-width: 575px) {
   .root {
-    .aboutUsTextContainer {
+    .serviceTextContainer {
       width: 97%;
       > :first-child {
         align-self: flex-start;

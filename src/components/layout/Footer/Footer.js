@@ -9,7 +9,7 @@ const Footer = () => (
     <Row className={styles.footerRow}>
       <Col className={`col-12 col-lg-4 order-2 order-md-1 ${styles.footerCol}`}>
         <div className={styles.yearBox}>
-          <p className={styles.textFooter}>Archaeomedes GbR</p>
+          <p className={styles.textFooter}>Archaeomedes GmbH</p>
           <p className={styles.textFooter}>Maasstraße 12</p>
           <p className={styles.textFooter}>47623 Kevelaer</p>
           <p className={styles.textFooter}>Nordrhein-Westfalen, Deutschland</p>
@@ -18,7 +18,7 @@ const Footer = () => (
       <Col className={`col-12 col-lg-4 order-2 order-md-2 ${styles.footerCol}`}>
         <div className={styles.yearBox}>
           <p className={styles.textFooter}>
-            © 2022
+            © 2022-{new Date().getFullYear()}
             {` `}
             <a
               className={styles.footerLinks}
@@ -30,10 +30,7 @@ const Footer = () => (
           <p className={styles.textFooter}>
             Designed & Coded by
             {` `}
-            <a
-              className={styles.footerLinks}
-              href="mailto:info@scriptorium.dev"
-            >
+            <a className={styles.footerLinks} href="https://scriptorium.dev">
               Scriptorium
             </a>
           </p>
