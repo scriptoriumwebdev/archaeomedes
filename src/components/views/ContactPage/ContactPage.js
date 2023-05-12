@@ -113,6 +113,14 @@ const Contact = () => {
           </div>
         </Col>
       </Row>
+      {/*
+        {
+          "id": "62c438d33a2a1d4f28b4a93d",
+          "textData": "Archaeomedes",
+          "value": "https://facebook.com/archaeomedes",
+          "type": "web",
+          "icon": "faFacebook"
+        } */}
       <div />
     </div>
   );
